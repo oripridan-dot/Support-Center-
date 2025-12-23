@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspaces/Support-Center-/backend/scripts/ingest_rcf_robust.py", line 4, in <module>
+    from app.services.pa_brands_scraper import PABrandsScraper
+ModuleNotFoundError: No module named 'app'

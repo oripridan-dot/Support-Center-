@@ -1,0 +1,5 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/workspaces/Support-Center-/backend/app/main.py", line 4, in <module>
+    from .core.database import create_db_and_tables
+ImportError: attempted relative import with no known parent package

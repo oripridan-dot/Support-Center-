@@ -1,0 +1,9 @@
+2025-12-22 08:50:57,575 - AH-Ingestor - ERROR - Links file /workspaces/Support-Center-/backend/ah_product_links.txt not found!
+2025-12-22 08:58:12,982 - AH-Ingestor - INFO - Starting ingestion for 89 Allen & Heath products
+2025-12-22 08:58:13,681 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-12-22 08:58:13,699 - sqlalchemy.engine.Engine - INFO - SELECT brand.id, brand.name, brand.logo_url, brand.website_url, brand.description, brand.primary_color, brand.secondary_color 
+FROM brand 
+WHERE brand.name = ?
+2025-12-22 08:58:13,700 - sqlalchemy.engine.Engine - INFO - [generated in 0.00048s] ('Allen Heath',)
+2025-12-22 08:58:13,701 - AH-Ingestor - ERROR - Brand 'Allen Heath' not found in database!
+2025-12-22 08:58:13,701 - sqlalchemy.engine.Engine - INFO - ROLLBACK

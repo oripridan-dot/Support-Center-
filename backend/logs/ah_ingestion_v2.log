@@ -1,0 +1,912 @@
+/workspaces/Support-Center-/backend/app/services/rag_service.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+2025-12-22 10:27:02,940 - AH-Ingestor - INFO - Starting ingestion for 89 Allen & Heath products
+2025-12-22 10:27:07,268 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-12-22 10:27:07,268 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-12-22 10:27:07,328 INFO sqlalchemy.engine.Engine SELECT brand.id, brand.name, brand.logo_url, brand.website_url, brand.description, brand.primary_color, brand.secondary_color 
+FROM brand 
+WHERE brand.name = ?
+2025-12-22 10:27:07,328 - sqlalchemy.engine.Engine - INFO - SELECT brand.id, brand.name, brand.logo_url, brand.website_url, brand.description, brand.primary_color, brand.secondary_color 
+FROM brand 
+WHERE brand.name = ?
+2025-12-22 10:27:07,330 INFO sqlalchemy.engine.Engine [generated in 0.00238s] ('Allen Heath',)
+2025-12-22 10:27:07,330 - sqlalchemy.engine.Engine - INFO - [generated in 0.00238s] ('Allen Heath',)
+2025-12-22 10:27:07,378 - AH-Ingestor - INFO - [1/89] Processing: https://www.allen-heath.com/hardware/ahm/ahm-16/
+2025-12-22 10:27:07,388 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,388 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,389 INFO sqlalchemy.engine.Engine [generated in 0.00134s] ('https://www.allen-heath.com/hardware/ahm/ahm-16/',)
+2025-12-22 10:27:07,389 - sqlalchemy.engine.Engine - INFO - [generated in 0.00134s] ('https://www.allen-heath.com/hardware/ahm/ahm-16/',)
+2025-12-22 10:27:07,445 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/ahm/ahm-16/
+2025-12-22 10:27:07,446 - AH-Ingestor - INFO - [2/89] Processing: https://www.allen-heath.com/hardware/ahm/ahm-32/
+2025-12-22 10:27:07,449 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,449 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,450 INFO sqlalchemy.engine.Engine [cached since 0.06198s ago] ('https://www.allen-heath.com/hardware/ahm/ahm-32/',)
+2025-12-22 10:27:07,450 - sqlalchemy.engine.Engine - INFO - [cached since 0.06198s ago] ('https://www.allen-heath.com/hardware/ahm/ahm-32/',)
+2025-12-22 10:27:07,455 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/ahm/ahm-32/
+2025-12-22 10:27:07,456 - AH-Ingestor - INFO - [3/89] Processing: https://www.allen-heath.com/hardware/ahm/ahm-64/
+2025-12-22 10:27:07,456 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,456 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,457 INFO sqlalchemy.engine.Engine [cached since 0.06919s ago] ('https://www.allen-heath.com/hardware/ahm/ahm-64/',)
+2025-12-22 10:27:07,457 - sqlalchemy.engine.Engine - INFO - [cached since 0.06919s ago] ('https://www.allen-heath.com/hardware/ahm/ahm-64/',)
+2025-12-22 10:27:07,457 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/ahm/ahm-64/
+2025-12-22 10:27:07,458 - AH-Ingestor - INFO - [4/89] Processing: https://www.allen-heath.com/hardware/ahm/all-models/resources/
+2025-12-22 10:27:07,458 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,458 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,459 INFO sqlalchemy.engine.Engine [cached since 0.07084s ago] ('https://www.allen-heath.com/hardware/ahm/all-models/resources/',)
+2025-12-22 10:27:07,459 - sqlalchemy.engine.Engine - INFO - [cached since 0.07084s ago] ('https://www.allen-heath.com/hardware/ahm/all-models/resources/',)
+2025-12-22 10:27:07,459 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/ahm/all-models/resources/
+2025-12-22 10:27:07,459 - AH-Ingestor - INFO - [5/89] Processing: https://www.allen-heath.com/hardware/ahm/processing-expansion/
+2025-12-22 10:27:07,460 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,460 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,460 INFO sqlalchemy.engine.Engine [cached since 0.07239s ago] ('https://www.allen-heath.com/hardware/ahm/processing-expansion/',)
+2025-12-22 10:27:07,460 - sqlalchemy.engine.Engine - INFO - [cached since 0.07239s ago] ('https://www.allen-heath.com/hardware/ahm/processing-expansion/',)
+2025-12-22 10:27:07,460 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/ahm/processing-expansion/
+2025-12-22 10:27:07,461 - AH-Ingestor - INFO - [6/89] Processing: https://www.allen-heath.com/hardware/audio-networking/aes3/
+2025-12-22 10:27:07,462 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,462 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,462 INFO sqlalchemy.engine.Engine [cached since 0.0742s ago] ('https://www.allen-heath.com/hardware/audio-networking/aes3/',)
+2025-12-22 10:27:07,462 - sqlalchemy.engine.Engine - INFO - [cached since 0.0742s ago] ('https://www.allen-heath.com/hardware/audio-networking/aes3/',)
+2025-12-22 10:27:07,462 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/audio-networking/aes3/
+2025-12-22 10:27:07,462 - AH-Ingestor - INFO - [7/89] Processing: https://www.allen-heath.com/hardware/audio-networking/dante-128x128/
+2025-12-22 10:27:07,463 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,463 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,464 INFO sqlalchemy.engine.Engine [cached since 0.0759s ago] ('https://www.allen-heath.com/hardware/audio-networking/dante-128x128/',)
+2025-12-22 10:27:07,464 - sqlalchemy.engine.Engine - INFO - [cached since 0.0759s ago] ('https://www.allen-heath.com/hardware/audio-networking/dante-128x128/',)
+2025-12-22 10:27:07,464 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/audio-networking/dante-128x128/
+2025-12-22 10:27:07,464 - AH-Ingestor - INFO - [8/89] Processing: https://www.allen-heath.com/hardware/audio-networking/dante-64x64/
+2025-12-22 10:27:07,465 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,465 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,465 INFO sqlalchemy.engine.Engine [cached since 0.07723s ago] ('https://www.allen-heath.com/hardware/audio-networking/dante-64x64/',)
+2025-12-22 10:27:07,465 - sqlalchemy.engine.Engine - INFO - [cached since 0.07723s ago] ('https://www.allen-heath.com/hardware/audio-networking/dante-64x64/',)
+2025-12-22 10:27:07,466 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/audio-networking/dante-64x64/
+2025-12-22 10:27:07,466 - AH-Ingestor - INFO - [9/89] Processing: https://www.allen-heath.com/hardware/audio-networking/dx-link/
+2025-12-22 10:27:07,467 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,467 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,467 INFO sqlalchemy.engine.Engine [cached since 0.07914s ago] ('https://www.allen-heath.com/hardware/audio-networking/dx-link/',)
+2025-12-22 10:27:07,467 - sqlalchemy.engine.Engine - INFO - [cached since 0.07914s ago] ('https://www.allen-heath.com/hardware/audio-networking/dx-link/',)
+2025-12-22 10:27:07,470 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/audio-networking/dx-link/
+2025-12-22 10:27:07,470 - AH-Ingestor - INFO - [10/89] Processing: https://www.allen-heath.com/hardware/audio-networking/fibreace/
+2025-12-22 10:27:07,471 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,471 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,472 INFO sqlalchemy.engine.Engine [cached since 0.08416s ago] ('https://www.allen-heath.com/hardware/audio-networking/fibreace/',)
+2025-12-22 10:27:07,472 - sqlalchemy.engine.Engine - INFO - [cached since 0.08416s ago] ('https://www.allen-heath.com/hardware/audio-networking/fibreace/',)
+2025-12-22 10:27:07,472 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/audio-networking/fibreace/
+2025-12-22 10:27:07,473 - AH-Ingestor - INFO - [11/89] Processing: https://www.allen-heath.com/hardware/audio-networking/gigaace/
+2025-12-22 10:27:07,474 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,474 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,474 INFO sqlalchemy.engine.Engine [cached since 0.0864s ago] ('https://www.allen-heath.com/hardware/audio-networking/gigaace/',)
+2025-12-22 10:27:07,474 - sqlalchemy.engine.Engine - INFO - [cached since 0.0864s ago] ('https://www.allen-heath.com/hardware/audio-networking/gigaace/',)
+2025-12-22 10:27:07,475 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/audio-networking/gigaace/
+2025-12-22 10:27:07,475 - AH-Ingestor - INFO - [12/89] Processing: https://www.allen-heath.com/hardware/audio-networking/m-dl-adapt/
+2025-12-22 10:27:07,476 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,476 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,476 INFO sqlalchemy.engine.Engine [cached since 0.08877s ago] ('https://www.allen-heath.com/hardware/audio-networking/m-dl-adapt/',)
+2025-12-22 10:27:07,476 - sqlalchemy.engine.Engine - INFO - [cached since 0.08877s ago] ('https://www.allen-heath.com/hardware/audio-networking/m-dl-adapt/',)
+2025-12-22 10:27:07,477 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/audio-networking/m-dl-adapt/
+2025-12-22 10:27:07,478 - AH-Ingestor - INFO - [13/89] Processing: https://www.allen-heath.com/hardware/audio-networking/sq-dante-32/
+2025-12-22 10:27:07,479 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,479 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,479 INFO sqlalchemy.engine.Engine [cached since 0.09127s ago] ('https://www.allen-heath.com/hardware/audio-networking/sq-dante-32/',)
+2025-12-22 10:27:07,479 - sqlalchemy.engine.Engine - INFO - [cached since 0.09127s ago] ('https://www.allen-heath.com/hardware/audio-networking/sq-dante-32/',)
+2025-12-22 10:27:07,479 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/audio-networking/sq-dante-32/
+2025-12-22 10:27:07,480 - AH-Ingestor - INFO - [14/89] Processing: https://www.allen-heath.com/hardware/audio-networking/sq-dante-64/
+2025-12-22 10:27:07,480 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,480 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,481 INFO sqlalchemy.engine.Engine [cached since 0.09371s ago] ('https://www.allen-heath.com/hardware/audio-networking/sq-dante-64/',)
+2025-12-22 10:27:07,481 - sqlalchemy.engine.Engine - INFO - [cached since 0.09371s ago] ('https://www.allen-heath.com/hardware/audio-networking/sq-dante-64/',)
+2025-12-22 10:27:07,483 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/audio-networking/sq-dante-64/
+2025-12-22 10:27:07,483 - AH-Ingestor - INFO - [15/89] Processing: https://www.allen-heath.com/hardware/audio-networking/sq-madi/
+2025-12-22 10:27:07,485 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,485 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,485 INFO sqlalchemy.engine.Engine [cached since 0.09767s ago] ('https://www.allen-heath.com/hardware/audio-networking/sq-madi/',)
+2025-12-22 10:27:07,485 - sqlalchemy.engine.Engine - INFO - [cached since 0.09767s ago] ('https://www.allen-heath.com/hardware/audio-networking/sq-madi/',)
+2025-12-22 10:27:07,486 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/audio-networking/sq-madi/
+2025-12-22 10:27:07,487 - AH-Ingestor - INFO - [16/89] Processing: https://www.allen-heath.com/hardware/audio-networking/sq-slink/
+2025-12-22 10:27:07,487 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,487 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,488 INFO sqlalchemy.engine.Engine [cached since 0.1001s ago] ('https://www.allen-heath.com/hardware/audio-networking/sq-slink/',)
+2025-12-22 10:27:07,488 - sqlalchemy.engine.Engine - INFO - [cached since 0.1001s ago] ('https://www.allen-heath.com/hardware/audio-networking/sq-slink/',)
+2025-12-22 10:27:07,488 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/audio-networking/sq-slink/
+2025-12-22 10:27:07,489 - AH-Ingestor - INFO - [17/89] Processing: https://www.allen-heath.com/hardware/audio-networking/sq-waves/
+2025-12-22 10:27:07,489 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,489 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,490 INFO sqlalchemy.engine.Engine [cached since 0.1019s ago] ('https://www.allen-heath.com/hardware/audio-networking/sq-waves/',)
+2025-12-22 10:27:07,490 - sqlalchemy.engine.Engine - INFO - [cached since 0.1019s ago] ('https://www.allen-heath.com/hardware/audio-networking/sq-waves/',)
+2025-12-22 10:27:07,490 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/audio-networking/sq-waves/
+2025-12-22 10:27:07,491 - AH-Ingestor - INFO - [18/89] Processing: https://www.allen-heath.com/hardware/audio-networking/supermadi/
+2025-12-22 10:27:07,491 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,491 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,492 INFO sqlalchemy.engine.Engine [cached since 0.1041s ago] ('https://www.allen-heath.com/hardware/audio-networking/supermadi/',)
+2025-12-22 10:27:07,492 - sqlalchemy.engine.Engine - INFO - [cached since 0.1041s ago] ('https://www.allen-heath.com/hardware/audio-networking/supermadi/',)
+2025-12-22 10:27:07,493 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/audio-networking/supermadi/
+2025-12-22 10:27:07,493 - AH-Ingestor - INFO - [19/89] Processing: https://www.allen-heath.com/hardware/audio-networking/waves-v3/
+2025-12-22 10:27:07,494 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,494 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,494 INFO sqlalchemy.engine.Engine [cached since 0.1064s ago] ('https://www.allen-heath.com/hardware/audio-networking/waves-v3/',)
+2025-12-22 10:27:07,494 - sqlalchemy.engine.Engine - INFO - [cached since 0.1064s ago] ('https://www.allen-heath.com/hardware/audio-networking/waves-v3/',)
+2025-12-22 10:27:07,495 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/audio-networking/waves-v3/
+2025-12-22 10:27:07,495 - AH-Ingestor - INFO - [20/89] Processing: https://www.allen-heath.com/hardware/cc-7-cc-10/resources/
+2025-12-22 10:27:07,496 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,496 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,496 INFO sqlalchemy.engine.Engine [cached since 0.1085s ago] ('https://www.allen-heath.com/hardware/cc-7-cc-10/resources/',)
+2025-12-22 10:27:07,496 - sqlalchemy.engine.Engine - INFO - [cached since 0.1085s ago] ('https://www.allen-heath.com/hardware/cc-7-cc-10/resources/',)
+2025-12-22 10:27:07,497 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/cc-7-cc-10/resources/
+2025-12-22 10:27:07,497 - AH-Ingestor - INFO - [21/89] Processing: https://www.allen-heath.com/hardware/controllers/cc-7-cc-10/
+2025-12-22 10:27:07,497 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,497 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,497 INFO sqlalchemy.engine.Engine [cached since 0.1098s ago] ('https://www.allen-heath.com/hardware/controllers/cc-7-cc-10/',)
+2025-12-22 10:27:07,497 - sqlalchemy.engine.Engine - INFO - [cached since 0.1098s ago] ('https://www.allen-heath.com/hardware/controllers/cc-7-cc-10/',)
+2025-12-22 10:27:07,498 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/controllers/cc-7-cc-10/
+2025-12-22 10:27:07,498 - AH-Ingestor - INFO - [22/89] Processing: https://www.allen-heath.com/hardware/controllers/custom-control/
+2025-12-22 10:27:07,501 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,501 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,502 INFO sqlalchemy.engine.Engine [cached since 0.114s ago] ('https://www.allen-heath.com/hardware/controllers/custom-control/',)
+2025-12-22 10:27:07,502 - sqlalchemy.engine.Engine - INFO - [cached since 0.114s ago] ('https://www.allen-heath.com/hardware/controllers/custom-control/',)
+2025-12-22 10:27:07,502 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/controllers/custom-control/
+2025-12-22 10:27:07,503 - AH-Ingestor - INFO - [23/89] Processing: https://www.allen-heath.com/hardware/controllers/gpio/
+2025-12-22 10:27:07,504 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,504 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,506 INFO sqlalchemy.engine.Engine [cached since 0.1179s ago] ('https://www.allen-heath.com/hardware/controllers/gpio/',)
+2025-12-22 10:27:07,506 - sqlalchemy.engine.Engine - INFO - [cached since 0.1179s ago] ('https://www.allen-heath.com/hardware/controllers/gpio/',)
+2025-12-22 10:27:07,507 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/controllers/gpio/
+2025-12-22 10:27:07,508 - AH-Ingestor - INFO - [24/89] Processing: https://www.allen-heath.com/hardware/cq/cq-12t/
+2025-12-22 10:27:07,509 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,509 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,511 INFO sqlalchemy.engine.Engine [cached since 0.1233s ago] ('https://www.allen-heath.com/hardware/cq/cq-12t/',)
+2025-12-22 10:27:07,511 - sqlalchemy.engine.Engine - INFO - [cached since 0.1233s ago] ('https://www.allen-heath.com/hardware/cq/cq-12t/',)
+2025-12-22 10:27:07,512 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/cq/cq-12t/
+2025-12-22 10:27:07,512 - AH-Ingestor - INFO - [25/89] Processing: https://www.allen-heath.com/hardware/cq/cq-18t/
+2025-12-22 10:27:07,513 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,513 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,514 INFO sqlalchemy.engine.Engine [cached since 0.1259s ago] ('https://www.allen-heath.com/hardware/cq/cq-18t/',)
+2025-12-22 10:27:07,514 - sqlalchemy.engine.Engine - INFO - [cached since 0.1259s ago] ('https://www.allen-heath.com/hardware/cq/cq-18t/',)
+2025-12-22 10:27:07,515 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/cq/cq-18t/
+2025-12-22 10:27:07,515 - AH-Ingestor - INFO - [26/89] Processing: https://www.allen-heath.com/hardware/cq/cq-20b/
+2025-12-22 10:27:07,516 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,516 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,517 INFO sqlalchemy.engine.Engine [cached since 0.1288s ago] ('https://www.allen-heath.com/hardware/cq/cq-20b/',)
+2025-12-22 10:27:07,517 - sqlalchemy.engine.Engine - INFO - [cached since 0.1288s ago] ('https://www.allen-heath.com/hardware/cq/cq-20b/',)
+2025-12-22 10:27:07,517 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/cq/cq-20b/
+2025-12-22 10:27:07,518 - AH-Ingestor - INFO - [27/89] Processing: https://www.allen-heath.com/hardware/cq/cq-accessories/
+2025-12-22 10:27:07,518 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,518 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,519 INFO sqlalchemy.engine.Engine [cached since 0.131s ago] ('https://www.allen-heath.com/hardware/cq/cq-accessories/',)
+2025-12-22 10:27:07,519 - sqlalchemy.engine.Engine - INFO - [cached since 0.131s ago] ('https://www.allen-heath.com/hardware/cq/cq-accessories/',)
+2025-12-22 10:27:07,523 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/cq/cq-accessories/
+2025-12-22 10:27:07,523 - AH-Ingestor - INFO - [28/89] Processing: https://www.allen-heath.com/hardware/cq/cq-mixpad/
+2025-12-22 10:27:07,524 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,524 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,525 INFO sqlalchemy.engine.Engine [cached since 0.1376s ago] ('https://www.allen-heath.com/hardware/cq/cq-mixpad/',)
+2025-12-22 10:27:07,525 - sqlalchemy.engine.Engine - INFO - [cached since 0.1376s ago] ('https://www.allen-heath.com/hardware/cq/cq-mixpad/',)
+2025-12-22 10:27:07,526 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/cq/cq-mixpad/
+2025-12-22 10:27:07,526 - AH-Ingestor - INFO - [29/89] Processing: https://www.allen-heath.com/hardware/cq/cq4you/
+2025-12-22 10:27:07,527 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,527 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,527 INFO sqlalchemy.engine.Engine [cached since 0.1398s ago] ('https://www.allen-heath.com/hardware/cq/cq4you/',)
+2025-12-22 10:27:07,527 - sqlalchemy.engine.Engine - INFO - [cached since 0.1398s ago] ('https://www.allen-heath.com/hardware/cq/cq4you/',)
+2025-12-22 10:27:07,528 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/cq/cq4you/
+2025-12-22 10:27:07,529 - AH-Ingestor - INFO - [30/89] Processing: https://www.allen-heath.com/hardware/dlive-series/all-models/resources
+2025-12-22 10:27:07,529 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,529 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,530 INFO sqlalchemy.engine.Engine [cached since 0.1419s ago] ('https://www.allen-heath.com/hardware/dlive-series/all-models/resources',)
+2025-12-22 10:27:07,530 - sqlalchemy.engine.Engine - INFO - [cached since 0.1419s ago] ('https://www.allen-heath.com/hardware/dlive-series/all-models/resources',)
+2025-12-22 10:27:07,530 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/dlive-series/all-models/resources
+2025-12-22 10:27:07,530 - AH-Ingestor - INFO - [31/89] Processing: https://www.allen-heath.com/hardware/dlive-series/dlive-accessories/
+2025-12-22 10:27:07,531 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,531 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,531 INFO sqlalchemy.engine.Engine [cached since 0.1437s ago] ('https://www.allen-heath.com/hardware/dlive-series/dlive-accessories/',)
+2025-12-22 10:27:07,531 - sqlalchemy.engine.Engine - INFO - [cached since 0.1437s ago] ('https://www.allen-heath.com/hardware/dlive-series/dlive-accessories/',)
+2025-12-22 10:27:07,532 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/dlive-series/dlive-accessories/
+2025-12-22 10:27:07,533 - AH-Ingestor - INFO - [32/89] Processing: https://www.allen-heath.com/hardware/dlive-series/dlive-mixracks/
+2025-12-22 10:27:07,533 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,533 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,533 INFO sqlalchemy.engine.Engine [cached since 0.1455s ago] ('https://www.allen-heath.com/hardware/dlive-series/dlive-mixracks/',)
+2025-12-22 10:27:07,533 - sqlalchemy.engine.Engine - INFO - [cached since 0.1455s ago] ('https://www.allen-heath.com/hardware/dlive-series/dlive-mixracks/',)
+2025-12-22 10:27:07,534 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/dlive-series/dlive-mixracks/
+2025-12-22 10:27:07,534 - AH-Ingestor - INFO - [33/89] Processing: https://www.allen-heath.com/hardware/dlive-series/dlive-surfaces/
+2025-12-22 10:27:07,534 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,534 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,534 INFO sqlalchemy.engine.Engine [cached since 0.1466s ago] ('https://www.allen-heath.com/hardware/dlive-series/dlive-surfaces/',)
+2025-12-22 10:27:07,534 - sqlalchemy.engine.Engine - INFO - [cached since 0.1466s ago] ('https://www.allen-heath.com/hardware/dlive-series/dlive-surfaces/',)
+2025-12-22 10:27:07,535 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/dlive-series/dlive-surfaces/
+2025-12-22 10:27:07,535 - AH-Ingestor - INFO - [34/89] Processing: https://www.allen-heath.com/hardware/dlive-series/rackultra-fx/
+2025-12-22 10:27:07,536 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,536 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,536 INFO sqlalchemy.engine.Engine [cached since 0.1486s ago] ('https://www.allen-heath.com/hardware/dlive-series/rackultra-fx/',)
+2025-12-22 10:27:07,536 - sqlalchemy.engine.Engine - INFO - [cached since 0.1486s ago] ('https://www.allen-heath.com/hardware/dlive-series/rackultra-fx/',)
+2025-12-22 10:27:07,537 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/dlive-series/rackultra-fx/
+2025-12-22 10:27:07,537 - AH-Ingestor - INFO - [35/89] Processing: https://www.allen-heath.com/hardware/everything-i-o/ab168/
+2025-12-22 10:27:07,538 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,538 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,538 INFO sqlalchemy.engine.Engine [cached since 0.1506s ago] ('https://www.allen-heath.com/hardware/everything-i-o/ab168/',)
+2025-12-22 10:27:07,538 - sqlalchemy.engine.Engine - INFO - [cached since 0.1506s ago] ('https://www.allen-heath.com/hardware/everything-i-o/ab168/',)
+2025-12-22 10:27:07,539 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/everything-i-o/ab168/
+2025-12-22 10:27:07,539 - AH-Ingestor - INFO - [36/89] Processing: https://www.allen-heath.com/hardware/everything-i-o/ar2412/
+2025-12-22 10:27:07,540 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,540 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,540 INFO sqlalchemy.engine.Engine [cached since 0.1528s ago] ('https://www.allen-heath.com/hardware/everything-i-o/ar2412/',)
+2025-12-22 10:27:07,540 - sqlalchemy.engine.Engine - INFO - [cached since 0.1528s ago] ('https://www.allen-heath.com/hardware/everything-i-o/ar2412/',)
+2025-12-22 10:27:07,541 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/everything-i-o/ar2412/
+2025-12-22 10:27:07,542 - AH-Ingestor - INFO - [37/89] Processing: https://www.allen-heath.com/hardware/everything-i-o/ar84/
+2025-12-22 10:27:07,542 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,542 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,543 INFO sqlalchemy.engine.Engine [cached since 0.155s ago] ('https://www.allen-heath.com/hardware/everything-i-o/ar84/',)
+2025-12-22 10:27:07,543 - sqlalchemy.engine.Engine - INFO - [cached since 0.155s ago] ('https://www.allen-heath.com/hardware/everything-i-o/ar84/',)
+2025-12-22 10:27:07,544 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/everything-i-o/ar84/
+2025-12-22 10:27:07,544 - AH-Ingestor - INFO - [38/89] Processing: https://www.allen-heath.com/hardware/everything-i-o/dt02/
+2025-12-22 10:27:07,544 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,544 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,545 INFO sqlalchemy.engine.Engine [cached since 0.1573s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dt02/',)
+2025-12-22 10:27:07,545 - sqlalchemy.engine.Engine - INFO - [cached since 0.1573s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dt02/',)
+2025-12-22 10:27:07,546 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/everything-i-o/dt02/
+2025-12-22 10:27:07,546 - AH-Ingestor - INFO - [39/89] Processing: https://www.allen-heath.com/hardware/everything-i-o/dt164-w/
+2025-12-22 10:27:07,547 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,547 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,547 INFO sqlalchemy.engine.Engine [cached since 0.1593s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dt164-w/',)
+2025-12-22 10:27:07,547 - sqlalchemy.engine.Engine - INFO - [cached since 0.1593s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dt164-w/',)
+2025-12-22 10:27:07,548 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/everything-i-o/dt164-w/
+2025-12-22 10:27:07,548 - AH-Ingestor - INFO - [40/89] Processing: https://www.allen-heath.com/hardware/everything-i-o/dt168/
+2025-12-22 10:27:07,548 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,548 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,549 INFO sqlalchemy.engine.Engine [cached since 0.1612s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dt168/',)
+2025-12-22 10:27:07,549 - sqlalchemy.engine.Engine - INFO - [cached since 0.1612s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dt168/',)
+2025-12-22 10:27:07,550 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/everything-i-o/dt168/
+2025-12-22 10:27:07,550 - AH-Ingestor - INFO - [41/89] Processing: https://www.allen-heath.com/hardware/everything-i-o/dt20/
+2025-12-22 10:27:07,550 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,550 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,551 INFO sqlalchemy.engine.Engine [cached since 0.163s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dt20/',)
+2025-12-22 10:27:07,551 - sqlalchemy.engine.Engine - INFO - [cached since 0.163s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dt20/',)
+2025-12-22 10:27:07,551 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/everything-i-o/dt20/
+2025-12-22 10:27:07,552 - AH-Ingestor - INFO - [42/89] Processing: https://www.allen-heath.com/hardware/everything-i-o/dt22/
+2025-12-22 10:27:07,552 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,552 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,553 INFO sqlalchemy.engine.Engine [cached since 0.1651s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dt22/',)
+2025-12-22 10:27:07,553 - sqlalchemy.engine.Engine - INFO - [cached since 0.1651s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dt22/',)
+2025-12-22 10:27:07,553 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/everything-i-o/dt22/
+2025-12-22 10:27:07,554 - AH-Ingestor - INFO - [43/89] Processing: https://www.allen-heath.com/hardware/everything-i-o/dx-hub/
+2025-12-22 10:27:07,554 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,554 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,554 INFO sqlalchemy.engine.Engine [cached since 0.1667s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dx-hub/',)
+2025-12-22 10:27:07,554 - sqlalchemy.engine.Engine - INFO - [cached since 0.1667s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dx-hub/',)
+2025-12-22 10:27:07,555 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/everything-i-o/dx-hub/
+2025-12-22 10:27:07,555 - AH-Ingestor - INFO - [44/89] Processing: https://www.allen-heath.com/hardware/everything-i-o/dx012/
+2025-12-22 10:27:07,556 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,556 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,556 INFO sqlalchemy.engine.Engine [cached since 0.1688s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dx012/',)
+2025-12-22 10:27:07,556 - sqlalchemy.engine.Engine - INFO - [cached since 0.1688s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dx012/',)
+2025-12-22 10:27:07,557 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/everything-i-o/dx012/
+2025-12-22 10:27:07,558 - AH-Ingestor - INFO - [45/89] Processing: https://www.allen-heath.com/hardware/everything-i-o/dx164-w/
+2025-12-22 10:27:07,558 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,558 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,559 INFO sqlalchemy.engine.Engine [cached since 0.1709s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dx164-w/',)
+2025-12-22 10:27:07,559 - sqlalchemy.engine.Engine - INFO - [cached since 0.1709s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dx164-w/',)
+2025-12-22 10:27:07,559 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/everything-i-o/dx164-w/
+2025-12-22 10:27:07,560 - AH-Ingestor - INFO - [46/89] Processing: https://www.allen-heath.com/hardware/everything-i-o/dx168/
+2025-12-22 10:27:07,560 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,560 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,561 INFO sqlalchemy.engine.Engine [cached since 0.173s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dx168/',)
+2025-12-22 10:27:07,561 - sqlalchemy.engine.Engine - INFO - [cached since 0.173s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dx168/',)
+2025-12-22 10:27:07,561 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/everything-i-o/dx168/
+2025-12-22 10:27:07,562 - AH-Ingestor - INFO - [47/89] Processing: https://www.allen-heath.com/hardware/everything-i-o/dx32/
+2025-12-22 10:27:07,562 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,562 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,563 INFO sqlalchemy.engine.Engine [cached since 0.1757s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dx32/',)
+2025-12-22 10:27:07,563 - sqlalchemy.engine.Engine - INFO - [cached since 0.1757s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dx32/',)
+2025-12-22 10:27:07,564 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/everything-i-o/dx32/
+2025-12-22 10:27:07,564 - AH-Ingestor - INFO - [48/89] Processing: https://www.allen-heath.com/hardware/everything-i-o/dx88-p/
+2025-12-22 10:27:07,565 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,565 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,565 INFO sqlalchemy.engine.Engine [cached since 0.1775s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dx88-p/',)
+2025-12-22 10:27:07,565 - sqlalchemy.engine.Engine - INFO - [cached since 0.1775s ago] ('https://www.allen-heath.com/hardware/everything-i-o/dx88-p/',)
+2025-12-22 10:27:07,566 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/everything-i-o/dx88-p/
+2025-12-22 10:27:07,566 - AH-Ingestor - INFO - [49/89] Processing: https://www.allen-heath.com/hardware/everything-i-o/gx4816/
+2025-12-22 10:27:07,567 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,567 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,567 INFO sqlalchemy.engine.Engine [cached since 0.1797s ago] ('https://www.allen-heath.com/hardware/everything-i-o/gx4816/',)
+2025-12-22 10:27:07,567 - sqlalchemy.engine.Engine - INFO - [cached since 0.1797s ago] ('https://www.allen-heath.com/hardware/everything-i-o/gx4816/',)
+2025-12-22 10:27:07,568 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/everything-i-o/gx4816/
+2025-12-22 10:27:07,568 - AH-Ingestor - INFO - [50/89] Processing: https://www.allen-heath.com/hardware/gr-series/gr4/
+2025-12-22 10:27:07,568 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,568 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,569 INFO sqlalchemy.engine.Engine [cached since 0.1809s ago] ('https://www.allen-heath.com/hardware/gr-series/gr4/',)
+2025-12-22 10:27:07,569 - sqlalchemy.engine.Engine - INFO - [cached since 0.1809s ago] ('https://www.allen-heath.com/hardware/gr-series/gr4/',)
+2025-12-22 10:27:07,569 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/gr-series/gr4/
+2025-12-22 10:27:07,569 - AH-Ingestor - INFO - [51/89] Processing: https://www.allen-heath.com/hardware/ip-series/ip1/
+2025-12-22 10:27:07,569 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,569 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,570 INFO sqlalchemy.engine.Engine [cached since 0.1819s ago] ('https://www.allen-heath.com/hardware/ip-series/ip1/',)
+2025-12-22 10:27:07,570 - sqlalchemy.engine.Engine - INFO - [cached since 0.1819s ago] ('https://www.allen-heath.com/hardware/ip-series/ip1/',)
+2025-12-22 10:27:07,571 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/ip-series/ip1/
+2025-12-22 10:27:07,572 - AH-Ingestor - INFO - [52/89] Processing: https://www.allen-heath.com/hardware/ip-series/ip4/
+2025-12-22 10:27:07,573 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,573 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,573 INFO sqlalchemy.engine.Engine [cached since 0.1855s ago] ('https://www.allen-heath.com/hardware/ip-series/ip4/',)
+2025-12-22 10:27:07,573 - sqlalchemy.engine.Engine - INFO - [cached since 0.1855s ago] ('https://www.allen-heath.com/hardware/ip-series/ip4/',)
+2025-12-22 10:27:07,574 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/ip-series/ip4/
+2025-12-22 10:27:07,575 - AH-Ingestor - INFO - [53/89] Processing: https://www.allen-heath.com/hardware/ip-series/ip6/
+2025-12-22 10:27:07,575 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,575 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,576 INFO sqlalchemy.engine.Engine [cached since 0.1882s ago] ('https://www.allen-heath.com/hardware/ip-series/ip6/',)
+2025-12-22 10:27:07,576 - sqlalchemy.engine.Engine - INFO - [cached since 0.1882s ago] ('https://www.allen-heath.com/hardware/ip-series/ip6/',)
+2025-12-22 10:27:07,577 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/ip-series/ip6/
+2025-12-22 10:27:07,577 - AH-Ingestor - INFO - [54/89] Processing: https://www.allen-heath.com/hardware/ip-series/ip8/
+2025-12-22 10:27:07,577 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,577 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,577 INFO sqlalchemy.engine.Engine [cached since 0.1895s ago] ('https://www.allen-heath.com/hardware/ip-series/ip8/',)
+2025-12-22 10:27:07,577 - sqlalchemy.engine.Engine - INFO - [cached since 0.1895s ago] ('https://www.allen-heath.com/hardware/ip-series/ip8/',)
+2025-12-22 10:27:07,578 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/ip-series/ip8/
+2025-12-22 10:27:07,578 - AH-Ingestor - INFO - [55/89] Processing: https://www.allen-heath.com/hardware/me-series/me-1/
+2025-12-22 10:27:07,578 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,578 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,578 INFO sqlalchemy.engine.Engine [cached since 0.1906s ago] ('https://www.allen-heath.com/hardware/me-series/me-1/',)
+2025-12-22 10:27:07,578 - sqlalchemy.engine.Engine - INFO - [cached since 0.1906s ago] ('https://www.allen-heath.com/hardware/me-series/me-1/',)
+2025-12-22 10:27:07,579 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/me-series/me-1/
+2025-12-22 10:27:07,579 - AH-Ingestor - INFO - [56/89] Processing: https://www.allen-heath.com/hardware/me-series/me-500/
+2025-12-22 10:27:07,579 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,579 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,579 INFO sqlalchemy.engine.Engine [cached since 0.1918s ago] ('https://www.allen-heath.com/hardware/me-series/me-500/',)
+2025-12-22 10:27:07,579 - sqlalchemy.engine.Engine - INFO - [cached since 0.1918s ago] ('https://www.allen-heath.com/hardware/me-series/me-500/',)
+2025-12-22 10:27:07,580 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/me-series/me-500/
+2025-12-22 10:27:07,580 - AH-Ingestor - INFO - [57/89] Processing: https://www.allen-heath.com/hardware/me-series/me-u/
+2025-12-22 10:27:07,580 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,580 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,581 INFO sqlalchemy.engine.Engine [cached since 0.1931s ago] ('https://www.allen-heath.com/hardware/me-series/me-u/',)
+2025-12-22 10:27:07,581 - sqlalchemy.engine.Engine - INFO - [cached since 0.1931s ago] ('https://www.allen-heath.com/hardware/me-series/me-u/',)
+2025-12-22 10:27:07,581 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/me-series/me-u/
+2025-12-22 10:27:07,582 - AH-Ingestor - INFO - [58/89] Processing: https://www.allen-heath.com/hardware/mixwizard4-series/wz4-122/
+2025-12-22 10:27:07,582 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,582 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,582 INFO sqlalchemy.engine.Engine [cached since 0.1946s ago] ('https://www.allen-heath.com/hardware/mixwizard4-series/wz4-122/',)
+2025-12-22 10:27:07,582 - sqlalchemy.engine.Engine - INFO - [cached since 0.1946s ago] ('https://www.allen-heath.com/hardware/mixwizard4-series/wz4-122/',)
+2025-12-22 10:27:07,583 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/mixwizard4-series/wz4-122/
+2025-12-22 10:27:07,583 - AH-Ingestor - INFO - [59/89] Processing: https://www.allen-heath.com/hardware/mixwizard4-series/wz4-1442/
+2025-12-22 10:27:07,583 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,583 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,584 INFO sqlalchemy.engine.Engine [cached since 0.1959s ago] ('https://www.allen-heath.com/hardware/mixwizard4-series/wz4-1442/',)
+2025-12-22 10:27:07,584 - sqlalchemy.engine.Engine - INFO - [cached since 0.1959s ago] ('https://www.allen-heath.com/hardware/mixwizard4-series/wz4-1442/',)
+2025-12-22 10:27:07,584 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/mixwizard4-series/wz4-1442/
+2025-12-22 10:27:07,584 - AH-Ingestor - INFO - [60/89] Processing: https://www.allen-heath.com/hardware/mixwizard4-series/wz4-162/
+2025-12-22 10:27:07,585 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,585 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,585 INFO sqlalchemy.engine.Engine [cached since 0.1972s ago] ('https://www.allen-heath.com/hardware/mixwizard4-series/wz4-162/',)
+2025-12-22 10:27:07,585 - sqlalchemy.engine.Engine - INFO - [cached since 0.1972s ago] ('https://www.allen-heath.com/hardware/mixwizard4-series/wz4-162/',)
+2025-12-22 10:27:07,585 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/mixwizard4-series/wz4-162/
+2025-12-22 10:27:07,586 - AH-Ingestor - INFO - [61/89] Processing: https://www.allen-heath.com/hardware/qu/qu-5-qu-5d/
+2025-12-22 10:27:07,586 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,586 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,586 INFO sqlalchemy.engine.Engine [cached since 0.1988s ago] ('https://www.allen-heath.com/hardware/qu/qu-5-qu-5d/',)
+2025-12-22 10:27:07,586 - sqlalchemy.engine.Engine - INFO - [cached since 0.1988s ago] ('https://www.allen-heath.com/hardware/qu/qu-5-qu-5d/',)
+2025-12-22 10:27:07,587 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/qu/qu-5-qu-5d/
+2025-12-22 10:27:07,587 - AH-Ingestor - INFO - [62/89] Processing: https://www.allen-heath.com/hardware/qu/qu-6-qu-6d/
+2025-12-22 10:27:07,588 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,588 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,588 INFO sqlalchemy.engine.Engine [cached since 0.2002s ago] ('https://www.allen-heath.com/hardware/qu/qu-6-qu-6d/',)
+2025-12-22 10:27:07,588 - sqlalchemy.engine.Engine - INFO - [cached since 0.2002s ago] ('https://www.allen-heath.com/hardware/qu/qu-6-qu-6d/',)
+2025-12-22 10:27:07,588 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/qu/qu-6-qu-6d/
+2025-12-22 10:27:07,589 - AH-Ingestor - INFO - [63/89] Processing: https://www.allen-heath.com/hardware/qu/qu-7-qu-7d/
+2025-12-22 10:27:07,589 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,589 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,589 INFO sqlalchemy.engine.Engine [cached since 0.2015s ago] ('https://www.allen-heath.com/hardware/qu/qu-7-qu-7d/',)
+2025-12-22 10:27:07,589 - sqlalchemy.engine.Engine - INFO - [cached since 0.2015s ago] ('https://www.allen-heath.com/hardware/qu/qu-7-qu-7d/',)
+2025-12-22 10:27:07,590 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/qu/qu-7-qu-7d/
+2025-12-22 10:27:07,590 - AH-Ingestor - INFO - [64/89] Processing: https://www.allen-heath.com/hardware/qu/qu-accessories/
+2025-12-22 10:27:07,590 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,590 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,591 INFO sqlalchemy.engine.Engine [cached since 0.203s ago] ('https://www.allen-heath.com/hardware/qu/qu-accessories/',)
+2025-12-22 10:27:07,591 - sqlalchemy.engine.Engine - INFO - [cached since 0.203s ago] ('https://www.allen-heath.com/hardware/qu/qu-accessories/',)
+2025-12-22 10:27:07,591 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/qu/qu-accessories/
+2025-12-22 10:27:07,591 - AH-Ingestor - INFO - [65/89] Processing: https://www.allen-heath.com/hardware/qu/qu-classic/
+2025-12-22 10:27:07,592 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,592 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,592 INFO sqlalchemy.engine.Engine [cached since 0.2044s ago] ('https://www.allen-heath.com/hardware/qu/qu-classic/',)
+2025-12-22 10:27:07,592 - sqlalchemy.engine.Engine - INFO - [cached since 0.2044s ago] ('https://www.allen-heath.com/hardware/qu/qu-classic/',)
+2025-12-22 10:27:07,593 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/qu/qu-classic/
+2025-12-22 10:27:07,593 - AH-Ingestor - INFO - [66/89] Processing: https://www.allen-heath.com/hardware/qu/qu-mixpad/
+2025-12-22 10:27:07,593 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,593 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,594 INFO sqlalchemy.engine.Engine [cached since 0.2059s ago] ('https://www.allen-heath.com/hardware/qu/qu-mixpad/',)
+2025-12-22 10:27:07,594 - sqlalchemy.engine.Engine - INFO - [cached since 0.2059s ago] ('https://www.allen-heath.com/hardware/qu/qu-mixpad/',)
+2025-12-22 10:27:07,594 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/qu/qu-mixpad/
+2025-12-22 10:27:07,594 - AH-Ingestor - INFO - [67/89] Processing: https://www.allen-heath.com/hardware/qu/qu4you/
+2025-12-22 10:27:07,595 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,595 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,595 INFO sqlalchemy.engine.Engine [cached since 0.2072s ago] ('https://www.allen-heath.com/hardware/qu/qu4you/',)
+2025-12-22 10:27:07,595 - sqlalchemy.engine.Engine - INFO - [cached since 0.2072s ago] ('https://www.allen-heath.com/hardware/qu/qu4you/',)
+2025-12-22 10:27:07,595 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/qu/qu4you/
+2025-12-22 10:27:07,595 - AH-Ingestor - INFO - [68/89] Processing: https://www.allen-heath.com/hardware/sq/sq-5/
+2025-12-22 10:27:07,596 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,596 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,596 INFO sqlalchemy.engine.Engine [cached since 0.2084s ago] ('https://www.allen-heath.com/hardware/sq/sq-5/',)
+2025-12-22 10:27:07,596 - sqlalchemy.engine.Engine - INFO - [cached since 0.2084s ago] ('https://www.allen-heath.com/hardware/sq/sq-5/',)
+2025-12-22 10:27:07,597 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/sq/sq-5/
+2025-12-22 10:27:07,597 - AH-Ingestor - INFO - [69/89] Processing: https://www.allen-heath.com/hardware/sq/sq-6/
+2025-12-22 10:27:07,597 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,597 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,597 INFO sqlalchemy.engine.Engine [cached since 0.2098s ago] ('https://www.allen-heath.com/hardware/sq/sq-6/',)
+2025-12-22 10:27:07,597 - sqlalchemy.engine.Engine - INFO - [cached since 0.2098s ago] ('https://www.allen-heath.com/hardware/sq/sq-6/',)
+2025-12-22 10:27:07,598 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/sq/sq-6/
+2025-12-22 10:27:07,598 - AH-Ingestor - INFO - [70/89] Processing: https://www.allen-heath.com/hardware/sq/sq-7/
+2025-12-22 10:27:07,599 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,599 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,599 INFO sqlalchemy.engine.Engine [cached since 0.2111s ago] ('https://www.allen-heath.com/hardware/sq/sq-7/',)
+2025-12-22 10:27:07,599 - sqlalchemy.engine.Engine - INFO - [cached since 0.2111s ago] ('https://www.allen-heath.com/hardware/sq/sq-7/',)
+2025-12-22 10:27:07,599 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/sq/sq-7/
+2025-12-22 10:27:07,599 - AH-Ingestor - INFO - [71/89] Processing: https://www.allen-heath.com/hardware/sq/sq-accessories/
+2025-12-22 10:27:07,600 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,600 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,600 INFO sqlalchemy.engine.Engine [cached since 0.2124s ago] ('https://www.allen-heath.com/hardware/sq/sq-accessories/',)
+2025-12-22 10:27:07,600 - sqlalchemy.engine.Engine - INFO - [cached since 0.2124s ago] ('https://www.allen-heath.com/hardware/sq/sq-accessories/',)
+2025-12-22 10:27:07,601 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/sq/sq-accessories/
+2025-12-22 10:27:07,601 - AH-Ingestor - INFO - [72/89] Processing: https://www.allen-heath.com/hardware/sq/sq-control/
+2025-12-22 10:27:07,601 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,601 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,601 INFO sqlalchemy.engine.Engine [cached since 0.2136s ago] ('https://www.allen-heath.com/hardware/sq/sq-control/',)
+2025-12-22 10:27:07,601 - sqlalchemy.engine.Engine - INFO - [cached since 0.2136s ago] ('https://www.allen-heath.com/hardware/sq/sq-control/',)
+2025-12-22 10:27:07,602 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/sq/sq-control/
+2025-12-22 10:27:07,602 - AH-Ingestor - INFO - [73/89] Processing: https://www.allen-heath.com/hardware/sq/sq-mixpad/
+2025-12-22 10:27:07,602 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,602 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,603 INFO sqlalchemy.engine.Engine [cached since 0.2148s ago] ('https://www.allen-heath.com/hardware/sq/sq-mixpad/',)
+2025-12-22 10:27:07,603 - sqlalchemy.engine.Engine - INFO - [cached since 0.2148s ago] ('https://www.allen-heath.com/hardware/sq/sq-mixpad/',)
+2025-12-22 10:27:07,603 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/sq/sq-mixpad/
+2025-12-22 10:27:07,603 - AH-Ingestor - INFO - [74/89] Processing: https://www.allen-heath.com/hardware/sq/sq-rack/
+2025-12-22 10:27:07,604 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,604 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,604 INFO sqlalchemy.engine.Engine [cached since 0.2161s ago] ('https://www.allen-heath.com/hardware/sq/sq-rack/',)
+2025-12-22 10:27:07,604 - sqlalchemy.engine.Engine - INFO - [cached since 0.2161s ago] ('https://www.allen-heath.com/hardware/sq/sq-rack/',)
+2025-12-22 10:27:07,604 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/sq/sq-rack/
+2025-12-22 10:27:07,604 - AH-Ingestor - INFO - [75/89] Processing: https://www.allen-heath.com/hardware/sq/sq4you/
+2025-12-22 10:27:07,605 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,605 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,605 INFO sqlalchemy.engine.Engine [cached since 0.2175s ago] ('https://www.allen-heath.com/hardware/sq/sq4you/',)
+2025-12-22 10:27:07,605 - sqlalchemy.engine.Engine - INFO - [cached since 0.2175s ago] ('https://www.allen-heath.com/hardware/sq/sq4you/',)
+2025-12-22 10:27:07,606 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/sq/sq4you/
+2025-12-22 10:27:07,606 - AH-Ingestor - INFO - [76/89] Processing: https://www.allen-heath.com/hardware/xb-series/xb-142/
+2025-12-22 10:27:07,606 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,606 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,606 INFO sqlalchemy.engine.Engine [cached since 0.2188s ago] ('https://www.allen-heath.com/hardware/xb-series/xb-142/',)
+2025-12-22 10:27:07,606 - sqlalchemy.engine.Engine - INFO - [cached since 0.2188s ago] ('https://www.allen-heath.com/hardware/xb-series/xb-142/',)
+2025-12-22 10:27:07,607 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/xb-series/xb-142/
+2025-12-22 10:27:07,607 - AH-Ingestor - INFO - [77/89] Processing: https://www.allen-heath.com/hardware/xone-series/xone24/
+2025-12-22 10:27:07,608 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,608 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,608 INFO sqlalchemy.engine.Engine [cached since 0.2202s ago] ('https://www.allen-heath.com/hardware/xone-series/xone24/',)
+2025-12-22 10:27:07,608 - sqlalchemy.engine.Engine - INFO - [cached since 0.2202s ago] ('https://www.allen-heath.com/hardware/xone-series/xone24/',)
+2025-12-22 10:27:07,608 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/xone-series/xone24/
+2025-12-22 10:27:07,608 - AH-Ingestor - INFO - [78/89] Processing: https://www.allen-heath.com/hardware/xone-series/xone24c/
+2025-12-22 10:27:07,609 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,609 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,609 INFO sqlalchemy.engine.Engine [cached since 0.2214s ago] ('https://www.allen-heath.com/hardware/xone-series/xone24c/',)
+2025-12-22 10:27:07,609 - sqlalchemy.engine.Engine - INFO - [cached since 0.2214s ago] ('https://www.allen-heath.com/hardware/xone-series/xone24c/',)
+2025-12-22 10:27:07,610 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/xone-series/xone24c/
+2025-12-22 10:27:07,610 - AH-Ingestor - INFO - [79/89] Processing: https://www.allen-heath.com/hardware/xone-series/xone43/
+2025-12-22 10:27:07,610 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,610 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,611 INFO sqlalchemy.engine.Engine [cached since 0.2229s ago] ('https://www.allen-heath.com/hardware/xone-series/xone43/',)
+2025-12-22 10:27:07,611 - sqlalchemy.engine.Engine - INFO - [cached since 0.2229s ago] ('https://www.allen-heath.com/hardware/xone-series/xone43/',)
+2025-12-22 10:27:07,612 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/xone-series/xone43/
+2025-12-22 10:27:07,612 - AH-Ingestor - INFO - [80/89] Processing: https://www.allen-heath.com/hardware/xone-series/xone92-limited-edition/
+2025-12-22 10:27:07,613 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,613 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,613 INFO sqlalchemy.engine.Engine [cached since 0.2253s ago] ('https://www.allen-heath.com/hardware/xone-series/xone92-limited-edition/',)
+2025-12-22 10:27:07,613 - sqlalchemy.engine.Engine - INFO - [cached since 0.2253s ago] ('https://www.allen-heath.com/hardware/xone-series/xone92-limited-edition/',)
+2025-12-22 10:27:07,614 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/xone-series/xone92-limited-edition/
+2025-12-22 10:27:07,614 - AH-Ingestor - INFO - [81/89] Processing: https://www.allen-heath.com/hardware/xone-series/xone92/
+2025-12-22 10:27:07,615 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,615 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,615 INFO sqlalchemy.engine.Engine [cached since 0.2277s ago] ('https://www.allen-heath.com/hardware/xone-series/xone92/',)
+2025-12-22 10:27:07,615 - sqlalchemy.engine.Engine - INFO - [cached since 0.2277s ago] ('https://www.allen-heath.com/hardware/xone-series/xone92/',)
+2025-12-22 10:27:07,616 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/xone-series/xone92/
+2025-12-22 10:27:07,617 - AH-Ingestor - INFO - [82/89] Processing: https://www.allen-heath.com/hardware/xone-series/xone96/
+2025-12-22 10:27:07,617 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,617 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,618 INFO sqlalchemy.engine.Engine [cached since 0.23s ago] ('https://www.allen-heath.com/hardware/xone-series/xone96/',)
+2025-12-22 10:27:07,618 - sqlalchemy.engine.Engine - INFO - [cached since 0.23s ago] ('https://www.allen-heath.com/hardware/xone-series/xone96/',)
+2025-12-22 10:27:07,618 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/xone-series/xone96/
+2025-12-22 10:27:07,619 - AH-Ingestor - INFO - [83/89] Processing: https://www.allen-heath.com/hardware/xone-series/xonek3/
+2025-12-22 10:27:07,619 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,619 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,620 INFO sqlalchemy.engine.Engine [cached since 0.2323s ago] ('https://www.allen-heath.com/hardware/xone-series/xonek3/',)
+2025-12-22 10:27:07,620 - sqlalchemy.engine.Engine - INFO - [cached since 0.2323s ago] ('https://www.allen-heath.com/hardware/xone-series/xonek3/',)
+2025-12-22 10:27:07,621 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/xone-series/xonek3/
+2025-12-22 10:27:07,621 - AH-Ingestor - INFO - [84/89] Processing: https://www.allen-heath.com/hardware/xone-series/xonepx5/
+2025-12-22 10:27:07,621 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,621 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,622 INFO sqlalchemy.engine.Engine [cached since 0.2343s ago] ('https://www.allen-heath.com/hardware/xone-series/xonepx5/',)
+2025-12-22 10:27:07,622 - sqlalchemy.engine.Engine - INFO - [cached since 0.2343s ago] ('https://www.allen-heath.com/hardware/xone-series/xonepx5/',)
+2025-12-22 10:27:07,623 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/xone-series/xonepx5/
+2025-12-22 10:27:07,623 - AH-Ingestor - INFO - [85/89] Processing: https://www.allen-heath.com/hardware/zed-series/zed-compact/
+2025-12-22 10:27:07,624 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,624 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,625 INFO sqlalchemy.engine.Engine [cached since 0.2368s ago] ('https://www.allen-heath.com/hardware/zed-series/zed-compact/',)
+2025-12-22 10:27:07,625 - sqlalchemy.engine.Engine - INFO - [cached since 0.2368s ago] ('https://www.allen-heath.com/hardware/zed-series/zed-compact/',)
+2025-12-22 10:27:07,625 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/zed-series/zed-compact/
+2025-12-22 10:27:07,626 - AH-Ingestor - INFO - [86/89] Processing: https://www.allen-heath.com/hardware/zed-series/zed-max/
+2025-12-22 10:27:07,626 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,626 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,627 INFO sqlalchemy.engine.Engine [cached since 0.239s ago] ('https://www.allen-heath.com/hardware/zed-series/zed-max/',)
+2025-12-22 10:27:07,627 - sqlalchemy.engine.Engine - INFO - [cached since 0.239s ago] ('https://www.allen-heath.com/hardware/zed-series/zed-max/',)
+2025-12-22 10:27:07,627 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/zed-series/zed-max/
+2025-12-22 10:27:07,628 - AH-Ingestor - INFO - [87/89] Processing: https://www.allen-heath.com/hardware/zed-series/zed-mid/
+2025-12-22 10:27:07,628 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,628 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,628 INFO sqlalchemy.engine.Engine [cached since 0.2403s ago] ('https://www.allen-heath.com/hardware/zed-series/zed-mid/',)
+2025-12-22 10:27:07,628 - sqlalchemy.engine.Engine - INFO - [cached since 0.2403s ago] ('https://www.allen-heath.com/hardware/zed-series/zed-mid/',)
+2025-12-22 10:27:07,628 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/zed-series/zed-mid/
+2025-12-22 10:27:07,628 - AH-Ingestor - INFO - [88/89] Processing: https://www.allen-heath.com/hardware/zed-series/zed-mini/
+2025-12-22 10:27:07,629 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,629 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,630 INFO sqlalchemy.engine.Engine [cached since 0.2422s ago] ('https://www.allen-heath.com/hardware/zed-series/zed-mini/',)
+2025-12-22 10:27:07,630 - sqlalchemy.engine.Engine - INFO - [cached since 0.2422s ago] ('https://www.allen-heath.com/hardware/zed-series/zed-mini/',)
+2025-12-22 10:27:07,631 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/zed-series/zed-mini/
+2025-12-22 10:27:07,631 - AH-Ingestor - INFO - [89/89] Processing: https://www.allen-heath.com/hardware/zed-series/zedi-compact/
+2025-12-22 10:27:07,632 INFO sqlalchemy.engine.Engine SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,632 - sqlalchemy.engine.Engine - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.url = ?
+2025-12-22 10:27:07,632 INFO sqlalchemy.engine.Engine [cached since 0.2445s ago] ('https://www.allen-heath.com/hardware/zed-series/zedi-compact/',)
+2025-12-22 10:27:07,632 - sqlalchemy.engine.Engine - INFO - [cached since 0.2445s ago] ('https://www.allen-heath.com/hardware/zed-series/zedi-compact/',)
+2025-12-22 10:27:07,633 - AH-Ingestor - INFO - Skipping already ingested: https://www.allen-heath.com/hardware/zed-series/zedi-compact/
+2025-12-22 10:27:07,633 INFO sqlalchemy.engine.Engine ROLLBACK
+2025-12-22 10:27:07,633 - sqlalchemy.engine.Engine - INFO - ROLLBACK

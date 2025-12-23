@@ -1,0 +1,1061 @@
+2025-12-23 18:13:19,729 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-12-23 18:13:19,745 INFO sqlalchemy.engine.Engine SELECT brand.id, brand.name, brand.logo_url, brand.website_url, brand.description, brand.primary_color, brand.secondary_color 
+FROM brand
+2025-12-23 18:13:19,745 INFO sqlalchemy.engine.Engine [generated in 0.00034s] ()
+2025-12-23 18:13:19,750 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,750 INFO sqlalchemy.engine.Engine [generated in 0.00028s] (1,)
+2025-12-23 18:13:19,754 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,754 INFO sqlalchemy.engine.Engine [generated in 0.00027s] (1,)
+Brand: Roland
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,755 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,755 INFO sqlalchemy.engine.Engine [cached since 0.005925s ago] (2,)
+2025-12-23 18:13:19,756 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,757 INFO sqlalchemy.engine.Engine [cached since 0.002766s ago] (2,)
+Brand: Boss
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,757 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,758 INFO sqlalchemy.engine.Engine [cached since 0.008203s ago] (3,)
+2025-12-23 18:13:19,759 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,759 INFO sqlalchemy.engine.Engine [cached since 0.004974s ago] (3,)
+Brand: Rode
+  Total Products: 23
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,760 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,760 INFO sqlalchemy.engine.Engine [cached since 0.01042s ago] (4,)
+2025-12-23 18:13:19,761 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,761 INFO sqlalchemy.engine.Engine [cached since 0.007179s ago] (4,)
+Brand: Marshall
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,762 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,762 INFO sqlalchemy.engine.Engine [cached since 0.01253s ago] (5,)
+2025-12-23 18:13:19,763 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,763 INFO sqlalchemy.engine.Engine [cached since 0.009196s ago] (5,)
+Brand: Akai Professional
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,764 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,764 INFO sqlalchemy.engine.Engine [cached since 0.01463s ago] (6,)
+2025-12-23 18:13:19,765 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,765 INFO sqlalchemy.engine.Engine [cached since 0.01138s ago] (6,)
+Brand: PreSonus
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,766 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,766 INFO sqlalchemy.engine.Engine [cached since 0.01679s ago] (7,)
+2025-12-23 18:13:19,767 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,767 INFO sqlalchemy.engine.Engine [cached since 0.01352s ago] (7,)
+Brand: Universal Audio
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,768 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,768 INFO sqlalchemy.engine.Engine [cached since 0.01895s ago] (8,)
+2025-12-23 18:13:19,769 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,770 INFO sqlalchemy.engine.Engine [cached since 0.01569s ago] (8,)
+Brand: Pearl
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,770 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,771 INFO sqlalchemy.engine.Engine [cached since 0.02109s ago] (9,)
+2025-12-23 18:13:19,772 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,772 INFO sqlalchemy.engine.Engine [cached since 0.0178s ago] (9,)
+Brand: Ampeg
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,772 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,773 INFO sqlalchemy.engine.Engine [cached since 0.02317s ago] (10,)
+2025-12-23 18:13:19,774 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,774 INFO sqlalchemy.engine.Engine [cached since 0.02033s ago] (10,)
+Brand: Beyerdynamic
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,775 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,775 INFO sqlalchemy.engine.Engine [cached since 0.0257s ago] (11,)
+2025-12-23 18:13:19,776 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,776 INFO sqlalchemy.engine.Engine [cached since 0.02229s ago] (11,)
+Brand: Adam Audio
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,778 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,778 INFO sqlalchemy.engine.Engine [cached since 0.02856s ago] (12,)
+2025-12-23 18:13:19,779 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,779 INFO sqlalchemy.engine.Engine [cached since 0.02531s ago] (12,)
+Brand: Nord
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,781 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,781 INFO sqlalchemy.engine.Engine [cached since 0.03142s ago] (13,)
+2025-12-23 18:13:19,782 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,782 INFO sqlalchemy.engine.Engine [cached since 0.0282s ago] (13,)
+Brand: Krk Systems
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,783 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,783 INFO sqlalchemy.engine.Engine [cached since 0.03348s ago] (14,)
+2025-12-23 18:13:19,784 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,784 INFO sqlalchemy.engine.Engine [cached since 0.03022s ago] (14,)
+Brand: Esp
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,785 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,785 INFO sqlalchemy.engine.Engine [cached since 0.03558s ago] (16,)
+2025-12-23 18:13:19,786 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,786 INFO sqlalchemy.engine.Engine [cached since 0.0324s ago] (16,)
+Brand: Hiwatt
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,787 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,787 INFO sqlalchemy.engine.Engine [cached since 0.0377s ago] (17,)
+2025-12-23 18:13:19,788 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,788 INFO sqlalchemy.engine.Engine [cached since 0.03459s ago] (17,)
+Brand: Heritage Audio
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,789 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,789 INFO sqlalchemy.engine.Engine [cached since 0.03999s ago] (18,)
+2025-12-23 18:13:19,790 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,791 INFO sqlalchemy.engine.Engine [cached since 0.03663s ago] (18,)
+Brand: Ashdown Engineering
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,791 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,792 INFO sqlalchemy.engine.Engine [cached since 0.0421s ago] (19,)
+2025-12-23 18:13:19,793 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,793 INFO sqlalchemy.engine.Engine [cached since 0.0388s ago] (19,)
+Brand: Ultimate Support
+  Total Products: 22
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,793 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,794 INFO sqlalchemy.engine.Engine [cached since 0.0442s ago] (20,)
+2025-12-23 18:13:19,795 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,795 INFO sqlalchemy.engine.Engine [cached since 0.0409s ago] (20,)
+Brand: Sonarworks
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,796 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,796 INFO sqlalchemy.engine.Engine [cached since 0.04634s ago] (21,)
+2025-12-23 18:13:19,797 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,797 INFO sqlalchemy.engine.Engine [cached since 0.04333s ago] (21,)
+Brand: Mackie
+  Total Products: 59
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,798 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,798 INFO sqlalchemy.engine.Engine [cached since 0.04871s ago] (22,)
+2025-12-23 18:13:19,799 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,799 INFO sqlalchemy.engine.Engine [cached since 0.04542s ago] (22,)
+Brand: Headrush Fx
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,800 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,800 INFO sqlalchemy.engine.Engine [cached since 0.05082s ago] (23,)
+2025-12-23 18:13:19,801 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,802 INFO sqlalchemy.engine.Engine [cached since 0.04764s ago] (23,)
+Brand: Headliner La Equipment Stands 
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,803 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,803 INFO sqlalchemy.engine.Engine [cached since 0.05328s ago] (24,)
+2025-12-23 18:13:19,804 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,804 INFO sqlalchemy.engine.Engine [cached since 0.05001s ago] (24,)
+Brand: Maton Guitars
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,805 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,805 INFO sqlalchemy.engine.Engine [cached since 0.0555s ago] (25,)
+2025-12-23 18:13:19,806 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,807 INFO sqlalchemy.engine.Engine [cached since 0.05274s ago] (25,)
+Brand: Oberheim
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,811 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,811 INFO sqlalchemy.engine.Engine [cached since 0.06129s ago] (26,)
+2025-12-23 18:13:19,812 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,812 INFO sqlalchemy.engine.Engine [cached since 0.05843s ago] (26,)
+Brand: Asm
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,813 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,813 INFO sqlalchemy.engine.Engine [cached since 0.06386s ago] (27,)
+2025-12-23 18:13:19,814 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,814 INFO sqlalchemy.engine.Engine [cached since 0.0606s ago] (27,)
+Brand: V Moda
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,815 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,815 INFO sqlalchemy.engine.Engine [cached since 0.06595s ago] (28,)
+2025-12-23 18:13:19,816 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,817 INFO sqlalchemy.engine.Engine [cached since 0.06276s ago] (28,)
+Brand: Allen & Heath
+  Total Products: 190
+  Covered Products: 87
+  Coverage: 45.8%
+2025-12-23 18:13:19,817 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,818 INFO sqlalchemy.engine.Engine [cached since 0.06819s ago] (29,)
+2025-12-23 18:13:19,819 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,819 INFO sqlalchemy.engine.Engine [cached since 0.06496s ago] (29,)
+Brand: Warm Audio
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,820 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,820 INFO sqlalchemy.engine.Engine [cached since 0.0703s ago] (30,)
+2025-12-23 18:13:19,821 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,821 INFO sqlalchemy.engine.Engine [cached since 0.06696s ago] (30,)
+Brand: Jasmine Guitars
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,822 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,822 INFO sqlalchemy.engine.Engine [cached since 0.07237s ago] (31,)
+2025-12-23 18:13:19,823 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,823 INFO sqlalchemy.engine.Engine [cached since 0.06905s ago] (31,)
+Brand:  Eaw Eastern Acoustic Works 
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,826 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,826 INFO sqlalchemy.engine.Engine [cached since 0.07643s ago] (32,)
+2025-12-23 18:13:19,827 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,829 INFO sqlalchemy.engine.Engine [cached since 0.07515s ago] (32,)
+Brand: Avid
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,830 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,830 INFO sqlalchemy.engine.Engine [cached since 0.08043s ago] (33,)
+2025-12-23 18:13:19,831 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,831 INFO sqlalchemy.engine.Engine [cached since 0.07703s ago] (33,)
+Brand: Keith Mcmillen Instruments Kmi
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,832 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,832 INFO sqlalchemy.engine.Engine [cached since 0.08225s ago] (34,)
+2025-12-23 18:13:19,832 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,833 INFO sqlalchemy.engine.Engine [cached since 0.07867s ago] (34,)
+Brand: Steinberg 
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,835 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,837 INFO sqlalchemy.engine.Engine [cached since 0.08755s ago] (35,)
+2025-12-23 18:13:19,838 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,838 INFO sqlalchemy.engine.Engine [cached since 0.08448s ago] (35,)
+Brand: Lynx
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,841 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,841 INFO sqlalchemy.engine.Engine [cached since 0.09172s ago] (36,)
+2025-12-23 18:13:19,842 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,842 INFO sqlalchemy.engine.Engine [cached since 0.08833s ago] (36,)
+Brand: Maybach
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,845 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,845 INFO sqlalchemy.engine.Engine [cached since 0.09519s ago] (37,)
+2025-12-23 18:13:19,846 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,846 INFO sqlalchemy.engine.Engine [cached since 0.09176s ago] (37,)
+Brand: Cordoba Guitars
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,846 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,846 INFO sqlalchemy.engine.Engine [cached since 0.09699s ago] (38,)
+2025-12-23 18:13:19,847 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,847 INFO sqlalchemy.engine.Engine [cached since 0.09353s ago] (38,)
+Brand: Bohemian Ukuleles Guitars Basses
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,848 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,848 INFO sqlalchemy.engine.Engine [cached since 0.09877s ago] (39,)
+2025-12-23 18:13:19,849 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,849 INFO sqlalchemy.engine.Engine [cached since 0.09532s ago] (39,)
+Brand: Foxgear Guitar Effects And Pedals
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,850 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,850 INFO sqlalchemy.engine.Engine [cached since 0.1006s ago] (40,)
+2025-12-23 18:13:19,851 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,851 INFO sqlalchemy.engine.Engine [cached since 0.09709s ago] (40,)
+Brand: Maestro Guitar Pedals And Effects
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,852 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,852 INFO sqlalchemy.engine.Engine [cached since 0.1023s ago] (41,)
+2025-12-23 18:13:19,853 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,853 INFO sqlalchemy.engine.Engine [cached since 0.09888s ago] (41,)
+Brand: Remo
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,853 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,854 INFO sqlalchemy.engine.Engine [cached since 0.1041s ago] (42,)
+2025-12-23 18:13:19,854 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,856 INFO sqlalchemy.engine.Engine [cached since 0.1017s ago] (42,)
+Brand: Guild
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,856 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,857 INFO sqlalchemy.engine.Engine [cached since 0.1076s ago] (43,)
+2025-12-23 18:13:19,860 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,860 INFO sqlalchemy.engine.Engine [cached since 0.1064s ago] (43,)
+Brand: Breedlove Guitars
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,864 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,864 INFO sqlalchemy.engine.Engine [cached since 0.1141s ago] (44,)
+2025-12-23 18:13:19,864 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,865 INFO sqlalchemy.engine.Engine [cached since 0.1112s ago] (44,)
+Brand: M Audio
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,867 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,867 INFO sqlalchemy.engine.Engine [cached since 0.1176s ago] (45,)
+2025-12-23 18:13:19,869 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,869 INFO sqlalchemy.engine.Engine [cached since 0.1152s ago] (45,)
+Brand: Xotic
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,870 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,870 INFO sqlalchemy.engine.Engine [cached since 0.1205s ago] (46,)
+2025-12-23 18:13:19,871 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,871 INFO sqlalchemy.engine.Engine [cached since 0.1174s ago] (46,)
+Brand: Medeli
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,872 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,872 INFO sqlalchemy.engine.Engine [cached since 0.1227s ago] (47,)
+2025-12-23 18:13:19,874 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,874 INFO sqlalchemy.engine.Engine [cached since 0.1204s ago] (47,)
+Brand: Paiste Cymbals
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,875 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,876 INFO sqlalchemy.engine.Engine [cached since 0.1261s ago] (48,)
+2025-12-23 18:13:19,877 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,878 INFO sqlalchemy.engine.Engine [cached since 0.1237s ago] (48,)
+Brand: Washburn
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,879 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,879 INFO sqlalchemy.engine.Engine [cached since 0.1295s ago] (49,)
+2025-12-23 18:13:19,880 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,882 INFO sqlalchemy.engine.Engine [cached since 0.1278s ago] (49,)
+Brand: Oscar Schmidt Acoustic Guitars 
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,883 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,884 INFO sqlalchemy.engine.Engine [cached since 0.1341s ago] (50,)
+2025-12-23 18:13:19,885 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,885 INFO sqlalchemy.engine.Engine [cached since 0.131s ago] (50,)
+Brand: Montarbo
+  Total Products: 61
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,886 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,886 INFO sqlalchemy.engine.Engine [cached since 0.1363s ago] (51,)
+2025-12-23 18:13:19,887 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,887 INFO sqlalchemy.engine.Engine [cached since 0.1329s ago] (51,)
+Brand: Xvive
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,888 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,888 INFO sqlalchemy.engine.Engine [cached since 0.1382s ago] (52,)
+2025-12-23 18:13:19,889 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,889 INFO sqlalchemy.engine.Engine [cached since 0.1349s ago] (52,)
+Brand: Eve Audio
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,890 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,890 INFO sqlalchemy.engine.Engine [cached since 0.1408s ago] (53,)
+2025-12-23 18:13:19,891 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,891 INFO sqlalchemy.engine.Engine [cached since 0.1375s ago] (53,)
+Brand: Tombo
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,892 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,892 INFO sqlalchemy.engine.Engine [cached since 0.1427s ago] (54,)
+2025-12-23 18:13:19,893 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,893 INFO sqlalchemy.engine.Engine [cached since 0.1393s ago] (54,)
+Brand: Spector
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,894 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,894 INFO sqlalchemy.engine.Engine [cached since 0.1448s ago] (55,)
+2025-12-23 18:13:19,895 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,895 INFO sqlalchemy.engine.Engine [cached since 0.1415s ago] (55,)
+Brand: Antigua
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,896 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,896 INFO sqlalchemy.engine.Engine [cached since 0.1468s ago] (56,)
+2025-12-23 18:13:19,897 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,897 INFO sqlalchemy.engine.Engine [cached since 0.1434s ago] (56,)
+Brand: On Stage
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,898 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,898 INFO sqlalchemy.engine.Engine [cached since 0.1486s ago] (57,)
+2025-12-23 18:13:19,899 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,899 INFO sqlalchemy.engine.Engine [cached since 0.1453s ago] (57,)
+Brand: Turkish
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,900 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,900 INFO sqlalchemy.engine.Engine [cached since 0.1506s ago] (58,)
+2025-12-23 18:13:19,901 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,901 INFO sqlalchemy.engine.Engine [cached since 0.1472s ago] (58,)
+Brand: Santos Martinez
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,902 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,902 INFO sqlalchemy.engine.Engine [cached since 0.1525s ago] (59,)
+2025-12-23 18:13:19,903 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,903 INFO sqlalchemy.engine.Engine [cached since 0.1495s ago] (59,)
+Brand: Rapier 33 Electric Guitars
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,905 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,905 INFO sqlalchemy.engine.Engine [cached since 0.1554s ago] (60,)
+2025-12-23 18:13:19,906 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,907 INFO sqlalchemy.engine.Engine [cached since 0.1524s ago] (60,)
+Brand: Adams
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,908 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,908 INFO sqlalchemy.engine.Engine [cached since 0.1582s ago] (61,)
+2025-12-23 18:13:19,909 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,910 INFO sqlalchemy.engine.Engine [cached since 0.1558s ago] (61,)
+Brand: Bespeco
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,910 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,911 INFO sqlalchemy.engine.Engine [cached since 0.1611s ago] (62,)
+2025-12-23 18:13:19,912 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,912 INFO sqlalchemy.engine.Engine [cached since 0.1578s ago] (62,)
+Brand: Topp Pro
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,912 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,913 INFO sqlalchemy.engine.Engine [cached since 0.163s ago] (63,)
+2025-12-23 18:13:19,913 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,913 INFO sqlalchemy.engine.Engine [cached since 0.1596s ago] (63,)
+Brand: Fusion
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,914 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,914 INFO sqlalchemy.engine.Engine [cached since 0.1649s ago] (64,)
+2025-12-23 18:13:19,915 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,915 INFO sqlalchemy.engine.Engine [cached since 0.1614s ago] (64,)
+Brand: Rhythm Tech
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,916 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,916 INFO sqlalchemy.engine.Engine [cached since 0.1667s ago] (65,)
+2025-12-23 18:13:19,917 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,917 INFO sqlalchemy.engine.Engine [cached since 0.1632s ago] (65,)
+Brand: Dynaudio
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,918 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,918 INFO sqlalchemy.engine.Engine [cached since 0.1685s ago] (66,)
+2025-12-23 18:13:19,919 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,919 INFO sqlalchemy.engine.Engine [cached since 0.1652s ago] (66,)
+Brand: Gon Bops Percussion
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,920 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,920 INFO sqlalchemy.engine.Engine [cached since 0.1706s ago] (67,)
+2025-12-23 18:13:19,921 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,921 INFO sqlalchemy.engine.Engine [cached since 0.1674s ago] (67,)
+Brand: Fzone
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,922 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,922 INFO sqlalchemy.engine.Engine [cached since 0.1729s ago] (68,)
+2025-12-23 18:13:19,923 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,923 INFO sqlalchemy.engine.Engine [cached since 0.1694s ago] (68,)
+Brand: Studio Logic
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,924 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,924 INFO sqlalchemy.engine.Engine [cached since 0.1746s ago] (69,)
+2025-12-23 18:13:19,925 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,925 INFO sqlalchemy.engine.Engine [cached since 0.1712s ago] (69,)
+Brand: Presonus
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,926 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,926 INFO sqlalchemy.engine.Engine [cached since 0.1766s ago] (70,)
+2025-12-23 18:13:19,927 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,927 INFO sqlalchemy.engine.Engine [cached since 0.1732s ago] (70,)
+Brand: Perri S Leathers
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,930 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,930 INFO sqlalchemy.engine.Engine [cached since 0.1805s ago] (71,)
+2025-12-23 18:13:19,931 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,931 INFO sqlalchemy.engine.Engine [cached since 0.1771s ago] (71,)
+Brand: Expressive E
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,932 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,932 INFO sqlalchemy.engine.Engine [cached since 0.1823s ago] (72,)
+2025-12-23 18:13:19,933 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,933 INFO sqlalchemy.engine.Engine [cached since 0.1788s ago] (72,)
+Brand: Show
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,934 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,934 INFO sqlalchemy.engine.Engine [cached since 0.1843s ago] (73,)
+2025-12-23 18:13:19,935 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,935 INFO sqlalchemy.engine.Engine [cached since 0.1809s ago] (73,)
+Brand: Vintage
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,936 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,936 INFO sqlalchemy.engine.Engine [cached since 0.1868s ago] (74,)
+2025-12-23 18:13:19,937 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,937 INFO sqlalchemy.engine.Engine [cached since 0.1835s ago] (74,)
+Brand: Innovative Percussion
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,938 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,938 INFO sqlalchemy.engine.Engine [cached since 0.1888s ago] (75,)
+2025-12-23 18:13:19,939 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,939 INFO sqlalchemy.engine.Engine [cached since 0.1855s ago] (75,)
+Brand: Drumdots
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,941 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,941 INFO sqlalchemy.engine.Engine [cached since 0.1912s ago] (76,)
+2025-12-23 18:13:19,942 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,942 INFO sqlalchemy.engine.Engine [cached since 0.1879s ago] (76,)
+Brand: Mjc Ironworks
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,943 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,943 INFO sqlalchemy.engine.Engine [cached since 0.1932s ago] (77,)
+2025-12-23 18:13:19,944 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,944 INFO sqlalchemy.engine.Engine [cached since 0.1898s ago] (77,)
+Brand: Lag Guitars
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,945 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,945 INFO sqlalchemy.engine.Engine [cached since 0.196s ago] (78,)
+2025-12-23 18:13:19,946 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,947 INFO sqlalchemy.engine.Engine [cached since 0.193s ago] (78,)
+Brand: Austrian Audio
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,948 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,948 INFO sqlalchemy.engine.Engine [cached since 0.1983s ago] (79,)
+2025-12-23 18:13:19,949 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,949 INFO sqlalchemy.engine.Engine [cached since 0.1952s ago] (79,)
+Brand: Amphion
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,950 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,950 INFO sqlalchemy.engine.Engine [cached since 0.2009s ago] (80,)
+2025-12-23 18:13:19,954 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,956 INFO sqlalchemy.engine.Engine [cached since 0.2021s ago] (80,)
+Brand: Magma
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,957 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,960 INFO sqlalchemy.engine.Engine [cached since 0.2108s ago] (81,)
+2025-12-23 18:13:19,961 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,965 INFO sqlalchemy.engine.Engine [cached since 0.2111s ago] (81,)
+Brand: Rogers
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,966 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,970 INFO sqlalchemy.engine.Engine [cached since 0.2208s ago] (82,)
+2025-12-23 18:13:19,971 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,974 INFO sqlalchemy.engine.Engine [cached since 0.2201s ago] (82,)
+Brand: Solar Guitars
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,978 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,978 INFO sqlalchemy.engine.Engine [cached since 0.2285s ago] (83,)
+2025-12-23 18:13:19,981 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,983 INFO sqlalchemy.engine.Engine [cached since 0.2287s ago] (83,)
+Brand: Eden
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,987 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,987 INFO sqlalchemy.engine.Engine [cached since 0.2373s ago] (84,)
+2025-12-23 18:13:19,990 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,993 INFO sqlalchemy.engine.Engine [cached since 0.2392s ago] (84,)
+Brand: Regal Tip
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:19,994 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:19,996 INFO sqlalchemy.engine.Engine [cached since 0.2466s ago] (85,)
+2025-12-23 18:13:20,002 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:20,002 INFO sqlalchemy.engine.Engine [cached since 0.248s ago] (85,)
+Brand: Dixon
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:20,003 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:20,005 INFO sqlalchemy.engine.Engine [cached since 0.2556s ago] (86,)
+2025-12-23 18:13:20,006 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:20,008 INFO sqlalchemy.engine.Engine [cached since 0.254s ago] (86,)
+Brand: Marimba One
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:20,009 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:20,010 INFO sqlalchemy.engine.Engine [cached since 0.2609s ago] (87,)
+2025-12-23 18:13:20,011 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:20,011 INFO sqlalchemy.engine.Engine [cached since 0.2576s ago] (87,)
+Brand: Encore
+  Total Products: 0
+  Covered Products: 0
+  Coverage: 0.0%
+2025-12-23 18:13:20,012 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:20,012 INFO sqlalchemy.engine.Engine [cached since 0.2628s ago] (88,)
+2025-12-23 18:13:20,013 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:20,014 INFO sqlalchemy.engine.Engine [cached since 0.2596s ago] (88,)
+Brand: RCF
+  Total Products: 1191
+  Covered Products: 485
+  Coverage: 40.7%
+2025-12-23 18:13:20,017 INFO sqlalchemy.engine.Engine SELECT count(product.id) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:20,017 INFO sqlalchemy.engine.Engine [cached since 0.2672s ago] (89,)
+2025-12-23 18:13:20,018 INFO sqlalchemy.engine.Engine SELECT count(distinct(product.id)) AS count_1 
+FROM product JOIN productfamily ON productfamily.id = product.family_id JOIN document ON product.id = document.product_id 
+WHERE productfamily.brand_id = ?
+2025-12-23 18:13:20,018 INFO sqlalchemy.engine.Engine [cached since 0.2639s ago] (89,)
+Brand: dBTechnologies
+  Total Products: 192
+  Covered Products: 28
+  Coverage: 14.6%
+2025-12-23 18:13:20,018 INFO sqlalchemy.engine.Engine ROLLBACK

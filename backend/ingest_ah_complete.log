@@ -1,0 +1,53 @@
+nohup: ignoring input
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+/workspaces/Support-Center-/backend/app/services/rag_service.py:9: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+INFO:AH-Complete-Ingestion:================================================================================
+INFO:AH-Complete-Ingestion:Starting Complete Allen & Heath Ingestion Pipeline
+INFO:AH-Complete-Ingestion:================================================================================
+2025-12-23 21:47:58,306 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-12-23 21:47:58,327 INFO sqlalchemy.engine.Engine SELECT brand.id, brand.name, brand.logo_url, brand.website_url, brand.description, brand.primary_color, brand.secondary_color 
+FROM brand 
+WHERE brand.name = ?
+INFO:sqlalchemy.engine.Engine:SELECT brand.id, brand.name, brand.logo_url, brand.website_url, brand.description, brand.primary_color, brand.secondary_color 
+FROM brand 
+WHERE brand.name = ?
+2025-12-23 21:47:58,327 INFO sqlalchemy.engine.Engine [generated in 0.00038s] ('Allen & Heath',)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00038s] ('Allen & Heath',)
+INFO:AH-Complete-Ingestion:Using brand ID: 28
+2025-12-23 21:47:58,328 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:AH-Complete-Ingestion:Starting comprehensive URL discovery for Allen & Heath...
+INFO:AH-Complete-Ingestion:Using HTTP-based discovery to bypass Cloudflare
+INFO:AH-Complete-Ingestion:Fetching hardware: https://www.allen-heath.com/hardware/
+INFO:httpx:HTTP Request: GET https://www.allen-heath.com/hardware/ "HTTP/1.1 403 Forbidden"
+WARNING:AH-Complete-Ingestion:Error fetching hardware: Client error '403 Forbidden' for url 'https://www.allen-heath.com/hardware/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+INFO:AH-Complete-Ingestion:Fetching support: https://www.allen-heath.com/support/
+INFO:httpx:HTTP Request: GET https://www.allen-heath.com/support/ "HTTP/1.1 403 Forbidden"
+WARNING:AH-Complete-Ingestion:Error fetching support: Client error '403 Forbidden' for url 'https://www.allen-heath.com/support/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+INFO:AH-Complete-Ingestion:Fetching downloads: https://www.allen-heath.com/downloads/
+INFO:httpx:HTTP Request: GET https://www.allen-heath.com/downloads/ "HTTP/1.1 403 Forbidden"
+WARNING:AH-Complete-Ingestion:Error fetching downloads: Client error '403 Forbidden' for url 'https://www.allen-heath.com/downloads/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+INFO:AH-Complete-Ingestion:Fetching technical: https://www.allen-heath.com/technical/
+INFO:httpx:HTTP Request: GET https://www.allen-heath.com/technical/ "HTTP/1.1 403 Forbidden"
+WARNING:AH-Complete-Ingestion:Error fetching technical: Client error '403 Forbidden' for url 'https://www.allen-heath.com/technical/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+INFO:AH-Complete-Ingestion:Fetching blog: https://www.allen-heath.com/blog/
+INFO:httpx:HTTP Request: GET https://www.allen-heath.com/blog/ "HTTP/1.1 403 Forbidden"
+WARNING:AH-Complete-Ingestion:Error fetching blog: Client error '403 Forbidden' for url 'https://www.allen-heath.com/blog/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+INFO:AH-Complete-Ingestion:HTTP discovery insufficient, switching to browser-based discovery...
+INFO:AH-Complete-Ingestion:Browser-fetching hardware: https://www.allen-heath.com/hardware/
+INFO:AH-Complete-Ingestion:Browser-fetching support: https://www.allen-heath.com/support/
+WARNING:app.engines.base_scraper:Cloudflare block detected on https://www.allen-heath.com/support/ (Attempt 1/3)

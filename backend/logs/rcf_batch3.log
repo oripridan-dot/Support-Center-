@@ -1,0 +1,250 @@
+/workspaces/Support-Center-/backend/app/services/rag_service.py:5: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+2025-12-22 09:37:45,948 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-12-22 09:37:46,122 INFO sqlalchemy.engine.Engine SELECT brand.id, brand.name, brand.logo_url, brand.website_url, brand.description, brand.primary_color, brand.secondary_color 
+FROM brand 
+WHERE brand.name = ?
+INFO:sqlalchemy.engine.Engine:SELECT brand.id, brand.name, brand.logo_url, brand.website_url, brand.description, brand.primary_color, brand.secondary_color 
+FROM brand 
+WHERE brand.name = ?
+2025-12-22 09:37:46,122 INFO sqlalchemy.engine.Engine [generated in 0.00031s] ('RCF',)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00031s] ('RCF',)
+2025-12-22 09:37:46,123 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:RCF-Batch-3:Starting batch 1 (10 URLs)
+INFO:RCF-Batch-3:Processing: https://www.rcf.it/en/products/product-detail/h-br-2x-compact-m-10
+2025-12-22 09:37:46,757 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-12-22 09:37:46,762 INFO sqlalchemy.engine.Engine SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.name = ?
+INFO:sqlalchemy.engine.Engine:SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.name = ?
+2025-12-22 09:37:46,765 INFO sqlalchemy.engine.Engine [generated in 0.00347s] ('H Br 2X Compact M 10',)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00347s] ('H Br 2X Compact M 10',)
+2025-12-22 09:37:46,767 INFO sqlalchemy.engine.Engine SELECT productfamily.id, productfamily.name, productfamily.description, productfamily.brand_id 
+FROM productfamily 
+WHERE productfamily.brand_id = ? AND productfamily.name = ?
+INFO:sqlalchemy.engine.Engine:SELECT productfamily.id, productfamily.name, productfamily.description, productfamily.brand_id 
+FROM productfamily 
+WHERE productfamily.brand_id = ? AND productfamily.name = ?
+2025-12-22 09:37:46,770 INFO sqlalchemy.engine.Engine [generated in 0.00244s] (88, 'RCF Products')
+INFO:sqlalchemy.engine.Engine:[generated in 0.00244s] (88, 'RCF Products')
+2025-12-22 09:37:46,778 INFO sqlalchemy.engine.Engine INSERT INTO product (name, description, image_url, family_id) VALUES (?, ?, ?, ?)
+INFO:sqlalchemy.engine.Engine:INSERT INTO product (name, description, image_url, family_id) VALUES (?, ?, ?, ?)
+2025-12-22 09:37:46,780 INFO sqlalchemy.engine.Engine [generated in 0.00324s] ('H Br 2X Compact M 10', None, None, 23)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00324s] ('H Br 2X Compact M 10', None, None, 23)
+2025-12-22 09:37:46,783 INFO sqlalchemy.engine.Engine COMMIT
+INFO:sqlalchemy.engine.Engine:COMMIT
+2025-12-22 09:37:46,792 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-12-22 09:37:46,797 INFO sqlalchemy.engine.Engine SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.id = ?
+INFO:sqlalchemy.engine.Engine:SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.id = ?
+2025-12-22 09:37:46,800 INFO sqlalchemy.engine.Engine [generated in 0.00274s] (595,)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00274s] (595,)
+INFO:app.services.pa_brands_scraper:Scraping product page: https://www.rcf.it/en/products/product-detail/h-br-2x-compact-m-10
+2025-12-22 09:37:57,456 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-12-22 09:37:57,462 INFO sqlalchemy.engine.Engine INSERT INTO document (title, url, content_hash, last_updated, brand_id, product_id) VALUES (?, ?, ?, ?, ?, ?)
+INFO:sqlalchemy.engine.Engine:INSERT INTO document (title, url, content_hash, last_updated, brand_id, product_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-12-22 09:37:57,462 INFO sqlalchemy.engine.Engine [generated in 0.00257s] ('Product Page: h-br-2x-compact-m-10', 'https://www.rcf.it/en/products/product-detail/h-br-2x-compact-m-10', None, '2025-12-22 09:37:57.454284', 88, 595)
+INFO:sqlalchemy.engine.Engine:[generated in 0.00257s] ('Product Page: h-br-2x-compact-m-10', 'https://www.rcf.it/en/products/product-detail/h-br-2x-compact-m-10', None, '2025-12-22 09:37:57.454284', 88, 595)
+2025-12-22 09:37:57,464 INFO sqlalchemy.engine.Engine COMMIT
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:app.services.pa_brands_scraper:Successfully ingested rich info for product 595
+INFO:RCF-Batch-3:Successfully ingested H Br 2X Compact M 10
+2025-12-22 09:37:57,468 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:RCF-Batch-3:Processing: https://www.rcf.it/en/products/product-detail/h-br-2x-compact-m-12
+2025-12-22 09:37:57,650 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-12-22 09:37:57,657 INFO sqlalchemy.engine.Engine SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.name = ?
+INFO:sqlalchemy.engine.Engine:SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.name = ?
+2025-12-22 09:37:57,657 INFO sqlalchemy.engine.Engine [cached since 10.89s ago] ('H Br 2X Compact M 12',)
+INFO:sqlalchemy.engine.Engine:[cached since 10.89s ago] ('H Br 2X Compact M 12',)
+2025-12-22 09:37:57,658 INFO sqlalchemy.engine.Engine SELECT productfamily.id, productfamily.name, productfamily.description, productfamily.brand_id 
+FROM productfamily 
+WHERE productfamily.brand_id = ? AND productfamily.name = ?
+INFO:sqlalchemy.engine.Engine:SELECT productfamily.id, productfamily.name, productfamily.description, productfamily.brand_id 
+FROM productfamily 
+WHERE productfamily.brand_id = ? AND productfamily.name = ?
+2025-12-22 09:37:57,665 INFO sqlalchemy.engine.Engine [cached since 10.9s ago] (88, 'RCF Products')
+INFO:sqlalchemy.engine.Engine:[cached since 10.9s ago] (88, 'RCF Products')
+2025-12-22 09:37:57,668 INFO sqlalchemy.engine.Engine INSERT INTO product (name, description, image_url, family_id) VALUES (?, ?, ?, ?)
+INFO:sqlalchemy.engine.Engine:INSERT INTO product (name, description, image_url, family_id) VALUES (?, ?, ?, ?)
+2025-12-22 09:37:57,672 INFO sqlalchemy.engine.Engine [cached since 10.9s ago] ('H Br 2X Compact M 12', None, None, 23)
+INFO:sqlalchemy.engine.Engine:[cached since 10.9s ago] ('H Br 2X Compact M 12', None, None, 23)
+2025-12-22 09:37:57,676 INFO sqlalchemy.engine.Engine COMMIT
+INFO:sqlalchemy.engine.Engine:COMMIT
+2025-12-22 09:37:57,695 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-12-22 09:37:57,695 INFO sqlalchemy.engine.Engine SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.id = ?
+INFO:sqlalchemy.engine.Engine:SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.id = ?
+2025-12-22 09:37:57,695 INFO sqlalchemy.engine.Engine [cached since 10.9s ago] (597,)
+INFO:sqlalchemy.engine.Engine:[cached since 10.9s ago] (597,)
+INFO:app.services.pa_brands_scraper:Scraping product page: https://www.rcf.it/en/products/product-detail/h-br-2x-compact-m-12
+2025-12-22 09:38:10,428 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-12-22 09:38:10,428 INFO sqlalchemy.engine.Engine INSERT INTO document (title, url, content_hash, last_updated, brand_id, product_id) VALUES (?, ?, ?, ?, ?, ?)
+INFO:sqlalchemy.engine.Engine:INSERT INTO document (title, url, content_hash, last_updated, brand_id, product_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-12-22 09:38:10,428 INFO sqlalchemy.engine.Engine [cached since 12.97s ago] ('Product Page: h-br-2x-compact-m-12', 'https://www.rcf.it/en/products/product-detail/h-br-2x-compact-m-12', None, '2025-12-22 09:38:10.427681', 88, 597)
+INFO:sqlalchemy.engine.Engine:[cached since 12.97s ago] ('Product Page: h-br-2x-compact-m-12', 'https://www.rcf.it/en/products/product-detail/h-br-2x-compact-m-12', None, '2025-12-22 09:38:10.427681', 88, 597)
+2025-12-22 09:38:10,431 INFO sqlalchemy.engine.Engine COMMIT
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:app.services.pa_brands_scraper:Successfully ingested rich info for product 597
+INFO:RCF-Batch-3:Successfully ingested H Br 2X Compact M 12
+2025-12-22 09:38:10,438 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:RCF-Batch-3:Processing: https://www.rcf.it/en/products/product-detail/h-br-2x-hd-10
+2025-12-22 09:38:10,552 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-12-22 09:38:10,557 INFO sqlalchemy.engine.Engine SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.name = ?
+INFO:sqlalchemy.engine.Engine:SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.name = ?
+2025-12-22 09:38:10,557 INFO sqlalchemy.engine.Engine [cached since 23.8s ago] ('H Br 2X Hd 10',)
+INFO:sqlalchemy.engine.Engine:[cached since 23.8s ago] ('H Br 2X Hd 10',)
+2025-12-22 09:38:10,561 INFO sqlalchemy.engine.Engine SELECT productfamily.id, productfamily.name, productfamily.description, productfamily.brand_id 
+FROM productfamily 
+WHERE productfamily.brand_id = ? AND productfamily.name = ?
+INFO:sqlalchemy.engine.Engine:SELECT productfamily.id, productfamily.name, productfamily.description, productfamily.brand_id 
+FROM productfamily 
+WHERE productfamily.brand_id = ? AND productfamily.name = ?
+2025-12-22 09:38:10,561 INFO sqlalchemy.engine.Engine [cached since 23.79s ago] (88, 'RCF Products')
+INFO:sqlalchemy.engine.Engine:[cached since 23.79s ago] (88, 'RCF Products')
+2025-12-22 09:38:10,565 INFO sqlalchemy.engine.Engine INSERT INTO product (name, description, image_url, family_id) VALUES (?, ?, ?, ?)
+INFO:sqlalchemy.engine.Engine:INSERT INTO product (name, description, image_url, family_id) VALUES (?, ?, ?, ?)
+2025-12-22 09:38:10,565 INFO sqlalchemy.engine.Engine [cached since 23.79s ago] ('H Br 2X Hd 10', None, None, 23)
+INFO:sqlalchemy.engine.Engine:[cached since 23.79s ago] ('H Br 2X Hd 10', None, None, 23)
+2025-12-22 09:38:10,566 INFO sqlalchemy.engine.Engine COMMIT
+INFO:sqlalchemy.engine.Engine:COMMIT
+2025-12-22 09:38:10,573 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-12-22 09:38:10,574 INFO sqlalchemy.engine.Engine SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.id = ?
+INFO:sqlalchemy.engine.Engine:SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.id = ?
+2025-12-22 09:38:10,575 INFO sqlalchemy.engine.Engine [cached since 23.78s ago] (600,)
+INFO:sqlalchemy.engine.Engine:[cached since 23.78s ago] (600,)
+INFO:app.services.pa_brands_scraper:Scraping product page: https://www.rcf.it/en/products/product-detail/h-br-2x-hd-10
+2025-12-22 09:38:22,297 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-12-22 09:38:22,298 INFO sqlalchemy.engine.Engine INSERT INTO document (title, url, content_hash, last_updated, brand_id, product_id) VALUES (?, ?, ?, ?, ?, ?)
+INFO:sqlalchemy.engine.Engine:INSERT INTO document (title, url, content_hash, last_updated, brand_id, product_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-12-22 09:38:22,298 INFO sqlalchemy.engine.Engine [cached since 24.84s ago] ('Product Page: h-br-2x-hd-10', 'https://www.rcf.it/en/products/product-detail/h-br-2x-hd-10', None, '2025-12-22 09:38:22.297429', 88, 600)
+INFO:sqlalchemy.engine.Engine:[cached since 24.84s ago] ('Product Page: h-br-2x-hd-10', 'https://www.rcf.it/en/products/product-detail/h-br-2x-hd-10', None, '2025-12-22 09:38:22.297429', 88, 600)
+2025-12-22 09:38:22,298 INFO sqlalchemy.engine.Engine COMMIT
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:app.services.pa_brands_scraper:Successfully ingested rich info for product 600
+INFO:RCF-Batch-3:Successfully ingested H Br 2X Hd 10
+2025-12-22 09:38:22,302 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:RCF-Batch-3:Processing: https://www.rcf.it/en/products/product-detail/h-br-2x-hd-12-32
+2025-12-22 09:38:22,358 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-12-22 09:38:22,358 INFO sqlalchemy.engine.Engine SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.name = ?
+INFO:sqlalchemy.engine.Engine:SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.name = ?
+2025-12-22 09:38:22,358 INFO sqlalchemy.engine.Engine [cached since 35.6s ago] ('H Br 2X Hd 12 32',)
+INFO:sqlalchemy.engine.Engine:[cached since 35.6s ago] ('H Br 2X Hd 12 32',)
+2025-12-22 09:38:22,359 INFO sqlalchemy.engine.Engine SELECT productfamily.id, productfamily.name, productfamily.description, productfamily.brand_id 
+FROM productfamily 
+WHERE productfamily.brand_id = ? AND productfamily.name = ?
+INFO:sqlalchemy.engine.Engine:SELECT productfamily.id, productfamily.name, productfamily.description, productfamily.brand_id 
+FROM productfamily 
+WHERE productfamily.brand_id = ? AND productfamily.name = ?
+2025-12-22 09:38:22,360 INFO sqlalchemy.engine.Engine [cached since 35.59s ago] (88, 'RCF Products')
+INFO:sqlalchemy.engine.Engine:[cached since 35.59s ago] (88, 'RCF Products')
+2025-12-22 09:38:22,361 INFO sqlalchemy.engine.Engine INSERT INTO product (name, description, image_url, family_id) VALUES (?, ?, ?, ?)
+INFO:sqlalchemy.engine.Engine:INSERT INTO product (name, description, image_url, family_id) VALUES (?, ?, ?, ?)
+2025-12-22 09:38:22,361 INFO sqlalchemy.engine.Engine [cached since 35.58s ago] ('H Br 2X Hd 12 32', None, None, 23)
+INFO:sqlalchemy.engine.Engine:[cached since 35.58s ago] ('H Br 2X Hd 12 32', None, None, 23)
+2025-12-22 09:38:22,362 INFO sqlalchemy.engine.Engine COMMIT
+INFO:sqlalchemy.engine.Engine:COMMIT
+2025-12-22 09:38:22,365 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-12-22 09:38:22,366 INFO sqlalchemy.engine.Engine SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.id = ?
+INFO:sqlalchemy.engine.Engine:SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.id = ?
+2025-12-22 09:38:22,366 INFO sqlalchemy.engine.Engine [cached since 35.57s ago] (603,)
+INFO:sqlalchemy.engine.Engine:[cached since 35.57s ago] (603,)
+INFO:app.services.pa_brands_scraper:Scraping product page: https://www.rcf.it/en/products/product-detail/h-br-2x-hd-12-32
+2025-12-22 09:38:36,161 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-12-22 09:38:36,163 INFO sqlalchemy.engine.Engine INSERT INTO document (title, url, content_hash, last_updated, brand_id, product_id) VALUES (?, ?, ?, ?, ?, ?)
+INFO:sqlalchemy.engine.Engine:INSERT INTO document (title, url, content_hash, last_updated, brand_id, product_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-12-22 09:38:36,165 INFO sqlalchemy.engine.Engine [cached since 38.7s ago] ('Product Page: h-br-2x-hd-12-32', 'https://www.rcf.it/en/products/product-detail/h-br-2x-hd-12-32', None, '2025-12-22 09:38:36.161373', 88, 603)
+INFO:sqlalchemy.engine.Engine:[cached since 38.7s ago] ('Product Page: h-br-2x-hd-12-32', 'https://www.rcf.it/en/products/product-detail/h-br-2x-hd-12-32', None, '2025-12-22 09:38:36.161373', 88, 603)
+2025-12-22 09:38:36,166 INFO sqlalchemy.engine.Engine COMMIT
+INFO:sqlalchemy.engine.Engine:COMMIT
+INFO:app.services.pa_brands_scraper:Successfully ingested rich info for product 603
+INFO:RCF-Batch-3:Successfully ingested H Br 2X Hd 12 32
+2025-12-22 09:38:36,178 INFO sqlalchemy.engine.Engine ROLLBACK
+INFO:sqlalchemy.engine.Engine:ROLLBACK
+INFO:RCF-Batch-3:Processing: https://www.rcf.it/en/products/product-detail/h-br-2x-m-1001
+2025-12-22 09:38:36,347 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-12-22 09:38:36,353 INFO sqlalchemy.engine.Engine SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.name = ?
+INFO:sqlalchemy.engine.Engine:SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.name = ?
+2025-12-22 09:38:36,353 INFO sqlalchemy.engine.Engine [cached since 49.59s ago] ('H Br 2X M 1001',)
+INFO:sqlalchemy.engine.Engine:[cached since 49.59s ago] ('H Br 2X M 1001',)
+2025-12-22 09:38:36,354 INFO sqlalchemy.engine.Engine SELECT productfamily.id, productfamily.name, productfamily.description, productfamily.brand_id 
+FROM productfamily 
+WHERE productfamily.brand_id = ? AND productfamily.name = ?
+INFO:sqlalchemy.engine.Engine:SELECT productfamily.id, productfamily.name, productfamily.description, productfamily.brand_id 
+FROM productfamily 
+WHERE productfamily.brand_id = ? AND productfamily.name = ?
+2025-12-22 09:38:36,354 INFO sqlalchemy.engine.Engine [cached since 49.59s ago] (88, 'RCF Products')
+INFO:sqlalchemy.engine.Engine:[cached since 49.59s ago] (88, 'RCF Products')
+2025-12-22 09:38:36,361 INFO sqlalchemy.engine.Engine INSERT INTO product (name, description, image_url, family_id) VALUES (?, ?, ?, ?)
+INFO:sqlalchemy.engine.Engine:INSERT INTO product (name, description, image_url, family_id) VALUES (?, ?, ?, ?)
+2025-12-22 09:38:36,362 INFO sqlalchemy.engine.Engine [cached since 49.59s ago] ('H Br 2X M 1001', None, None, 23)
+INFO:sqlalchemy.engine.Engine:[cached since 49.59s ago] ('H Br 2X M 1001', None, None, 23)
+2025-12-22 09:38:36,364 INFO sqlalchemy.engine.Engine COMMIT
+INFO:sqlalchemy.engine.Engine:COMMIT
+2025-12-22 09:38:36,391 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+INFO:sqlalchemy.engine.Engine:BEGIN (implicit)
+2025-12-22 09:38:36,392 INFO sqlalchemy.engine.Engine SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.id = ?
+INFO:sqlalchemy.engine.Engine:SELECT product.id, product.name, product.description, product.image_url, product.family_id 
+FROM product 
+WHERE product.id = ?
+2025-12-22 09:38:36,392 INFO sqlalchemy.engine.Engine [cached since 49.59s ago] (607,)
+INFO:sqlalchemy.engine.Engine:[cached since 49.59s ago] (607,)
+INFO:app.services.pa_brands_scraper:Scraping product page: https://www.rcf.it/en/products/product-detail/h-br-2x-m-1001

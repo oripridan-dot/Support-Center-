@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+sqlmodel
+alembic
+beautifulsoup4
+playwright
+chromadb
+langchain
+langchain-community
+langchain-openai
+python-dotenv
+httpx
+apscheduler
+pydantic-settings

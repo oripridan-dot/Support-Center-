@@ -1,0 +1,28 @@
+2025-12-23 21:30:17,639 - INFO - ======================================================================
+2025-12-23 21:30:17,639 - INFO - ALLEN & HEATH SUPPORT CENTER INGESTION
+2025-12-23 21:30:17,640 - INFO - ======================================================================
+2025-12-23 21:30:17,687 - INFO - ✓ HTTP session initialized
+2025-12-23 21:30:17,689 - INFO - BEGIN (implicit)
+2025-12-23 21:30:17,722 - INFO - SELECT brand.id, brand.name, brand.logo_url, brand.website_url, brand.description, brand.primary_color, brand.secondary_color 
+FROM brand 
+WHERE brand.name = ?
+2025-12-23 21:30:17,723 - INFO - [generated in 0.00100s] ('Allen & Heath',)
+2025-12-23 21:30:17,724 - INFO - ROLLBACK
+2025-12-23 21:30:17,725 - INFO - BEGIN (implicit)
+2025-12-23 21:30:17,730 - INFO - SELECT document.id, document.title, document.url, document.content_hash, document.last_updated, document.brand_id, document.product_id 
+FROM document 
+WHERE document.brand_id = ? AND document.url LIKE ?
+2025-12-23 21:30:17,731 - INFO - [generated in 0.00083s] (28, '%zendesk%')
+2025-12-23 21:30:17,732 - INFO - Already ingested: 0 support articles
+2025-12-23 21:30:17,733 - INFO - ROLLBACK
+2025-12-23 21:30:17,733 - INFO - 
+======================================================================
+2025-12-23 21:30:17,733 - INFO - FETCHING ARTICLES FROM ZENDESK API
+2025-12-23 21:30:17,734 - INFO - ======================================================================
+2025-12-23 21:30:17,734 - INFO - Fetching articles page 1...
+2025-12-23 21:30:18,214 - INFO - HTTP Request: GET https://allen-heath.zendesk.com/api/v2/help_center/articles.json?per_page=100&page=1&sort_by=created_at "HTTP/1.1 404 Not Found"
+2025-12-23 21:30:18,215 - WARNING -   → Status 404
+2025-12-23 21:30:18,215 - WARNING - No articles found or API error
+2025-12-23 21:30:18,216 - INFO - ✓ Fetched 0 total articles
+2025-12-23 21:30:18,216 - ERROR - Could not fetch articles from Zendesk API
+2025-12-23 21:30:18,216 - INFO - Trying alternative approach...
