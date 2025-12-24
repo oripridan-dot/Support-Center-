@@ -17,6 +17,8 @@ from playwright.async_api import async_playwright, Page
 from sqlmodel import Session, select, SQLModel
 from app.core.database import create_db_and_tables, engine
 from app.models.sql_models import Brand, Document, IngestLog
+from app.services.rag_service import ingest_document
+from app.services.ingestion_tracker import tracker
 
 # Configure logging
 logging.basicConfig(
@@ -31,7 +33,7 @@ logger = logging.getLogger(__name__)
 
 BRAND_CONFIGS = {
     "Rode": {
-        "brand_id": 5,
+        "brand_id": 3,
         "support_urls": [
             "https://en.rode.com/support",
             "https://en.rode.com/support/faqs",
@@ -119,24 +121,27 @@ class Phase2Ingester:
         """Discover URLs from support pages"""
         discovered_urls = set()
         
-        for base_url in config["support_urls"][:2]:  # Try first 2 URLs
+        for base_url in config["support_urls"]:  # Try all URLs
             try:
                 logger.info(f"  Discovering from {base_url}...")
-                await page.goto(base_url, wait_until="networkidle", timeout=30000)
-                await asyncio.sleep(2)
+                await page.goto(base_url, wait_until="domcontentloaded", timeout=60000)
+                await asyncio.sleep(3)
                 
                 # Extract all links
                 links = await page.evaluate("""
                     () => {
                         return Array.from(document.querySelectorAll('a[href]'))
                             .map(a => a.href)
-                            .filter(href => href && href.includes('/support') || href.includes('/faq'))
-                            .slice(0, 100);
+                            .filter(href => {
+                                const h = href.toLowerCase();
+                                return h.includes('/support') || h.includes('/faq') || h.includes('/knowledge') || h.includes('/article');
+                            })
+                            .slice(0, 200);
                     }
                 """)
                 
                 for link in links:
-                    if link and len(discovered_urls) < 50:
+                    if link and len(discovered_urls) < 100:
                         discovered_urls.add(link)
                         
             except Exception as e:
@@ -191,13 +196,14 @@ class Phase2Ingester:
             logger.info("🔍 Discovering URLs...")
             discovered_urls = await self.discover_urls(page, brand_name, config)
             logger.info(f"   Found {len(discovered_urls)} potential URLs")
+            tracker.update_urls_discovered(brand_name, len(discovered_urls))
             
             # Get existing URLs to avoid duplicates
             with Session(engine) as session:
                 existing_docs = session.exec(
                     select(Document).where(Document.brand_id == config['brand_id'])
                 ).all()
-                self.ingested_urls = {doc.source_url for doc in existing_docs if doc.source_url}
+                self.ingested_urls = {doc.url for doc in existing_docs if doc.url}
             
             logger.info(f"   Already have {len(self.ingested_urls)} documents")
             
@@ -213,28 +219,43 @@ class Phase2Ingester:
                     break
                 
                 try:
-                    await page.goto(url, wait_until="networkidle", timeout=30000)
-                    await asyncio.sleep(1)
+                    await page.goto(url, wait_until="domcontentloaded", timeout=60000)
+                    await asyncio.sleep(2)
                     
                     title, content = await self.extract_content(page)
                     
                     if content and len(content) > 100:
-                        # Create document
+                        # Create document in SQL DB
                         doc = Document(
                             brand_id=config['brand_id'],
                             title=title[:200],
-                            content=content,
-                            source_url=url,
+                            url=url,
                             content_hash=self.get_content_hash(content),
-                            ingestion_date=datetime.utcnow()
+                            last_updated=datetime.utcnow()
                         )
                         
                         with Session(engine) as session:
                             session.add(doc)
                             session.commit()
+                            session.refresh(doc)
                         
+                        # Ingest into Vector DB
+                        try:
+                            await ingest_document(
+                                text=content,
+                                metadata={
+                                    "source": url,
+                                    "title": str(title),
+                                    "brand_id": int(config['brand_id']),
+                                    "doc_id": int(doc.id)
+                                }
+                            )
+                        except Exception as ve:
+                            logger.error(f"    Vector DB error for {url}: {ve}")
+
                         new_count += 1
-                        if new_count % 10 == 0:
+                        tracker.update_document_count(brand_name, new_count)
+                        if new_count % 5 == 0:
                             logger.info(f"   ✅ Ingested {new_count} documents...")
                     
                 except Exception as e:
@@ -250,6 +271,10 @@ class Phase2Ingester:
     async def run(self):
         """Execute multi-brand ingestion"""
         create_db_and_tables()
+        
+        # Start tracker
+        tracker.start()
+        
         await self.init_browser()
         
         try:
@@ -265,9 +290,16 @@ class Phase2Ingester:
                 if brand_name in BRAND_CONFIGS:
                     config = BRAND_CONFIGS[brand_name]
                     try:
-                        await self.ingest_brand(brand_name, config)
+                        # Update tracker for brand start
+                        tracker.update_brand_start(brand_name, config['brand_id'])
+                        
+                        ingested = await self.ingest_brand(brand_name, config)
+                        
+                        # Update tracker for brand completion
+                        tracker.update_brand_complete(brand_name, ingested)
                     except Exception as e:
                         logger.error(f"Failed to ingest {brand_name}: {e}")
+                        tracker.add_error(f"{brand_name}: {str(e)}")
                         continue
             
             # Summary
@@ -285,6 +317,9 @@ class Phase2Ingester:
                 logger.info(f"  {brand}: {count} documents")
             
             logger.info(f"{'=' * 60}\n")
+            
+            # Mark tracker as complete
+            tracker.complete()
             
         finally:
             await self.close_browser()

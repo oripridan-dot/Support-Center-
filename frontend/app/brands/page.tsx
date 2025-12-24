@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Sidebar from '@/components/Sidebar';
+import BrandIngestionBar from '@/components/BrandIngestionBar';
 import { Search, ArrowRight } from 'lucide-react';
 
 interface Brand {
@@ -11,10 +12,17 @@ interface Brand {
   description: string;
 }
 
+interface IngestionStatus {
+  is_running: boolean;
+  current_brand: string | null;
+  brand_progress: Record<string, any>;
+}
+
 export default function BrandsPage() {
   const [brands, setBrands] = useState<Brand[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
+  const [ingestionStatus, setIngestionStatus] = useState<IngestionStatus | null>(null);
 
   useEffect(() => {
     fetch('/api/backend/brands')
@@ -27,6 +35,18 @@ export default function BrandsPage() {
         console.error(err);
         setLoading(false);
       });
+
+    // Poll for ingestion status
+    const pollStatus = () => {
+      fetch('/api/backend/ingestion/status')
+        .then(res => res.json())
+        .then(data => setIngestionStatus(data))
+        .catch(err => console.error('Status poll error:', err));
+    };
+
+    pollStatus();
+    const interval = setInterval(pollStatus, 3000);
+    return () => clearInterval(interval);
   }, []);
 
   const filteredBrands = brands.filter(b => 
@@ -79,6 +99,13 @@ export default function BrandsPage() {
                     <p className="text-sm text-gray-500 line-clamp-2 mb-6">
                       {brand.description || 'Official technical support and documentation.'}
                     </p>
+
+                    <BrandIngestionBar 
+                      brandName={brand.name}
+                      progress={ingestionStatus?.brand_progress[brand.name]}
+                      isCurrent={ingestionStatus?.current_brand === brand.name}
+                    />
+
                     <div className="mt-auto flex items-center text-blue-600 font-bold text-sm opacity-0 group-hover:opacity-100 transition-opacity">
                       Open Support <ArrowRight size={16} className="ml-2" />
                     </div>

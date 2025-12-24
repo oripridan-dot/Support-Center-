@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useState } from 'react';
 
 interface BrandProgress {
@@ -31,19 +33,17 @@ export default function IngestionMonitor() {
   const [ws, setWs] = useState<WebSocket | null>(null);
 
   useEffect(() => {
-    // Try to connect with WebSocket first
-    try {
-      const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-      const socket = new WebSocket(`${wsProtocol}//localhost:8000/api/ingestion/ws/status`);
-      
-      socket.onopen = () => {
-        console.log('WebSocket connected');
-        setWs(socket);
-      };
-      
-      socket.onmessage = (event) => {
+    let wsAttempted = false;
+    let wsConnected = false;
+    let cleanupPolling: (() => void) | null = null;
+    
+    const setupPolling = () => {
+      // Fallback to polling if WebSocket is not available
+      const interval = setInterval(async () => {
         try {
-          const data = JSON.parse(event.data);
+          const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
+          const response = await fetch(`${apiUrl}/ingestion/status`);
+          const data: IngestionStatus = await response.json();
           setStatus(data);
           
           // Auto-show when ingestion starts
@@ -55,55 +55,82 @@ export default function IngestionMonitor() {
             setTimeout(() => setIsVisible(false), 3000);
           }
         } catch (error) {
-          console.error('Failed to parse WebSocket message:', error);
+          console.error('Failed to fetch ingestion status:', error);
         }
-      };
-      
-      socket.onerror = (error) => {
-        console.error('WebSocket error:', error);
-        // Fall back to polling if WebSocket fails
-        setupPolling();
-      };
-      
-      socket.onclose = () => {
-        console.log('WebSocket disconnected, falling back to polling');
-        setupPolling();
-      };
-      
-      return () => {
-        if (socket.readyState === WebSocket.OPEN) {
-          socket.close();
-        }
-      };
-    } catch (error) {
-      console.error('Failed to create WebSocket:', error);
-      setupPolling();
-    }
-  }, [isVisible]);
+      }, 2000); // Poll every 2 seconds
 
-  const setupPolling = () => {
-    // Fallback to polling if WebSocket is not available
-    const interval = setInterval(async () => {
+      return () => clearInterval(interval);
+    };
+    
+    // Try WebSocket if not in dev environment
+    const tryWebSocket = () => {
+      if (wsAttempted || typeof window === 'undefined') return;
+      wsAttempted = true;
+      
       try {
-        const response = await fetch('http://localhost:8000/api/ingestion/status');
-        const data: IngestionStatus = await response.json();
-        setStatus(data);
+        const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
+        const wsBaseUrl = apiUrl.replace(/^https?:\/\//, '').replace(/\/api$/, '');
+        const wsUrl = `${wsProtocol}//${wsBaseUrl}/api/ingestion/ws/status`;
         
-        // Auto-show when ingestion starts
-        if (data.is_running && !isVisible) {
-          setIsVisible(true);
-        }
-        // Auto-hide when complete
-        if (!data.is_running && data.progress_percent === 100) {
-          setTimeout(() => setIsVisible(false), 3000);
-        }
+        const socket = new WebSocket(wsUrl);
+        
+        socket.onopen = () => {
+          wsConnected = true;
+          setWs(socket);
+          // Stop polling if WebSocket connects
+          if (cleanupPolling) {
+            cleanupPolling();
+            cleanupPolling = null;
+          }
+        };
+        
+        socket.onmessage = (event) => {
+          try {
+            const data = JSON.parse(event.data);
+            setStatus(data);
+            
+            if (data.is_running && !isVisible) {
+              setIsVisible(true);
+            }
+            if (!data.is_running && data.progress_percent === 100) {
+              setTimeout(() => setIsVisible(false), 3000);
+            }
+          } catch (error) {
+            console.log('Parse error, using polling');
+          }
+        };
+        
+        socket.onerror = () => {
+          if (!wsConnected && !cleanupPolling) {
+            cleanupPolling = setupPolling();
+          }
+        };
+        
+        socket.onclose = () => {
+          if (wsConnected && !cleanupPolling) {
+            cleanupPolling = setupPolling();
+          }
+        };
       } catch (error) {
-        console.error('Failed to fetch ingestion status:', error);
+        if (!cleanupPolling) {
+          cleanupPolling = setupPolling();
+        }
       }
-    }, 1000); // Poll more frequently (every 1 second instead of 2)
+    };
+    
+    // Start with polling, try WebSocket after initial fetch
+    cleanupPolling = setupPolling();
+    setTimeout(tryWebSocket, 500);
+    
+    // Cleanup on unmount
+    return () => {
+      if (cleanupPolling) cleanupPolling();
+      if (ws) ws.close();
+    };
+  }, []);
 
-    return () => clearInterval(interval);
-  };
+
 
   if (!status || !isVisible) return null;
 
@@ -123,7 +150,8 @@ export default function IngestionMonitor() {
         </div>
         <span className="font-semibold text-blue-600">{count} docs</span>
       </div>
-  ));
+    );
+  });
 
   return (
     <div className="fixed bottom-6 right-6 w-96 bg-white rounded-lg shadow-2xl p-6 z-50 border-l-4 border-blue-500">

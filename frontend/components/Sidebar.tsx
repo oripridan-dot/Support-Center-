@@ -15,7 +15,6 @@ export default function Sidebar() {
   const menuItems = [
     { icon: Home, label: 'Dashboard', href: '/' },
     { icon: Grid, label: 'All Brands', href: '/brands' },
-    { icon: Activity, label: 'System Status', href: '/status' },
   ];
 
   return (

@@ -18,6 +18,7 @@ from sqlmodel import Session, select, SQLModel
 from app.core.database import create_db_and_tables, engine
 from app.models.sql_models import Brand, Document, IngestLog
 from app.services.ingestion_tracker import tracker
+from app.services.rag_service import ingest_document
 
 # Configure logging
 logging.basicConfig(
@@ -32,7 +33,7 @@ logger = logging.getLogger(__name__)
 
 COMPREHENSIVE_BRAND_CONFIGS = {
     "Rode": {
-        "brand_id": 5,
+        "brand_id": 3,
         "support_centers": [
             "https://en.rode.com/support",
             "https://en.rode.com/support/faqs",
@@ -298,7 +299,22 @@ class ComprehensiveIngester:
                     )
                     session.add(doc)
                     session.commit()
+                    session.refresh(doc)
                 
+                # Ingest into Vector DB
+                try:
+                    await ingest_document(
+                        text=content,
+                        metadata={
+                            "source": url,
+                            "title": str(title),
+                            "brand_id": int(brand_id),
+                            "doc_id": int(doc.id)
+                        }
+                    )
+                except Exception as ve:
+                    logger.error(f"      Vector DB error: {ve}")
+
                 self.ingested_urls.add(url)
                 self.processed_hashes.add(content_hash)
                 ingested_count += 1

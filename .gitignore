@@ -1,0 +1,68 @@
+# Python
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+.venv/
+ENV/
+
+# Databases
+*.db
+*.sqlite3
+**/chroma_db/
+backend/support_center.db
+
+# Logs
+*.log
+**/logs/
+*.pid
+*.out
+backend/*.log
+backend/*.pid
+backend/*.out
+frontend/frontend.log
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.next/
+out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Environment variables
+.env
+.env.local
+
+# Project specific
+backend/data/brand_docs/
+ingestion_phase2.pid
+ingest_ah.pid

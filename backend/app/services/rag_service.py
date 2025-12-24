@@ -42,6 +42,18 @@ async def ingest_document(text: str, metadata: dict):
     )
     return len(chunks)
 
+def extract_product_model(question: str) -> str:
+    """
+    Extract product model name from question.
+    Matches patterns like T5V, A7V, T10S, etc.
+    """
+    import re
+    # Match patterns: letter(s) + number(s) + optional letter(s)
+    match = re.search(r'\b([A-Z]+\d+[A-Z]*)\b', question.upper())
+    if match:
+        return match.group(1)
+    return None
+
 async def ask_question(question: str, brand_id: int = None, is_first_message: bool = False, history: list[dict] = [], product_id: int = None):
     """
     Retrieve context and generate answer using Gemini.
@@ -50,14 +62,36 @@ async def ask_question(question: str, brand_id: int = None, is_first_message: bo
     # Detect if the user is asking for a comparison or general brand info
     is_comparison = any(keyword in question.lower() for keyword in ["vs", "difference", "compare", "better", "between"])
     
+    # Try to extract product model from question
+    product_model = extract_product_model(question)
+    print(f"[RAG DEBUG] Question: {question}")
+    print(f"[RAG DEBUG] Extracted product model: {product_model}")
+    print(f"[RAG DEBUG] Brand ID: {brand_id}")
+    
     query_params = {
         "query_texts": [question],
         "n_results": 15  # Increased from 10 to get more context
     }
     
     where_clause = {}
-    if brand_id:
-        where_clause["brand_id"] = brand_id
+    
+    # If we found a product model in the question, prioritize that
+    if product_model and not is_comparison:
+        # First try: query with product model filter (using brand metadata, not brand_id)
+        session = next(get_session())
+        if brand_id:
+            statement = select(Brand).where(Brand.id == brand_id)
+            brand = session.exec(statement).first()
+            if brand:
+                where_clause["brand"] = brand.name
+                # Note: We'll do a post-filter for product name since ChromaDB doesn't support partial matching well
+    elif brand_id:
+        # Use brand name from database
+        session = next(get_session())
+        statement = select(Brand).where(Brand.id == brand_id)
+        brand = session.exec(statement).first()
+        if brand:
+            where_clause["brand"] = brand.name
     
     # Only filter by product_id if it's NOT a comparison question
     if product_id and not is_comparison:
@@ -85,9 +119,17 @@ async def ask_question(question: str, brand_id: int = None, is_first_message: bo
             # Use a more robust query approach
             results = collection.query(**query_params)
             context_docs = results['documents'][0] if results['documents'] else []
+            context_metas = results['metadatas'][0] if results['metadatas'] else []
             
-            # Reorder results to prioritize product_id if it was a broad search
-            # (Though Chroma's 'where' already filters, we might want to handle cases where product_id is not strictly required)
+            # If we extracted a product model, prioritize docs matching that model
+            if product_model and context_docs:
+                # Sort results: matching product first
+                combined = list(zip(context_docs, context_metas))
+                combined.sort(key=lambda x: product_model.lower() not in x[1].get('product', '').lower())
+                context_docs = [doc for doc, _ in combined]
+                context_metas = [meta for _, meta in combined]
+                results['documents'][0] = context_docs
+                results['metadatas'][0] = context_metas
             
             context_text = "\n\n".join([f"--- Context {i+1} ---\n{doc}" for i, doc in enumerate(context_docs)])
         except Exception as e:
