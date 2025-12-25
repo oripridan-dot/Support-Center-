@@ -170,7 +170,7 @@ export default function IngestionMonitor({ variant = 'floating' }: IngestionMoni
     }
   };
 
-  const brandCounts = Object.entries(status.brand_progress).map(([brand, progress]) => {
+  const brandCounts = Object.entries(status.brand_progress || {}).map(([brand, progress]) => {
     const count = progress.document_count || 0;
     const statusEmoji = progress.status === 'complete' ? '✅' : progress.status === 'processing' ? '⚙️' : progress.status === 'idle' ? '⏸' : '🔍';
     
