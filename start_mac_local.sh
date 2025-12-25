@@ -75,7 +75,7 @@ osascript <<EOF
 tell application "Terminal"
     activate
     -- Window 1: Backend
-    do script "echo 'Starting Backend...'; cd \"$PROJECT_ROOT/backend\"; python3 -m venv venv; source venv/bin/activate; pip install -r requirements.txt; uvicorn app.main:app --reload"
+    do script "echo 'Starting Backend...'; cd \"$PROJECT_ROOT/backend\"; python3 -m venv venv; source venv/bin/activate; pip install -r requirements.txt; ./venv/bin/python -m uvicorn app.main:app --reload"
     
     -- Window 2: Frontend
     tell application "System Events" to keystroke "n" using command down
