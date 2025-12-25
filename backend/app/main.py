@@ -1,35 +1,20 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from contextlib import asynccontextmanager
-from .core.database import create_db_and_tables
-from .api import brands, chat, ingestion, cache, worker, documents
-from .scheduler import start_scheduler
+from app.core.config import settings
+from app.api.routes import router
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    create_db_and_tables()
-    start_scheduler()
-    yield
+app = FastAPI(title=settings.PROJECT_NAME)
 
-app = FastAPI(title="Halilit Support Center API", lifespan=lifespan)
-
-# Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # In production, specify the frontend URL
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-app.include_router(brands.router, prefix="/api/brands", tags=["brands"])
-app.include_router(chat.router, prefix="/api/chat", tags=["chat"])
-app.include_router(ingestion.router, prefix="/api/ingestion", tags=["ingestion"])
-app.include_router(cache.router, prefix="/api/cache", tags=["cache"])
-app.include_router(worker.router, prefix="/api/worker", tags=["worker"])
-app.include_router(documents.router, prefix="/api/documents", tags=["documents"])
+app.include_router(router, prefix="/api/v1")
 
 @app.get("/")
-def read_root():
-    return {"message": "Welcome to the Halilit Support Center API"}
-
+async def root():
+    return {"message": "Halilit Support Center Local AI API"}
