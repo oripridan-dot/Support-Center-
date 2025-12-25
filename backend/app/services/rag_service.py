@@ -6,24 +6,68 @@ from ..core.database import get_session
 from ..models.sql_models import Product, ProductFamily, Brand
 from sqlmodel import select
 import uuid
-import google.generativeai as genai
+# Note: google.generativeai is deprecated, but langchain still uses it internally
+# The warning is safe to ignore for now as langchain handles the migration
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
-
-# Configure Gemini
-genai.configure(api_key=settings.GEMINI_API_KEY)
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # Initialize LangChain components
 embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=settings.GEMINI_API_KEY)
-llm = ChatGoogleGenerativeAI(model="gemini-3-flash-preview", google_api_key=settings.GEMINI_API_KEY)
+llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=settings.GEMINI_API_KEY)
 
 collection = get_collection()
 
-async def ingest_document(text: str, metadata: dict):
+import hashlib
+
+def generate_chunk_id(content: str, url: str, index: int) -> str:
+    """Generate a deterministic ID for a chunk"""
+    payload = f"{url}|{index}|{content[:100]}".encode('utf-8')
+    return hashlib.md5(payload).hexdigest()
+
+def is_english(text: str) -> bool:
+    """
+    Simple heuristic to check if text is English.
+    Checks for common English stopwords.
+    """
+    common_words = {'the', 'be', 'to', 'of', 'and', 'a', 'in', 'that', 'have', 'it', 
+                   'for', 'not', 'on', 'with', 'he', 'as', 'you', 'do', 'at', 'this',
+                   'but', 'his', 'by', 'from', 'they', 'we', 'say', 'her', 'she',
+                   'or', 'an', 'will', 'my', 'one', 'all', 'would', 'there', 'their',
+                   'what', 'so', 'up', 'out', 'if', 'about', 'who', 'get', 'which', 
+                   'go', 'me', 'when', 'make', 'can', 'like', 'time', 'no', 'just',
+                   'him', 'know', 'take', 'people', 'into', 'year', 'your', 'good',
+                   'some', 'could', 'them', 'see', 'other', 'than', 'then', 'now',
+                   'look', 'only', 'come', 'its', 'over', 'think', 'also', 'back',
+                   'after', 'use', 'two', 'how', 'our', 'work', 'first', 'well',
+                   'way', 'even', 'new', 'want', 'because', 'any', 'these', 'give',
+                   'day', 'most', 'us'}
+    
+    # Convert to lowercase and split into words
+    words = set(text.lower().split())
+    
+    # Calculate intersection
+    intersection = words.intersection(common_words)
+    
+    # If we have at least a few common English words, it's likely English
+    # Adjust threshold based on text length if needed, but > 2 is a safe bet for paragraphs
+    return len(intersection) >= 3
+
+async def ingest_document(text: str, metadata: dict, document_id: str = None):
     """
     Split text into chunks and store in vector DB.
+    Uses deterministic IDs to prevent duplicates.
     """
+    # Quality check: Skip if text is too short
+    if len(text.strip()) < 50:
+        print(f"[INGEST] Skipping document: Content too short ({len(text)} chars)")
+        return 0
+
+    # Language check: Skip if not English
+    if not is_english(text):
+        print(f"[INGEST] Skipping document: Not detected as English (Title: {metadata.get('title', 'Unknown')})")
+        return 0
+
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=1500,
         chunk_overlap=200,
@@ -32,15 +76,31 @@ async def ingest_document(text: str, metadata: dict):
     
     chunks = text_splitter.split_text(text)
     
-    ids = [str(uuid.uuid4()) for _ in chunks]
-    metadatas = [metadata for _ in chunks]
+    # Generate deterministic IDs
+    base_id = document_id or metadata.get("source_url", "unknown")
+    ids = [generate_chunk_id(chunk, base_id, i) for i, chunk in enumerate(chunks)]
     
-    collection.add(
-        documents=chunks,
-        metadatas=metadatas,
-        ids=ids
-    )
-    return len(chunks)
+    # Ensure metadata has required fields and valid types
+    clean_metadatas = []
+    for _ in chunks:
+        # Create a copy to avoid modifying the original for all chunks
+        clean_meta = metadata.copy()
+        # Convert any non-primitive types to string for ChromaDB
+        for k, v in clean_meta.items():
+            if not isinstance(v, (str, int, float, bool)) and v is not None:
+                clean_meta[k] = str(v)
+        clean_metadatas.append(clean_meta)
+    
+    try:
+        collection.upsert(
+            documents=chunks,
+            metadatas=clean_metadatas,
+            ids=ids
+        )
+        return len(chunks)
+    except Exception as e:
+        print(f"[INGEST] Error upserting to ChromaDB: {e}")
+        return 0
 
 def extract_product_model(question: str) -> str:
     """

@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from .core.database import create_db_and_tables
-from .api import brands, chat, ingestion, cache
+from .api import brands, chat, ingestion, cache, worker, documents
 from .scheduler import start_scheduler
 
 @asynccontextmanager
@@ -26,6 +26,8 @@ app.include_router(brands.router, prefix="/api/brands", tags=["brands"])
 app.include_router(chat.router, prefix="/api/chat", tags=["chat"])
 app.include_router(ingestion.router, prefix="/api/ingestion", tags=["ingestion"])
 app.include_router(cache.router, prefix="/api/cache", tags=["cache"])
+app.include_router(worker.router, prefix="/api/worker", tags=["worker"])
+app.include_router(documents.router, prefix="/api/documents", tags=["documents"])
 
 @app.get("/")
 def read_root():

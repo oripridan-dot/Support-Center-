@@ -1,8 +1,7 @@
-'use client';
-import { useState, useEffect, use } from 'react';
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import Sidebar from '@/components/Sidebar';
 import ChatBox from '@/components/ChatBox';
-import { Package, Search, ChevronRight, Sparkles } from 'lucide-react';
 
 interface Brand {
   id: number;
@@ -13,6 +12,10 @@ interface Brand {
   total_products?: number;
   covered_products?: number;
   coverage_percentage?: number;
+  // Real data fields
+  total_documents?: number;
+  target_documents?: number;
+  document_coverage_percentage?: number;
 }
 
 interface Product {
@@ -22,14 +25,11 @@ interface Product {
   image_url: string;
 }
 
-export default function BrandPage({ params }: { params: Promise<{ id: string }> }) {
-  const resolvedParams = use(params);
-  const brandId = parseInt(resolvedParams.id);
+export default function BrandPage() {
+  const { brandId: brandIdParam } = useParams<{ brandId: string }>();
+  const brandId = parseInt(brandIdParam || '0');
   const [brand, setBrand] = useState<Brand | null>(null);
   const [products, setProducts] = useState<Product[]>([]);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  const [isProductModalOpen, setIsProductModalOpen] = useState(false);
 
   useEffect(() => {
     // Fetch brand details
@@ -55,9 +55,14 @@ export default function BrandPage({ params }: { params: Promise<{ id: string }> 
       });
   }, [brandId]);
 
-  const filteredProducts = Array.isArray(products) ? products.filter(p => 
-    p.name.toLowerCase().includes(searchQuery.toLowerCase())
-  ) : [];
+  const getVisibleColor = (color: string, fallback: string) => {
+    if (!color) return fallback;
+    const c = color.toLowerCase();
+    if (c === '#ffffff' || c === '#fff' || c === 'white') {
+      return fallback;
+    }
+    return color;
+  };
 
   const brandVibes: Record<string, string> = {
     'Mackie': 'Loud & Proud • Professional Audio',
@@ -114,26 +119,26 @@ export default function BrandPage({ params }: { params: Promise<{ id: string }> 
             </div>
             
             <div className="flex items-center gap-8">
-              {/* Coverage Bar */}
-              {brand && brand.coverage_percentage !== undefined && (
+              {/* Coverage Bar - Using REAL document data */}
+              {brand && brand.document_coverage_percentage !== undefined && (
                 <div className="hidden md:flex flex-col items-end gap-1.5 min-w-[240px]">
                   <div className="flex items-center justify-between w-full text-xs font-bold">
                     <span className="text-gray-400 uppercase tracking-wider text-[10px]">Documentation Coverage</span>
-                    <span style={{ color: brand.secondary_color }}>{brand.coverage_percentage}%</span>
+                    <span style={{ color: getVisibleColor(brand.secondary_color, brand.primary_color) }}>{brand.document_coverage_percentage}%</span>
                   </div>
                   <div className="w-full h-2.5 bg-gray-100 rounded-full overflow-hidden border border-gray-100">
                     <div 
                       className="h-full rounded-full transition-all duration-1000 ease-out relative overflow-hidden"
                       style={{ 
-                        width: `${brand.coverage_percentage}%`,
-                        backgroundColor: brand.secondary_color 
+                        width: `${brand.document_coverage_percentage}%`,
+                        backgroundColor: getVisibleColor(brand.secondary_color, brand.primary_color)
                       }}
                     >
                       <div className="absolute inset-0 bg-white/20 animate-[shimmer_2s_infinite]" style={{ backgroundImage: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent)' }} />
                     </div>
                   </div>
                   <p className="text-[10px] text-gray-400 font-bold">
-                    {brand.covered_products} of {brand.total_products} products indexed
+                    {brand.total_documents || 0} of {brand.target_documents || 100} documents ingested
                   </p>
                 </div>
               )}
@@ -150,7 +155,6 @@ export default function BrandPage({ params }: { params: Promise<{ id: string }> 
               brandId={brandId} 
               brandName={brand?.name} 
               brandLogo={brand?.logo_url}
-              selectedProduct={selectedProduct}
               primaryColor={brand?.primary_color}
               secondaryColor={brand?.secondary_color}
             />
@@ -159,75 +163,6 @@ export default function BrandPage({ params }: { params: Promise<{ id: string }> 
 
 
       </main>
-
-      {/* Product Detail Modal */}
-      {isProductModalOpen && selectedProduct && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
-          <div 
-            className="bg-white w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="relative h-64 bg-gray-100 flex items-center justify-center overflow-hidden">
-              {selectedProduct.image_url ? (
-                <img src={selectedProduct.image_url} alt={selectedProduct.name} className="w-full h-full object-contain p-8" />
-              ) : (
-                <Package size={64} className="text-gray-300" />
-              )}
-              <button 
-                onClick={() => setIsProductModalOpen(false)}
-                className="absolute top-4 right-4 p-2 bg-white/80 backdrop-blur-md rounded-full hover:bg-white transition-colors shadow-lg"
-              >
-                <ChevronRight className="rotate-180" size={20} />
-              </button>
-              
-              {/* Brand Badge */}
-              <div 
-                className="absolute bottom-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-white shadow-lg"
-                style={{ backgroundColor: brand?.primary_color }}
-              >
-                {brand?.name}
-              </div>
-            </div>
-            
-            <div className="p-8">
-              <h2 className="text-2xl font-black text-gray-900 mb-2">{selectedProduct.name}</h2>
-              <p className="text-gray-600 leading-relaxed mb-8">
-                {selectedProduct.description || 'This product is part of the official catalog. You can ask the AI assistant for technical specifications, setup guides, and troubleshooting steps related to this specific model.'}
-              </p>
-              
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100">
-                  <p className="text-[10px] font-bold text-gray-400 uppercase mb-1">Category</p>
-                  <p className="text-sm font-bold text-gray-900">Professional Audio</p>
-                </div>
-                <div className="p-4 rounded-2xl bg-gray-50 border border-gray-100">
-                  <p className="text-[10px] font-bold text-gray-400 uppercase mb-1">Support Status</p>
-                  <p className="text-sm font-bold text-green-600 flex items-center gap-1">
-                    <Sparkles size={12} />
-                    AI Enhanced
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex gap-3">
-                <button 
-                  onClick={() => setIsProductModalOpen(false)}
-                  className="flex-grow py-4 rounded-2xl font-bold text-white shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all"
-                  style={{ backgroundColor: brand?.secondary_color }}
-                >
-                  Start Support Chat
-                </button>
-                <button 
-                  className="px-6 py-4 rounded-2xl font-bold text-gray-900 bg-gray-100 hover:bg-gray-200 transition-colors"
-                  onClick={() => window.open(`https://www.google.com/search?q=${brand?.name}+${selectedProduct.name}+manual`, '_blank')}
-                >
-                  Manuals
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

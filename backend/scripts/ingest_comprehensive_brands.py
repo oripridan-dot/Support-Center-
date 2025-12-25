@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright, Page
 from sqlmodel import Session, select, SQLModel
 from app.core.database import create_db_and_tables, engine
-from app.models.sql_models import Brand, Document, IngestLog
+from app.models.sql_models import Brand, Document, IngestLog, Product, ProductFamily
 from app.services.ingestion_tracker import tracker
 from app.services.rag_service import ingest_document
 
@@ -35,25 +35,25 @@ COMPREHENSIVE_BRAND_CONFIGS = {
     "Rode": {
         "brand_id": 3,
         "support_centers": [
-            "https://en.rode.com/support",
-            "https://en.rode.com/support/faqs",
-            "https://en.rode.com/support/knowledge-base"
+            "https://rode.com/en/support",
+            "https://rode.com/en/support/faqs",
+            "https://rode.com/en/support/knowledge-base"
         ],
         "product_docs": [
-            "https://en.rode.com/microphones",
-            "https://en.rode.com/wireless",
-            "https://en.rode.com/interfaces",
-            "https://en.rode.com/software",
-            "https://en.rode.com/accessories"
+            "https://rode.com/en/microphones",
+            "https://rode.com/en/wireless",
+            "https://rode.com/en/interfaces",
+            "https://rode.com/en/software",
+            "https://rode.com/en/accessories"
         ],
         "spec_sources": [
-            "https://en.rode.com/support/downloads",
-            "https://en.rode.com/microphones/specifications"
+            "https://rode.com/en/support/downloads",
+            "https://rode.com/en/microphones/specifications"
         ],
-        "target_docs": 250
+        "target_docs": 1000
     },
     "Boss": {
-        "brand_id": 2,
+        "brand_id": 71,
         "support_centers": [
             "https://www.boss.info/support",
             "https://www.boss.info/en/support/faqs",
@@ -70,10 +70,10 @@ COMPREHENSIVE_BRAND_CONFIGS = {
             "https://www.boss.info/en/support/downloads",
             "https://www.boss.info/en/support/manuals"
         ],
-        "target_docs": 200
+        "target_docs": 1000
     },
     "Roland": {
-        "brand_id": 1,
+        "brand_id": 70,
         "support_centers": [
             "https://www.roland.com/support/",
             "https://www.roland.com/support/faqs/",
@@ -93,7 +93,7 @@ COMPREHENSIVE_BRAND_CONFIGS = {
             "https://www.roland.com/support/documentation/",
             "https://www.roland.com/support/manuals/"
         ],
-        "target_docs": 300
+        "target_docs": 1000
     },
     "Mackie": {
         "brand_id": 21,
@@ -119,10 +119,9 @@ COMPREHENSIVE_BRAND_CONFIGS = {
     "PreSonus": {
         "brand_id": 69,
         "support_centers": [
-            "https://support.presonus.com/hc/en-us",
-            "https://support.presonus.com/hc/en-us/categories",
-            "https://support.presonus.com/hc/en-us/articles",
-            "https://presonus.com/support"
+            "https://www.presonus.com/en/support",
+            "https://www.presonus.com/en/learn",
+            "https://www.presonus.com/en/products"
         ],
         "product_docs": [
             "https://www.presonus.com/products",
@@ -132,8 +131,8 @@ COMPREHENSIVE_BRAND_CONFIGS = {
             "https://www.presonus.com/en/products/interfaces"
         ],
         "spec_sources": [
-            "https://support.presonus.com/hc/en-us/articles",
-            "https://www.presonus.com/en/support"
+            "https://www.presonus.com/en/support/downloads",
+            "https://www.presonus.com/en/support/knowledge-base"
         ],
         "target_docs": 280
     }
@@ -150,8 +149,21 @@ class ComprehensiveIngester:
     async def init_browser(self):
         """Initialize Playwright browser"""
         self.playwright = await async_playwright().start()
-        self.browser = await self.playwright.chromium.launch(headless=True)
-        logger.info("✅ Browser initialized")
+        self.browser = await self.playwright.chromium.launch(
+            headless=True,
+            args=[
+                '--disable-blink-features=AutomationControlled',
+                '--disable-dev-shm-usage',
+                '--no-sandbox',
+                '--disable-setuid-sandbox',
+                '--disable-gpu'
+            ]
+        )
+        # Create a context with a real user agent
+        self.context = await self.browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        )
+        logger.info("✅ Browser initialized with stealth settings")
         
     async def close_browser(self):
         """Close Playwright browser"""
@@ -171,8 +183,17 @@ class ComprehensiveIngester:
         
         try:
             logger.info(f"  📍 Discovering from: {category_url}")
-            await page.goto(category_url, wait_until="networkidle", timeout=30000)
-            await asyncio.sleep(1.5)
+            try:
+                await page.goto(category_url, wait_until="domcontentloaded", timeout=60000)
+                await page.wait_for_load_state("networkidle", timeout=10000)
+            except Exception as e:
+                logger.warning(f"    ⚠️  Timeout/Error loading {category_url}, attempting to scrape anyway: {e}")
+            
+            await asyncio.sleep(2)
+            
+            # Scroll to bottom to trigger lazy loading
+            await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            await asyncio.sleep(1)
             
             # Extract all links
             links = await page.evaluate("""
@@ -258,14 +279,26 @@ class ComprehensiveIngester:
         ingested_count = 0
         
         # Load existing documents to avoid re-ingesting
+        # Also load products for linking
+        products_map = {} # name -> id
         with Session(engine) as session:
             existing = session.exec(
                 select(Document).where(Document.brand_id == brand_id)
             ).all()
             self.ingested_urls = {doc.url for doc in existing if doc.url}
             self.processed_hashes = {doc.content_hash for doc in existing if doc.content_hash}
+            
+            # Load products
+            products = session.exec(
+                select(Product)
+                .join(ProductFamily)
+                .where(ProductFamily.brand_id == brand_id)
+            ).all()
+            for p in products:
+                products_map[p.name.lower()] = p.id
         
         logger.info(f"  Found {len(self.ingested_urls)} existing documents for {brand_name}")
+        logger.info(f"  Loaded {len(products_map)} products for linking")
         
         for idx, url in enumerate(urls):
             if url in self.ingested_urls:
@@ -288,6 +321,17 @@ class ComprehensiveIngester:
                     logger.info(f"      ⊘ Duplicate content")
                     continue
                 
+                # Try to link to product
+                product_id = None
+                title_lower = title.lower()
+                # Simple matching: if product name is in title
+                # Sort products by length desc to match longest name first (e.g. "Boss GT-1000" vs "Boss GT-1")
+                sorted_products = sorted(products_map.keys(), key=len, reverse=True)
+                for p_name in sorted_products:
+                    if p_name in title_lower:
+                        product_id = products_map[p_name]
+                        break
+
                 # Store document
                 with Session(engine) as session:
                     doc = Document(
@@ -295,7 +339,8 @@ class ComprehensiveIngester:
                         title=title[:200],
                         url=url,
                         content_hash=content_hash,
-                        last_updated=datetime.utcnow()
+                        last_updated=datetime.utcnow(),
+                        product_id=product_id
                     )
                     session.add(doc)
                     session.commit()
@@ -309,7 +354,8 @@ class ComprehensiveIngester:
                             "source": url,
                             "title": str(title),
                             "brand_id": int(brand_id),
-                            "doc_id": int(doc.id)
+                            "doc_id": int(doc.id),
+                            "product_id": product_id if product_id else 0
                         }
                     )
                 except Exception as ve:
@@ -322,7 +368,7 @@ class ComprehensiveIngester:
                 # Update tracker with progress
                 tracker.update_document_count(brand_name, ingested_count)
                 
-                logger.info(f"      ✅ Ingested ({ingested_count})")
+                logger.info(f"      ✅ Ingested ({ingested_count}) [Product: {product_id or 'None'}]")
                 
                 if ingested_count % 10 == 0:
                     await asyncio.sleep(2)  # Rate limiting
@@ -347,8 +393,9 @@ class ComprehensiveIngester:
         # Update tracker
         tracker.update_brand_start(brand_name, config['brand_id'])
         
-        page = await self.browser.new_page()
-        page.set_default_timeout(20000)
+        # Use the context created in init_browser
+        page = await self.context.new_page()
+        page.set_default_timeout(60000)
         
         try:
             all_urls = set()
@@ -399,11 +446,13 @@ class ComprehensiveIngester:
         finally:
             await page.close()
     
-    async def run(self):
-        """Run comprehensive ingestion for all brands"""
+    async def run(self, target_brand: str = None):
+        """Run comprehensive ingestion for all brands or a specific brand"""
         logger.info(f"\n{'=' * 70}")
         logger.info("🚀 COMPREHENSIVE BRAND DOCUMENTATION INGESTION")
         logger.info("Ingesting: Support Centers + Products + Specifications")
+        if target_brand:
+            logger.info(f"Target Brand: {target_brand}")
         logger.info(f"{'=' * 70}\n")
         
         # Start tracker
@@ -412,7 +461,15 @@ class ComprehensiveIngester:
         await self.init_browser()
         
         try:
-            for brand_name, config in COMPREHENSIVE_BRAND_CONFIGS.items():
+            brands_to_process = COMPREHENSIVE_BRAND_CONFIGS.items()
+            if target_brand:
+                if target_brand in COMPREHENSIVE_BRAND_CONFIGS:
+                    brands_to_process = [(target_brand, COMPREHENSIVE_BRAND_CONFIGS[target_brand])]
+                else:
+                    logger.error(f"Brand {target_brand} not found in configuration")
+                    return
+
+            for brand_name, config in brands_to_process:
                 await self.ingest_brand(brand_name, config)
                 await asyncio.sleep(2)  # Pause between brands
             
@@ -437,17 +494,21 @@ class ComprehensiveIngester:
             logger.info(f"{'=' * 70}\n")
             logger.info("✅ COMPREHENSIVE INGESTION COMPLETE")
             
-            # Mark tracker as complete
-            tracker.complete()
+            # Mark tracker as complete ONLY if running full suite
+            if not target_brand:
+                tracker.complete()
             
         finally:
             await self.close_browser()
 
 async def main():
     """Main entry point"""
+    import sys
+    target_brand = sys.argv[1] if len(sys.argv) > 1 else None
+    
     try:
         ingester = ComprehensiveIngester()
-        await ingester.run()
+        await ingester.run(target_brand)
     except KeyboardInterrupt:
         logger.info("\n⚠️  Ingestion interrupted by user")
         tracker.add_error("Ingestion interrupted by user")

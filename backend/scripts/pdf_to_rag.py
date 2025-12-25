@@ -17,6 +17,7 @@ from pathlib import Path
 import logging
 import hashlib
 from datetime import datetime
+import asyncio
 
 # Add parent to path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -113,7 +114,7 @@ class PDFToRAGProcessor:
         
         return product
     
-    def process_pdf(self, pdf_path, manifest_entry):
+    async def process_pdf(self, pdf_path, manifest_entry):
         """Process a single PDF: extract text and index in RAG"""
         logging.info(f"Processing: {pdf_path.name}")
         
@@ -179,7 +180,7 @@ class PDFToRAGProcessor:
                     "title": title
                 }
                 
-                ingest_document(text=text, metadata=metadata)
+                await ingest_document(text=text, metadata=metadata)
                 
                 logging.info(f"  ✅ Indexed: {len(text)} chars")
                 self.processed_count += 1
@@ -190,7 +191,7 @@ class PDFToRAGProcessor:
             self.error_count += 1
             return False
     
-    def process_brand(self, brand_name):
+    async def process_brand(self, brand_name):
         """Process all PDFs for a brand"""
         self.brand_name = brand_name
         brand_dir = BRAND_DOCS_DIR / brand_name.lower().replace(' ', '_')
@@ -213,7 +214,7 @@ class PDFToRAGProcessor:
         for entry in manifest:
             pdf_path = Path(entry['filepath'])
             if pdf_path.exists():
-                self.process_pdf(pdf_path, entry)
+                await self.process_pdf(pdf_path, entry)
             else:
                 logging.warning(f"PDF not found: {pdf_path}")
         
@@ -225,7 +226,7 @@ class PDFToRAGProcessor:
         logging.info(f"Errors: {self.error_count}")
         logging.info(f"{'='*80}\n")
     
-    def process_all_brands(self):
+    async def process_all_brands(self):
         """Process all brands in the brand_docs directory"""
         if not BRAND_DOCS_DIR.exists():
             logging.error(f"Brand docs directory not found: {BRAND_DOCS_DIR}")
@@ -237,20 +238,20 @@ class PDFToRAGProcessor:
         for brand_dir in brand_dirs:
             # Convert directory name back to brand name
             brand_name = brand_dir.name.replace('_', ' ').title()
-            self.process_brand(brand_name)
+            await self.process_brand(brand_name)
 
 
-def main():
+async def main():
     processor = PDFToRAGProcessor()
     
     if len(sys.argv) > 1:
         # Process specific brand
         brand_name = sys.argv[1]
-        processor.process_brand(brand_name)
+        await processor.process_brand(brand_name)
     else:
         # Process all brands
-        processor.process_all_brands()
+        await processor.process_all_brands()
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

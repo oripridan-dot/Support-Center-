@@ -23,7 +23,21 @@ This system crawls Halilit's product data and documentation to provide accurate,
 
 ## ⚙️ Getting Started
 
-### Backend Setup
+### Quick Start (Unified)
+The easiest way to start both the backend and frontend is from the root directory:
+
+1. Install all dependencies:
+   ```bash
+   npm run install-all
+   ```
+2. Start all services (Backend, Frontend, and Ingestion):
+   ```bash
+   npm run dev
+   ```
+
+### Manual Setup
+
+#### Backend Setup
 1. Navigate to the backend directory:
    ```bash
    cd backend
@@ -43,7 +57,7 @@ This system crawls Halilit's product data and documentation to provide accurate,
    uvicorn app.main:app --reload
    ```
 
-### Frontend Setup
+#### Frontend Setup
 1. Navigate to the frontend directory:
    ```bash
    cd frontend

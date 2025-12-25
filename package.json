@@ -1,0 +1,16 @@
+{
+  "name": "support-center",
+  "version": "1.0.0",
+  "description": "Halilit Support Center - RAG Application",
+  "scripts": {
+    "dev": "./scripts/dev.sh",
+    "dev:worker": "./scripts/dev.sh --worker",
+    "worker": "cd backend && python worker.py --mode continuous",
+    "worker:once": "cd backend && python worker.py --mode once",
+    "install-all": "cd backend && pip install -r requirements.txt && cd ../frontend && npm install",
+    "backend": "cd backend && uvicorn app.main:app --reload",
+    "frontend": "cd frontend && npm run dev"
+  },
+  "author": "",
+  "license": "ISC"
+}

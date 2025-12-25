@@ -40,9 +40,9 @@ BRAND_CONFIGS = {
             "https://en.rode.com/support/knowledge-base"
         ],
         "main_discovery_url": "https://en.rode.com/support",
-        "category_limit": 15,
-        "articles_per_category": 50,
-        "target_docs": 200
+        "category_limit": 50,
+        "articles_per_category": 200,
+        "target_docs": 1000
     },
     "Boss": {
         "brand_id": 2,
@@ -52,9 +52,9 @@ BRAND_CONFIGS = {
             "https://www.boss.info/en/support/downloads"
         ],
         "main_discovery_url": "https://www.boss.info/support",
-        "category_limit": 12,
-        "articles_per_category": 40,
-        "target_docs": 150
+        "category_limit": 50,
+        "articles_per_category": 200,
+        "target_docs": 1000
     },
     "Roland": {
         "brand_id": 1,
@@ -64,9 +64,9 @@ BRAND_CONFIGS = {
             "https://www.roland.com/support/knowledge-base/"
         ],
         "main_discovery_url": "https://www.roland.com/support/",
-        "category_limit": 15,
-        "articles_per_category": 50,
-        "target_docs": 250
+        "category_limit": 50,
+        "articles_per_category": 200,
+        "target_docs": 1000
     },
     "Mackie": {
         "brand_id": 21,
@@ -76,9 +76,9 @@ BRAND_CONFIGS = {
             "https://mackie.com/en/support/knowledge-base"
         ],
         "main_discovery_url": "https://mackie.com/support",
-        "category_limit": 12,
-        "articles_per_category": 45,
-        "target_docs": 180
+        "category_limit": 50,
+        "articles_per_category": 200,
+        "target_docs": 1000
     },
     "PreSonus": {
         "brand_id": 69,
@@ -88,9 +88,9 @@ BRAND_CONFIGS = {
             "https://presonus.com/support"
         ],
         "main_discovery_url": "https://support.presonus.com/hc/en-us",
-        "category_limit": 12,
-        "articles_per_category": 50,
-        "target_docs": 200
+        "category_limit": 50,
+        "articles_per_category": 200,
+        "target_docs": 1000
     }
 }
 
@@ -268,7 +268,7 @@ class Phase2Ingester:
         finally:
             await page.close()
     
-    async def run(self):
+    async def run(self, target_brand: str = None):
         """Execute multi-brand ingestion"""
         create_db_and_tables()
         
@@ -282,11 +282,22 @@ class Phase2Ingester:
             logger.info(f"\n{'=' * 60}")
             logger.info("PHASE 2 INGESTION STARTED")
             logger.info(f"Time: {start_time.isoformat()}")
-            logger.info(f"Brands: {', '.join(BRAND_CONFIGS.keys())}")
+            if target_brand:
+                logger.info(f"Target Brand: {target_brand}")
+            else:
+                logger.info(f"Brands: {', '.join(BRAND_CONFIGS.keys())}")
             logger.info(f"{'=' * 60}\n")
             
+            brands_to_process = ["Rode", "Boss", "Roland", "Mackie", "PreSonus"]
+            if target_brand:
+                if target_brand in BRAND_CONFIGS:
+                    brands_to_process = [target_brand]
+                else:
+                    logger.error(f"Brand {target_brand} not found in configuration")
+                    return
+
             # Ingest each brand sequentially
-            for brand_name in ["Rode", "Boss", "Roland", "Mackie", "PreSonus"]:
+            for brand_name in brands_to_process:
                 if brand_name in BRAND_CONFIGS:
                     config = BRAND_CONFIGS[brand_name]
                     try:
@@ -318,15 +329,18 @@ class Phase2Ingester:
             
             logger.info(f"{'=' * 60}\n")
             
-            # Mark tracker as complete
-            tracker.complete()
+            # Mark tracker as complete ONLY if running full suite
+            if not target_brand:
+                tracker.complete()
             
         finally:
             await self.close_browser()
 
 async def main():
+    import sys
+    target_brand = sys.argv[1] if len(sys.argv) > 1 else None
     ingester = Phase2Ingester()
-    await ingester.run()
+    await ingester.run(target_brand)
 
 if __name__ == "__main__":
     asyncio.run(main())

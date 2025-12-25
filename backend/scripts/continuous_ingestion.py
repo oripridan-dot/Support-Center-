@@ -114,6 +114,13 @@ class ContinuousIngestionService:
             try:
                 logger.info(f"\n[{completed_brands + 1}/{total_brands}] Starting ingestion for: {brand_name} ({item['doc_count']} existing docs)")
                 
+                # Reload tracker to get latest state from previous script run
+                tracker.reload()
+                
+                # Ensure is_running is True (in case a script turned it off)
+                if not tracker.status.get("is_running"):
+                    tracker.start("Complete Catalog Ingestion")
+                
                 tracker.update_step(
                     step=f"[{completed_brands + 1}/{total_brands}] Ingesting {brand_name}...",
                     brand=brand_name
@@ -124,16 +131,24 @@ class ContinuousIngestionService:
                 if item["script"] == "ingest_generic_brand.py":
                     args.append(item["website"] or "")
 
+                # Update tracker before running script to ensure UI is in sync
+                tracker.update_brand_start(brand_name, item["id"])
+                
                 await self.run_ingestion_script(item["script"], brand_name, args)
                 completed_brands += 1
                 
                 # Wait before next brand (be respectful to servers)
                 if completed_brands < total_brands:
-                    logger.info(f"Waiting 5 seconds before next brand...")
-                    await asyncio.sleep(5)
+                    logger.info(f"Waiting 2 seconds before next brand...")
+                    await asyncio.sleep(2)
             except Exception as e:
                 logger.error(f"Failed to ingest {brand_name}: {e}")
                 continue
+        
+        # Run optimization after cycle
+        logger.info("\n🧹 Running Catalog Optimization...")
+        tracker.update_step("Optimizing catalog and linking products...")
+        await self.run_ingestion_script("optimize_catalog.py", "System", [])
         
         # Cycle complete
         cycle_end = datetime.now()

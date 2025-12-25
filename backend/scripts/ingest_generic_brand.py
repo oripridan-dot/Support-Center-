@@ -25,6 +25,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from app.core.database import engine
 from app.models.sql_models import Brand, Product, ProductFamily, Document
 from app.services.rag_service import ingest_document
+from app.services.ingestion_tracker import tracker
 
 # Configure logging
 logging.basicConfig(
@@ -44,6 +45,8 @@ class GenericIngester:
         self.product_urls: Set[str] = set()
         self.pdf_urls: Set[str] = set()
         self.brand_id = None
+        self.processed_count = 0
+        self.ingested_count = 0
         
         with Session(engine) as session:
             brand = session.exec(select(Brand).where(Brand.name == brand_name)).first()
@@ -53,6 +56,10 @@ class GenericIngester:
                 session.commit()
                 session.refresh(brand)
             self.brand_id = brand.id
+        
+        # Initialize tracker for this brand
+        tracker.reload()
+        tracker.update_brand_start(brand_name, self.brand_id)
 
     async def run(self):
         if not self.base_url:
@@ -71,30 +78,46 @@ class GenericIngester:
             
             logger.info(f"Found {len(self.product_urls)} potential product pages and {len(self.pdf_urls)} PDFs for {self.brand_name}")
             
-            # Limit to 50 products for generic ingestion
-            to_process = list(self.product_urls)[:50]
+            tracker.update_urls(len(self.product_urls) + len(self.pdf_urls), 0, brand_name=self.brand_name)
+            
+            # Limit to 1000 products for generic ingestion (increased from 50)
+            to_process = list(self.product_urls)[:1000]
             for url in to_process:
                 try:
                     await self.ingest_product_page(page, url)
+                    self.processed_count += 1
+                    tracker.update_urls(len(self.product_urls) + len(self.pdf_urls), self.processed_count, brand_name=self.brand_name)
                 except Exception as e:
                     logger.error(f"Error ingesting {url}: {e}")
             
             # Process PDFs
-            for url in list(self.pdf_urls)[:20]:
+            for url in list(self.pdf_urls)[:100]:
                 try:
                     await self.ingest_pdf(url)
+                    self.processed_count += 1
+                    tracker.update_urls(len(self.product_urls) + len(self.pdf_urls), self.processed_count, brand_name=self.brand_name)
                 except Exception as e:
                     logger.error(f"Error ingesting PDF {url}: {e}")
             
+            # Mark as complete
+            tracker.update_brand_complete(self.brand_name, self.ingested_count)
+            
             await browser.close()
 
-    async def discover_products(self, page: Page, url: str):
-        """Simple discovery: look for links containing 'product', 'item', or in 'collections'"""
+    async def discover_products(self, page: Page, url: str, depth: int = 0):
+        """Discovery with limited recursion for category pages"""
+        if depth > 1: return
+        if url in self.visited_urls: return
+        self.visited_urls.add(url)
+
         try:
+            logger.info(f"Discovering at {url} (depth={depth})")
             await page.goto(url, wait_until="domcontentloaded", timeout=60000)
             await asyncio.sleep(2)
             
             links = await page.query_selector_all("a")
+            category_candidates = []
+
             for link in links:
                 href = await link.get_attribute("href")
                 if not href: continue
@@ -120,7 +143,21 @@ class GenericIngester:
                 if any(pattern in href.lower() for pattern in ["/product", "/item", "/p/", "/shop/", "/collections/"]):
                     if href not in self.product_urls:
                         self.product_urls.add(href)
-                        if len(self.product_urls) >= 100: break # Cap discovery
+                        tracker.update_urls_discovered(self.brand_name, len(self.product_urls) + len(self.pdf_urls))
+                        if len(self.product_urls) >= 1000: break # Cap discovery at 1000
+                
+                # Category detection: if it contains brand name and we are at depth 0
+                elif depth == 0 and self.brand_name.lower() in href.lower():
+                    if href not in self.visited_urls:
+                        category_candidates.append(href)
+            
+            # Recursively check categories if we haven't found enough products
+            if depth == 0 and len(self.product_urls) < 100:
+                logger.info(f"Found {len(category_candidates)} potential category links. Exploring...")
+                for cat_url in category_candidates[:20]: # Limit to 20 categories
+                    if len(self.product_urls) >= 1000: break
+                    await self.discover_products(page, cat_url, depth=1)
+
         except Exception as e:
             logger.error(f"Discovery error at {url}: {e}")
 
@@ -231,6 +268,8 @@ class GenericIngester:
                     }
                 )
                 logger.info(f"✅ RAG Ingested: {title} ({doc_type})")
+                self.ingested_count += 1
+                tracker.update_document_count(self.brand_name, self.ingested_count)
             except Exception as e:
                 logger.error(f"RAG error for {url}: {e}")
 

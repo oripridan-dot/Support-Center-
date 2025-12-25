@@ -12,3 +12,5 @@ python-dotenv
 httpx
 apscheduler
 pydantic-settings
+google-generativeai
+langchain-google-genai
