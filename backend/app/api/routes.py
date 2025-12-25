@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from typing import List, Optional, Dict, Any
 from app.services.llm import llm_service
 from app.services.vector_db import vector_db
+from datetime import datetime
 
 router = APIRouter()
 
@@ -14,7 +15,8 @@ class SearchResponse(BaseModel):
     answer: str
     sources: List[Dict[str, Any]]
 
-@router.post("/search", response_model=SearchResponse)
+# --- Search Endpoints ---
+@router.post("/v1/search", response_model=SearchResponse)
 async def search(request: SearchRequest):
     try:
         # 1. Get embedding for query
@@ -41,6 +43,53 @@ async def search(request: SearchRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@router.get("/health")
+@router.get("/v1/health")
 async def health():
     return {"status": "ok"}
+
+# --- Ingestion Endpoints (Mock for Frontend Compatibility) ---
+
+class IngestionStatus(BaseModel):
+    is_running: bool
+    current_brand: Optional[str]
+    current_step: Optional[str]
+    current_document: Optional[str]
+    total_documents: int
+    current_brand_documents: Optional[int]
+    current_brand_target: Optional[int]
+    current_brand_progress: Optional[int]
+    documents_by_brand: Dict[str, int]
+    urls_discovered: int
+    urls_processed: int
+    progress_percent: int
+    last_updated: str
+    errors: List[Dict[str, str]]
+    start_time: Optional[str]
+    estimated_completion: Optional[str]
+    brand_progress: Dict[str, Any]
+
+@router.get("/ingestion/status", response_model=IngestionStatus)
+async def get_ingestion_status():
+    return IngestionStatus(
+        is_running=False,
+        current_brand=None,
+        current_step=None,
+        current_document=None,
+        total_documents=0,
+        current_brand_documents=0,
+        current_brand_target=0,
+        current_brand_progress=0,
+        documents_by_brand={},
+        urls_discovered=0,
+        urls_processed=0,
+        progress_percent=0,
+        last_updated=datetime.now().isoformat(),
+        errors=[],
+        start_time=None,
+        estimated_completion=None,
+        brand_progress={}
+    )
+
+@router.post("/ingestion/start")
+async def start_ingestion():
+    return {"message": "Ingestion started (mock)"}
