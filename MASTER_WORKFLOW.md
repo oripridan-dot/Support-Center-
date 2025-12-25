@@ -1,56 +1,49 @@
-# Master Workflow: Halilit Brands Documentation Coverage
+# Halilit Support Center - Local AI Workflow
 
-This document defines the **ONLY** authorized workflow for this project. All other workflows are deprecated.
+## 🚨 CRITICAL: MASTER WORKFLOW ADHERENCE 🚨
+**ALL work must strictly follow this file.**
 
-## Goal
-Achieve 100% official documentation coverage for all brands in the Halilit Brands List, ensuring the UI reflects this status in real-time.
+## Context & Focus
+- **Project:** Local AI Product Knowledge System for Halilit Staff.
+- **Goal:** Instant, private, and accurate answers using local LLMs.
+- **Stack:** FastAPI (Backend), Electron/React (Frontend), Qdrant (Vector Store), Ollama (LLM Runtime).
 
-## The Workflow
+## Workflow Execution Rules
 
-### 1. Brand Selection
-- **Source of Truth:** `HALILIT_BRANDS_LIST.md`
-- **Process:** Select brands **one by one** from the list.
-- **Constraint:** Do NOT move to the next brand until the current brand is 100% complete.
+### 1. Local AI Stack
+- **Runtime:** Ollama must be running (`ollama serve`).
+- **Model:** `llama3.2:3b` (or `phi3:mini` for lower RAM).
+- **Embeddings:** `nomic-embed-text`.
+- **Vector DB:** Qdrant running in Docker (`docker run -p 6333:6333 qdrant/qdrant`).
 
-### 2. Planning (Per Brand)
-- Create a specific scraping plan for the brand.
-- **Objective:** 100% official documentation coverage (Manuals, Specs, FAQs, Drivers/Firmware).
-- **Future-proofing:** The plan must include a strategy for fast, accurate future updates (e.g., monitoring specific URL patterns, RSS feeds, or sitemaps).
+### 2. Data Ingestion
+- **Source:** Official PDF manuals and product pages.
+- **Process:**
+    1.  **Scrape/Download:** Use Playwright for authenticated portals.
+    2.  **Extract:** PyMuPDF for PDFs.
+    3.  **Chunk:** Semantic chunking (preserve context).
+    4.  **Enrich:** Add metadata (Brand, Model, Category).
+    5.  **Embed & Store:** Generate embeddings and upsert to Qdrant.
 
-### 3. Execution & Resolution
-- Execute the scraping plan.
-- Resolve ALL issues immediately. Do not defer fixes.
-- **Validation:** Verify that the data is correctly ingested into the Vector DB (ChromaDB) and is retrievable.
+### 3. Backend Development (FastAPI)
+- **Location:** `backend/app/`
+- **Standards:**
+    - Async/Await for all I/O.
+    - Pydantic models for all requests/responses.
+    - Type hints everywhere.
+- **Endpoints:**
+    - `/api/v1/search`: RAG search with filters.
+    - `/api/v1/ingest`: Trigger ingestion (admin only).
 
-### 4. Real-Time UI Synchronization
-- The UI must reflect the backend's status in real-time.
-- **All Brands Page:** Must show a coverage bar for each brand based on *actual* ingested data vs. expected data.
-- **Ingestion Panel:** Must show accurate, live progress of the current scraping/ingestion task.
+### 4. Frontend Development (Electron/React)
+- **Location:** `frontend/`
+- **Standards:**
+    - Tailwind CSS for styling.
+    - React Query for data fetching.
+    - Electron IPC for native features (if needed).
 
-### 5. Completion Criteria
-- A brand is "Complete" ONLY when:
-    - All targeted documentation is scraped.
-    - All data is ingested and indexed.
-    - The UI shows 100% coverage.
-    - Search queries for the brand return accurate results.
-
-### 6. Iteration
-- Once a brand is Complete, mark it as such in `HALILIT_BRANDS_LIST.md`.
-- Proceed to the next brand in the list.
-
-## UI Requirements
-
-### All Brands Page
-- **List View:** Display all brands from the master list.
-- **Coverage Bar:** Visual indicator (0-100%) for each brand.
-- **Data Source:** Real-time query to the backend to count indexed documents vs. estimated total.
-
-### Ingestion Panel
-- **Status:** Live updates (Running, Completed, Failed).
-- **Logs:** Real-time stream of ingestion logs.
-- **Accuracy:** No "fake" progress bars. Display actual processed items count.
-
-## Optimization Guidelines
-- **Speed:** Use parallel processing where safe (respecting rate limits).
-- **Structure:** Maintain a consistent folder structure for scraped data (`backend/data/<brand_name>/`).
-- **Caching:** Cache successful requests to avoid redundant network calls during development.
+## File Structure
+- `backend/app/services/`: Business logic (LLM, VectorDB, Ingestion).
+- `backend/app/api/`: API Routes.
+- `frontend/electron/`: Electron main process.
+- `frontend/src/`: React UI.
