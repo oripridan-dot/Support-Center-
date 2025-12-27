@@ -21,6 +21,7 @@ from app.models.sql_models import Brand
 from app.workers.explorer import ExplorerWorker
 from app.workers.scraper import ScraperWorker
 from app.workers.ingester import IngesterWorker
+from app.services.activity_logger import activity_logger
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/hp", tags=["High-Performance Workers"])
@@ -373,40 +374,62 @@ async def get_queue_status():
 async def get_worker_breakdown():
     """Get detailed worker breakdown by category"""
     stats = hp_worker_pool.get_stats()
+    health = hp_worker_pool.get_health()
+    
+    def calc_success_rate(category: str) -> float:
+        """Calculate success rate for a category"""
+        completed = stats["metrics"]["completed"].get(category, 0)
+        failed = stats["metrics"]["failed"].get(category, 0)
+        total = completed + failed
+        return 100.0 if total == 0 else (completed / total * 100)
+    
     return {
         "total_workers": 22,
-        "categories": {
+        "active_tasks": stats["active_tasks"],
+        "worker_categories": {
             "scraping": {
                 "workers": 6,
                 "queue_size": stats["queues"]["scraping"],
                 "tasks_completed": stats["metrics"]["completed"].get("scraping", 0),
-                "avg_duration": stats["metrics"]["avg_duration"].get("scraping", 0)
+                "tasks_failed": stats["metrics"]["failed"].get("scraping", 0),
+                "avg_duration": stats["metrics"]["avg_duration"].get("scraping", 0),
+                "success_rate": calc_success_rate("scraping")
             },
             "rag_query": {
                 "workers": 10,
                 "queue_size": stats["queues"]["rag_query"],
                 "tasks_completed": stats["metrics"]["completed"].get("rag_query", 0),
-                "avg_duration": stats["metrics"]["avg_duration"].get("rag_query", 0)
+                "tasks_failed": stats["metrics"]["failed"].get("rag_query", 0),
+                "avg_duration": stats["metrics"]["avg_duration"].get("rag_query", 0),
+                "success_rate": calc_success_rate("rag_query")
             },
             "embedding": {
                 "workers": 3,
                 "queue_size": stats["queues"]["embedding"],
                 "tasks_completed": stats["metrics"]["completed"].get("embedding", 0),
-                "avg_duration": stats["metrics"]["avg_duration"].get("embedding", 0)
+                "tasks_failed": stats["metrics"]["failed"].get("embedding", 0),
+                "avg_duration": stats["metrics"]["avg_duration"].get("embedding", 0),
+                "success_rate": calc_success_rate("embedding")
             },
             "batch_processing": {
                 "workers": 2,
                 "queue_size": stats["queues"]["batch_processing"],
                 "tasks_completed": stats["metrics"]["completed"].get("batch_processing", 0),
-                "avg_duration": stats["metrics"]["avg_duration"].get("batch_processing", 0)
+                "tasks_failed": stats["metrics"]["failed"].get("batch_processing", 0),
+                "avg_duration": stats["metrics"]["avg_duration"].get("batch_processing", 0),
+                "success_rate": calc_success_rate("batch_processing")
             },
             "maintenance": {
                 "workers": 1,
                 "queue_size": stats["queues"]["maintenance"],
                 "tasks_completed": stats["metrics"]["completed"].get("maintenance", 0),
-                "avg_duration": stats["metrics"]["avg_duration"].get("maintenance", 0)
+                "tasks_failed": stats["metrics"]["failed"].get("maintenance", 0),
+                "avg_duration": stats["metrics"]["avg_duration"].get("maintenance", 0),
+                "success_rate": calc_success_rate("maintenance")
             }
-        }
+        },
+        "circuit_breakers": health["circuit_breakers"],
+        "overall_health": health["healthy"]
     }
 
 
@@ -415,6 +438,13 @@ async def get_circuit_breaker_status():
     """Get status of all circuit breakers"""
     stats = hp_worker_pool.get_stats()
     return stats["circuit_breakers"]
+
+
+@router.get("/activity")
+async def get_recent_activity(limit: int = 20):
+    """Get recent worker activity for UI display"""
+    events = activity_logger.get_recent_events(limit)
+    return {"events": events, "count": len(events)}
 
 
 # ============================================================================

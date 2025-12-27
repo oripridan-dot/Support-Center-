@@ -10,14 +10,15 @@ from .brands import router as brands_router
 from .chat import router as chat_router
 from .documents import router as documents_router
 from .async_endpoints import router as async_router
-# Legacy ingestion and workers routers removed - using HP 22-worker system only
+from .ingestion import router as ingestion_router  # REAL ingestion router
 
 router = APIRouter()
 
-# Include sub-routers (removed legacy ingestion and workers)
+# Include sub-routers with REAL ingestion
 router.include_router(brands_router, prefix="/brands", tags=["brands"])
 router.include_router(chat_router, prefix="/chat", tags=["chat"])
 router.include_router(documents_router, prefix="/documents", tags=["documents"])
+router.include_router(ingestion_router, prefix="/ingestion", tags=["ingestion"])
 router.include_router(async_router, prefix="/v2", tags=["async", "performance"])
 
 class SearchRequest(BaseModel):
@@ -60,49 +61,6 @@ async def search(request: SearchRequest):
 async def health():
     return {"status": "ok"}
 
-# --- Ingestion Endpoints (Mock for Frontend Compatibility) ---
+# --- Ingestion Endpoints now handled by ingestion.py router ---
+# Mock endpoints removed - using REAL implementation
 
-class IngestionStatus(BaseModel):
-    is_running: bool
-    current_brand: Optional[str]
-    current_step: Optional[str]
-    current_document: Optional[str]
-    total_documents: int
-    current_brand_documents: Optional[int]
-    current_brand_target: Optional[int]
-    current_brand_progress: Optional[int]
-    documents_by_brand: Dict[str, int]
-    urls_discovered: int
-    urls_processed: int
-    progress_percent: int
-    last_updated: str
-    errors: List[Dict[str, str]]
-    start_time: Optional[str]
-    estimated_completion: Optional[str]
-    brand_progress: Dict[str, Any]
-
-@router.get("/ingestion/status", response_model=IngestionStatus)
-async def get_ingestion_status():
-    return IngestionStatus(
-        is_running=False,
-        current_brand=None,
-        current_step=None,
-        current_document=None,
-        total_documents=0,
-        current_brand_documents=0,
-        current_brand_target=0,
-        current_brand_progress=0,
-        documents_by_brand={},
-        urls_discovered=0,
-        urls_processed=0,
-        progress_percent=0,
-        last_updated=datetime.now().isoformat(),
-        errors=[],
-        start_time=None,
-        estimated_completion=None,
-        brand_progress={}
-    )
-
-@router.post("/ingestion/start")
-async def start_ingestion():
-    return {"message": "Ingestion started (mock)"}

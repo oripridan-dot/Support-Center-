@@ -75,10 +75,13 @@ export default function HighPerformanceMonitor() {
 
   // Fetch brands list
   useEffect(() => {
-    fetch('/api/brands', { signal: AbortSignal.timeout(3000) })
+    fetch('/api/brands', { signal: AbortSignal.timeout(30000) })
       .then(res => res.json())
       .then(data => setBrands(data))
-      .catch(err => console.error('Failed to fetch brands:', err));
+      .catch(err => {
+        console.error('Failed to fetch brands:', err);
+        setBrands([]);
+      });
   }, []);
 
   // Pipeline control handlers
@@ -115,27 +118,48 @@ export default function HighPerformanceMonitor() {
   // Fetch data
   const fetchData = async () => {
     try {
-      const [statsRes, healthRes, pipelineRes] = await Promise.all([
-        fetch('/api/hp/stats', { signal: AbortSignal.timeout(5000) }),
-        fetch('/api/hp/health', { signal: AbortSignal.timeout(5000) }),
-        fetch('/api/hp/pipeline/status', { signal: AbortSignal.timeout(5000) })
+      const [statsRes, healthRes, pipelineRes, activityRes] = await Promise.all([
+        fetch('/api/hp/stats', { signal: AbortSignal.timeout(30000) }),
+        fetch('/api/hp/health', { signal: AbortSignal.timeout(30000) }),
+        fetch('/api/hp/pipeline/status', { signal: AbortSignal.timeout(30000) }),
+        fetch('/api/hp/activity?limit=5', { signal: AbortSignal.timeout(30000) })
       ]);
 
       if (statsRes.ok && healthRes.ok) {
         const statsData = await statsRes.json();
         const healthData = await healthRes.json();
         const pipelineData = pipelineRes.ok ? await pipelineRes.json() : { is_running: false };
+        const activityData = activityRes.ok ? await activityRes.json() : { events: [] };
         
         console.log('HP Stats:', statsData);
         console.log('HP Health:', healthData);
         console.log('HP Pipeline Status:', pipelineData);
+        console.log('HP Activity:', activityData);
         
         // Transform HP stats to match expected metrics format
         const workersByCategory: { [key: string]: { count: number; active: number } } = {};
+        
+        // Get queue sizes and completed metrics
+        const queues = statsData.queues || {};
+        const completed = statsData.metrics?.completed || {};
+        
         Object.entries(statsData.workers?.by_category || {}).forEach(([category, count]) => {
-          workersByCategory[category.toUpperCase()] = {
+          const categoryKey = category.toUpperCase();
+          const queueSize = queues[category] || 0;
+          const completedCount = completed[category] || 0;
+          
+          // Show workers as "active" if they have queue OR have completed work
+          let activeWorkers = 0;
+          if (queueSize > 0) {
+            activeWorkers = Math.min(queueSize, count as number);
+          } else if (completedCount > 0) {
+            // If tasks were completed, show some workers were active
+            activeWorkers = Math.min(Math.ceil(completedCount / 10), count as number);
+          }
+          
+          workersByCategory[categoryKey] = {
             count: count as number,
-            active: 0 // Will be updated from active_tasks if needed
+            active: activeWorkers
           };
         });
         
@@ -145,15 +169,24 @@ export default function HighPerformanceMonitor() {
         const retriesMetrics = statsData.metrics?.retries || {};
         const avgDurationMetrics = statsData.metrics?.avg_duration || {};
         
+        // Normalize all metric keys to UPPERCASE to match workers keys
+        const normalizeKeys = (obj: any) => {
+          const normalized: any = {};
+          Object.entries(obj).forEach(([key, val]) => {
+            normalized[key.toUpperCase()] = val;
+          });
+          return normalized;
+        };
+        
         const transformedMetrics: WorkerMetrics = {
           timestamp: new Date().toISOString(),
           workers: workersByCategory,
-          queue_sizes: statsData.queues || {},
-          processed: completedMetrics,
-          failed: failedMetrics,
-          retries: retriesMetrics,
+          queue_sizes: normalizeKeys(statsData.queues || {}),
+          processed: normalizeKeys(completedMetrics),
+          failed: normalizeKeys(failedMetrics),
+          retries: normalizeKeys(retriesMetrics),
           avg_duration_ms: Object.entries(avgDurationMetrics).reduce((acc, [key, val]) => {
-            acc[key] = val ? (val as number) * 1000 : 0; // Convert seconds to ms, handle null
+            acc[key.toUpperCase()] = val ? (val as number) * 1000 : 0;
             return acc;
           }, {} as { [key: string]: number }),
           success_rate: Object.keys(workersByCategory).reduce((acc, key) => {
@@ -198,8 +231,11 @@ export default function HighPerformanceMonitor() {
         const actuallyRunning = pipelineData.is_running === true;
         setIsRunning(actuallyRunning);
         
-        // Update activity log from pipeline progress
-        if (pipelineData.progress && pipelineData.progress.activity_log) {
+        // Update activity log from real activity logger
+        if (activityData.events && activityData.events.length > 0) {
+          const activities = activityData.events.map((event: any) => event.message);
+          setRecentActivity(activities);
+        } else if (pipelineData.progress && pipelineData.progress.activity_log) {
           const activities = pipelineData.progress.activity_log.map((item: any) => 
             `${item.message}`
           );

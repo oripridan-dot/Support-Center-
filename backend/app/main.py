@@ -27,7 +27,7 @@ try:
     from app.workers.high_performance import (
         worker_pool,
         batch_processor,
-        openai_breaker,
+        gemini_breaker,
         chromadb_breaker
     )
     OLD_SYSTEM_AVAILABLE = True

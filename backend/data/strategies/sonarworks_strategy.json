@@ -122,6 +122,22 @@
       "product_name": null,
       "priority": 5,
       "estimated_size": null
+    },
+    {
+      "url": "https://www.sonarworks.com/blog/product-news/new-ebook-released-best-pro-studio-headphones-guide-for-2025",
+      "type": "manual",
+      "title": "<img class=\"w-100 wp-post-image\" src=\"https://blog-uploads.imgix.net/2025/02/eBook-landing-1.jpg?aut",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.sonarworks.com/blog/learn/ai-cover-songs-producer-guide",
+      "type": "manual",
+      "title": "<img src=\"https://blog-uploads.imgix.net/2025/08/Screenshot-2025-08-04-at-14.48.12.png?auto=compress",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
     }
   ],
   "navigation_pattern": "hierarchical",
@@ -135,6 +151,6 @@
   "download_links": false,
   "requires_javascript": true,
   "rate_limit_ms": 1000,
-  "total_estimated_docs": 15,
-  "notes": "Discovered 15 documentation sources"
+  "total_estimated_docs": 17,
+  "notes": "Discovered 17 documentation sources"
 }

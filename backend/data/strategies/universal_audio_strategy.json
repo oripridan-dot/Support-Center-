@@ -1,5 +1,5 @@
 {
-  "brand_id": 1,
+  "brand_id": 7,
   "brand_name": "Universal Audio",
   "base_url": "https://www.uaudio.com",
   "documentation_urls": [
@@ -2130,6 +2130,318 @@
       "product_name": null,
       "priority": 7,
       "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/pages/download-luna",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/pages/analog-hardware",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/pages/downloads",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/pages/download-ox",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/pages/download-mics",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/pages/download-volt",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/pages/download-uad-apollo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/pages/download-uafx-pedals",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/pages/download-ua-connect",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/pages/download-apollo-e-series",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/pages/on-sale-hardware",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/collections/analog-hardware",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/collections/uad-plugins",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/collections/plugin-bundles",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/collections/build-your-own-plugin-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/ua/uad-powers-flosstradamus-edm-productions",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/ua/inner-game-of-vocal-production",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/ua/uad-desert-island-plugins",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/ua/support-report-tubes",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/press/0119_nevesoftwarealliance",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/press/uad-software-59",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/press/uad-software-77",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/press/software-release-99",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/press/software-release-910",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/press/get-top-plugins-avalon-others",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/press/new-downloadable-luna-sessions",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/press/control-surface-support-sidechaining-in-luna-2",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/press/ua-supports-ukraine",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/press/ua-native-plugin-now-available",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/press/ua-releases-waterfall-rotary-speaker-plugin",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/press/ua-releases-immersive-audio-support",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/press/universal-audio-congratulates-2024-grammy-nominees-in-music-production",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/ua/how-to-use-plugins-on-vocals",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/ua/best-compressor-plugins",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/press/back-to-school-back-to-music-universal-audio-supports-save-the-music-foundation-with-charitable-give",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/ua/2024-holiday-gift-guide",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/press/apollo-constellations-launch-ushers-in-new-era-of-ua-recording-hardware-and-software",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/ua/unlock-the-secrets-of-uafx-enigmatic-82-overdrive-special-amp-emulator",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/blogs/ua/how-to-stop-making-the-same-production-mistakes",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
     }
   ],
   "navigation_pattern": "hierarchical",
@@ -2143,6 +2455,6 @@
   "download_links": false,
   "requires_javascript": true,
   "rate_limit_ms": 1000,
-  "total_estimated_docs": 266,
-  "notes": "Discovered 266 documentation sources"
+  "total_estimated_docs": 305,
+  "notes": "Discovered 305 documentation sources"
 }

@@ -3,7 +3,6 @@ import { Home, Grid, Menu, X, Activity, Zap } from 'lucide-react';
 import { useState } from 'react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
-import IngestionMonitor from './IngestionMonitor';
 import ApiHealthCheck from './ApiHealthCheck';
 
 function cn(...inputs: ClassValue[]) {
@@ -62,8 +61,6 @@ export default function Sidebar() {
             ))}
           </nav>
         </div>
-
-        <IngestionMonitor variant="sidebar" />
 
         <div className="p-6 pt-0 mt-auto">
           <div className="pt-6 border-t border-gray-100">

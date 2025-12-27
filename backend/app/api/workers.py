@@ -226,7 +226,7 @@ async def get_circuit_breaker_status():
         Circuit breaker states for OpenAI, ChromaDB, and Playwright
     """
     return {
-        "openai": openai_breaker.get_state(),
+        "gemini": gemini_breaker.get_state(),
         "chromadb": chromadb_breaker.get_state(),
         "playwright": playwright_breaker.get_state()
     }

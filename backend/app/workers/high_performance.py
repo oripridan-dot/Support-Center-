@@ -309,7 +309,7 @@ class SpecializedWorkerPool:
         
         # Circuit breakers
         self.circuit_breakers = {
-            "openai": CircuitBreaker("openai", failure_threshold=5, recovery_timeout=60),
+            "gemini": CircuitBreaker("gemini", failure_threshold=5, recovery_timeout=60),
             "chromadb": CircuitBreaker("chromadb", failure_threshold=3, recovery_timeout=30),
             "playwright": CircuitBreaker("playwright", failure_threshold=5, recovery_timeout=45),
         }
@@ -692,7 +692,7 @@ worker_pool = SpecializedWorkerPool()
 batch_processor = BatchProcessor(worker_pool)
 
 # Export circuit breakers for use in services
-openai_breaker = worker_pool.circuit_breakers["openai"]
+gemini_breaker = worker_pool.circuit_breakers["gemini"]
 chromadb_breaker = worker_pool.circuit_breakers["chromadb"]
 playwright_breaker = worker_pool.circuit_breakers["playwright"]
 

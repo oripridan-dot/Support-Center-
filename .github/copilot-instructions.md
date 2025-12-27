@@ -1,5 +1,21 @@
 # Halilit Support Center - Coding & Workflow Guidelines
 
+## 🚨 MANDATORY: Command Execution Rules 🚨
+**ALWAYS use timeout for EVERY terminal command that could hang:**
+- `timeout 5s` for quick checks (curl, ps, grep, lsof, jq)
+- `timeout 10s` for database queries (sqlite3, psql)
+- `timeout 30s` for npm/build commands
+- `timeout 60s` for scraping/long operations
+
+**Examples:**
+```bash
+timeout 5s curl -s http://localhost:8000/health
+timeout 10s sqlite3 db.db "SELECT COUNT(*) FROM table"
+timeout 30s npm install
+```
+
+**This prevents commands from hanging and blocking the entire workflow.**
+
 ## 🚨 CRITICAL: MASTER WORKFLOW ADHERENCE 🚨
 **ALL work must strictly follow the `MASTER_WORKFLOW.md` file.**
 - **One Brand at a Time:** Do not context switch between brands. Finish one completely before starting the next.

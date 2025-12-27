@@ -6,15 +6,8 @@ from ..core.database import get_session
 from ..models.sql_models import Product, ProductFamily, Brand
 from sqlmodel import select
 import uuid
-# Note: google.generativeai is deprecated, but langchain still uses it internally
-# The warning is safe to ignore for now as langchain handles the migration
-from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
-
+from .llm import llm_service
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-
-# Initialize LangChain components
-embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=settings.GEMINI_API_KEY)
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp", google_api_key=settings.GEMINI_API_KEY, temperature=0.3)
 
 collection = get_collection()
 
@@ -255,11 +248,8 @@ async def ask_question(question: str, brand_id: int = None, is_first_message: bo
     else:
         prompt += "\n\nNOTE: Do NOT include a greeting. Start directly with the answer."
 
-    response = await llm.ainvoke(prompt)
-    
-    answer = response.content
-    if isinstance(answer, list):
-        answer = "\n".join([item.get("text", "") if isinstance(item, dict) else str(item) for item in answer])
+    # Use unified llm_service for answer generation
+    answer = llm_service.generate_response(prompt, "")
     
     # Extract unique images and PDFs from sources
     all_images = []

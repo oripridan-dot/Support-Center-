@@ -27,10 +27,19 @@ export default function BrandsPage() {
   const [ingestionStatus, setIngestionStatus] = useState<IngestionStatus | null>(null);
 
   useEffect(() => {
-    fetch('/api/brands/stats')
+    fetch('/api/brands')
       .then(res => res.json())
       .then(data => {
-        setBrands(data);
+        // Transform basic brand data to match expected format
+        const brandsWithStats = data.map((brand: any) => ({
+          ...brand,
+          total_documents: brand.total_documents || 0,
+          target_documents: brand.target_documents || 0,
+          document_coverage_percentage: brand.total_documents && brand.target_documents 
+            ? (brand.total_documents / brand.target_documents) * 100 
+            : 0
+        }));
+        setBrands(brandsWithStats);
         setLoading(false);
       })
       .catch(err => {

@@ -14,6 +14,8 @@ from app.core.database import get_session
 from app.models.ingestion_status import IngestionStatus as DBIngestionStatus
 from app.services.ingestion_tracker import tracker, INGESTION_STATUS_FILE
 from app.services.pa_brands_scraper import PABrandsScraper
+from app.services.real_ingestion import real_ingestion_service
+from app.services.hp_ingestion_service import hp_ingestion_service
 
 logger = logging.getLogger(__name__)
 
@@ -49,30 +51,66 @@ class StartPipelineRequest(BaseModel):
     brand_id: Optional[int] = None
     parallel_mode: bool = True  # Enable parallel mode by default
 
-async def run_ingestion_task(brand_name: Optional[str], force_rescan: bool):
-    """Background task to run ingestion"""
-    scraper = PABrandsScraper(force_rescan=force_rescan)
-    if brand_name:
-        scraper.brands_to_scrape = [b for b in scraper.brands_to_scrape if b['name'].lower() == brand_name.lower()]
-        if not scraper.brands_to_scrape:
-            # If brand not found in default list, try to find it in DB or just pass the name if scraper handles it
-            # For now, we assume it must be in the list or we add it dynamically if we know the URL
-            # But PABrandsScraper needs the URL.
-            # Let's assume the scraper has the list.
-            logger.warning(f"Brand {brand_name} not found in scraper configuration.")
-            return
-
-    await scraper.run()
+async def run_real_ingestion_task(brand_name: str, force_rescan: bool, use_hp_workers: bool = True):
+    """REAL background task that uses HP workers for parallel processing"""
+    try:
+        if use_hp_workers:
+            logger.info(f"🚀 HP-POWERED INGESTION STARTED for {brand_name}")
+            result = await hp_ingestion_service.ingest_brand_via_hp_workers(
+                brand_name=brand_name,
+                force_rescan=force_rescan
+            )
+            logger.info(f"✅ HP ingestion completed for {brand_name}: {result}")
+            return result
+        else:
+            # Fallback to direct scraping (old way)
+            from app.core.database import engine
+            logger.info(f"🚀 DIRECT INGESTION STARTED for {brand_name}")
+            
+            with Session(engine) as session:
+                result = await real_ingestion_service.scrape_brand(
+                    brand_name=brand_name,
+                    session=session,
+                    force_rescan=force_rescan
+                )
+                logger.info(f"✅ Ingestion completed for {brand_name}: {result}")
+                return result
+    except Exception as e:
+        logger.error(f"❌ Ingestion failed for {brand_name}: {e}", exc_info=True)
+        tracker.add_error(f"Ingestion failed: {str(e)}")
+        tracker.complete()
+        raise
 
 @router.post("/start")
-async def start_ingestion(request: StartIngestionRequest, background_tasks: BackgroundTasks, session: Session = Depends(get_session)):
-    """Start ingestion process"""
+async def start_ingestion(
+    request: StartIngestionRequest, 
+    background_tasks: BackgroundTasks, 
+    session: Session = Depends(get_session)
+):
+    """Start HP-powered ingestion with 22-worker pool"""
     status = get_ingestion_status(session)
     if status.get("is_running"):
         raise HTTPException(status_code=400, detail="Ingestion is already running")
     
-    background_tasks.add_task(run_ingestion_task, request.brand_name, request.force_rescan)
-    return {"message": f"Ingestion started for {request.brand_name or 'all brands'}"}
+    if not request.brand_name:
+        raise HTTPException(status_code=400, detail="brand_name is required")
+    
+    # Start HP-powered ingestion (uses worker pool for parallel processing)
+    background_tasks.add_task(
+        run_real_ingestion_task, 
+        request.brand_name, 
+        request.force_rescan,
+        use_hp_workers=True  # Enable HP workers
+    )
+    
+    logger.info(f"✅ HP-powered ingestion task started for {request.brand_name}")
+    
+    return {
+        "message": f"HP-powered ingestion started for {request.brand_name} (using 22-worker pool)",
+        "status": "processing",
+        "brand": request.brand_name,
+        "workers": "hp_22_worker_pool"
+    }
 
 def get_ingestion_status(session: Session) -> dict:
     """Read current ingestion status combining Tracker (Real-time) and DB (Historical)"""

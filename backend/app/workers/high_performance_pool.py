@@ -164,7 +164,7 @@ class WorkerPool:
         
         # Circuit breakers for external services
         self.circuit_breakers = {
-            "openai": CircuitBreaker("OpenAI", failure_threshold=5, timeout_seconds=60),
+            "gemini": CircuitBreaker("Gemini", failure_threshold=5, timeout_seconds=60),
             "chromadb": CircuitBreaker("ChromaDB", failure_threshold=3, timeout_seconds=30),
             "playwright": CircuitBreaker("Playwright", failure_threshold=5, timeout_seconds=45)
         }

@@ -19,7 +19,7 @@ from app.workers.high_performance import (
     OptimizedTask,
     submit_task,
     chromadb_breaker,
-    openai_breaker
+    gemini_breaker
 )
 
 from app.services.rag_service import (

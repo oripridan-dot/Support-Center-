@@ -10,6 +10,14 @@
       "product_name": null,
       "priority": 6,
       "estimated_size": null
+    },
+    {
+      "url": "https://www.espguitars.com/pages/support",
+      "type": "manual",
+      "title": "Support",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
     }
   ],
   "navigation_pattern": "hierarchical",
@@ -23,6 +31,6 @@
   "download_links": false,
   "requires_javascript": true,
   "rate_limit_ms": 1000,
-  "total_estimated_docs": 1,
-  "notes": "Discovered 1 documentation sources"
+  "total_estimated_docs": 2,
+  "notes": "Discovered 2 documentation sources"
 }

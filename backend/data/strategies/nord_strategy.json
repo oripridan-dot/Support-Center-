@@ -50,6 +50,70 @@
       "product_name": null,
       "priority": 5,
       "estimated_size": null
+    },
+    {
+      "url": "https://www.nordkeyboards.com/products/nord-piano-6/specifications/",
+      "type": "manual",
+      "title": "Specifications",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.nordkeyboards.com/products/nord-organ-3/specifications/",
+      "type": "manual",
+      "title": "Specifications",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.nordkeyboards.com/products/nord-grand-2/specifications/",
+      "type": "manual",
+      "title": "Specifications",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.nordkeyboards.com/products/nord-stage-4/specifications/",
+      "type": "manual",
+      "title": "Specifications",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.nordkeyboards.com/products/nord-electro-6/specifications/",
+      "type": "manual",
+      "title": "Specifications",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.nordkeyboards.com/products/nord-wave-2/specifications/",
+      "type": "manual",
+      "title": "Specifications",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.nordkeyboards.com/products/nord-lead-a1/specifications/",
+      "type": "manual",
+      "title": "Specifications",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.nordkeyboards.com/products/nord-drum-3p/specifications/",
+      "type": "manual",
+      "title": "Specifications",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
     }
   ],
   "navigation_pattern": "hierarchical",
@@ -63,6 +127,6 @@
   "download_links": false,
   "requires_javascript": true,
   "rate_limit_ms": 1000,
-  "total_estimated_docs": 6,
-  "notes": "Discovered 6 documentation sources"
+  "total_estimated_docs": 14,
+  "notes": "Discovered 14 documentation sources"
 }

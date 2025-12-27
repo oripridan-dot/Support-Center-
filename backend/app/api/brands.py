@@ -123,10 +123,32 @@ def read_brands_stats(session: Session = Depends(get_session)):
     
     return stats
 
-@router.get("", response_model=List[Brand])
+@router.get("")
 def read_brands(skip: int = 0, limit: int = 100, session: Session = Depends(get_session)):
+    """Get all brands with document counts"""
     brands = session.exec(select(Brand).offset(skip).limit(limit)).all()
-    return brands
+    
+    # Build response with document counts
+    result = []
+    for brand in brands:
+        # Get actual document count from database
+        doc_count = session.exec(
+            select(func.count(Document.id)).where(Document.brand_id == brand.id)
+        ).one()
+        
+        # Convert to dict and add counts
+        brand_dict = {
+            "id": brand.id,
+            "name": brand.name,
+            "website_url": brand.website_url,
+            "logo_url": brand.logo_url,
+            "description": brand.description,
+            "total_documents": doc_count,
+            "target_documents": doc_count if doc_count > 0 else 0
+        }
+        result.append(brand_dict)
+    
+    return result
 
 @router.get("/{brand_id}/products", response_model=List[Product])
 def read_brand_products(brand_id: int, session: Session = Depends(get_session)):
