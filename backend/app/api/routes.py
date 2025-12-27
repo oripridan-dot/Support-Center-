@@ -10,15 +10,13 @@ from .brands import router as brands_router
 from .chat import router as chat_router
 from .documents import router as documents_router
 from .async_endpoints import router as async_router
-from .ingestion import router as ingestion_router  # REAL ingestion router
 
 router = APIRouter()
 
-# Include sub-routers with REAL ingestion
+# Include sub-routers (ingestion removed - use HP 22-worker pipeline at /api/hp/*)
 router.include_router(brands_router, prefix="/brands", tags=["brands"])
 router.include_router(chat_router, prefix="/chat", tags=["chat"])
 router.include_router(documents_router, prefix="/documents", tags=["documents"])
-router.include_router(ingestion_router, prefix="/ingestion", tags=["ingestion"])
 router.include_router(async_router, prefix="/v2", tags=["async", "performance"])
 
 class SearchRequest(BaseModel):

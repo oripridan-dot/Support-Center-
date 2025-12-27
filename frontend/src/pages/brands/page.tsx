@@ -47,9 +47,9 @@ export default function BrandsPage() {
         setLoading(false);
       });
 
-    // Poll for ingestion status
+    // Poll for HP pipeline status
     const pollStatus = () => {
-      fetch('/api/ingestion/status')
+      fetch('/api/hp/pipeline/status')
         .then(res => res.json())
         .then(data => setIngestionStatus(data))
         .catch(err => console.error('Status poll error:', err));

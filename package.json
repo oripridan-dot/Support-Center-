@@ -1,7 +1,7 @@
 {
   "name": "support-center",
-  "version": "1.0.0",
-  "description": "Halilit Support Center - RAG Application",
+  "version": "2.0.0",
+  "description": "Halilit Support Center - RAG Application with Google Gemini & HP 22-Worker Pipeline",
   "scripts": {
     "dev": "./scripts/dev.sh",
     "dev:worker": "./scripts/dev.sh --worker",
