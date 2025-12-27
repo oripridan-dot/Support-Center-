@@ -5,7 +5,20 @@ from app.services.llm import llm_service
 from app.services.vector_db import vector_db
 from datetime import datetime
 
+# Import sub-routers
+from .brands import router as brands_router
+from .chat import router as chat_router
+from .documents import router as documents_router
+from .async_endpoints import router as async_router
+# Legacy ingestion and workers routers removed - using HP 22-worker system only
+
 router = APIRouter()
+
+# Include sub-routers (removed legacy ingestion and workers)
+router.include_router(brands_router, prefix="/brands", tags=["brands"])
+router.include_router(chat_router, prefix="/chat", tags=["chat"])
+router.include_router(documents_router, prefix="/documents", tags=["documents"])
+router.include_router(async_router, prefix="/v2", tags=["async", "performance"])
 
 class SearchRequest(BaseModel):
     query: str

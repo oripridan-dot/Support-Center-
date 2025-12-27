@@ -1,0 +1,28 @@
+{
+  "brand_id": 14,
+  "brand_name": "ESP",
+  "base_url": "https://www.espguitars.com",
+  "documentation_urls": [
+    {
+      "url": "http://cdn.growassets.net/user_files/esp/site_assets/000/000/436/original.pdf",
+      "type": "spec_sheet",
+      "title": "Owner's Manual",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    }
+  ],
+  "navigation_pattern": "hierarchical",
+  "content_selectors": {
+    "title": "h1, .title, .doc-title",
+    "content": "article, .content, .documentation, main",
+    "sidebar": ".sidebar, nav",
+    "download_link": "a[href$='.pdf']"
+  },
+  "pagination_info": null,
+  "download_links": false,
+  "requires_javascript": true,
+  "rate_limit_ms": 1000,
+  "total_estimated_docs": 1,
+  "notes": "Discovered 1 documentation sources"
+}

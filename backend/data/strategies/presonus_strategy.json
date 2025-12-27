@@ -1,0 +1,19 @@
+{
+  "brand_id": 4,
+  "brand_name": "Presonus",
+  "base_url": "https://www.presonus.com",
+  "documentation_urls": [],
+  "navigation_pattern": "hierarchical",
+  "content_selectors": {
+    "title": "h1, .title, .doc-title",
+    "content": "article, .content, .documentation, main",
+    "sidebar": ".sidebar, nav",
+    "download_link": "a[href$='.pdf']"
+  },
+  "pagination_info": null,
+  "download_links": false,
+  "requires_javascript": true,
+  "rate_limit_ms": 1000,
+  "total_estimated_docs": 0,
+  "notes": "Discovered 0 documentation sources"
+}

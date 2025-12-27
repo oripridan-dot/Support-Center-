@@ -27,7 +27,7 @@ export default function BrandsPage() {
   const [ingestionStatus, setIngestionStatus] = useState<IngestionStatus | null>(null);
 
   useEffect(() => {
-    fetch('/api/backend/brands/stats')
+    fetch('/api/brands/stats')
       .then(res => res.json())
       .then(data => {
         setBrands(data);
@@ -40,7 +40,7 @@ export default function BrandsPage() {
 
     // Poll for ingestion status
     const pollStatus = () => {
-      fetch('/api/backend/ingestion/status')
+      fetch('/api/ingestion/status')
         .then(res => res.json())
         .then(data => setIngestionStatus(data))
         .catch(err => console.error('Status poll error:', err));

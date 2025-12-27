@@ -3,6 +3,8 @@ import HomePage from './pages/page';
 import BrandsPage from './pages/brands/page';
 import BrandDetailPage from './pages/brands/BrandDetailPage';
 import ChatPage from './pages/chat/page';
+import WorkersPage from './pages/workers/page';
+import PerformancePage from './pages/performance/page';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Route path="/brands" element={<BrandsPage />} />
         <Route path="/brands/:brandId" element={<BrandDetailPage />} />
         <Route path="/chat" element={<ChatPage />} />
+        <Route path="/workers" element={<WorkersPage />} />
+        <Route path="/performance" element={<PerformancePage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>

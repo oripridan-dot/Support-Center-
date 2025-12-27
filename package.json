@@ -7,6 +7,10 @@
     "dev:worker": "./scripts/dev.sh --worker",
     "worker": "cd backend && python worker.py --mode continuous",
     "worker:once": "cd backend && python worker.py --mode once",
+    "test:workers": "cd backend && python3 test_hp_workers.py",
+    "workers:health": "curl -s http://localhost:8000/api/hp/health | python3 -m json.tool",
+    "workers:stats": "curl -s http://localhost:8000/api/hp/stats | python3 -m json.tool",
+    "workers:status": "curl -s http://localhost:8000/api/hp/workers | python3 -m json.tool",
     "install-all": "cd backend && pip install -r requirements.txt && cd ../frontend && npm install",
     "backend": "cd backend && uvicorn app.main:app --reload",
     "frontend": "cd frontend && npm run dev"

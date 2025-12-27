@@ -1,0 +1,19 @@
+{
+  "brand_id": 27,
+  "brand_name": "V-Moda",
+  "base_url": "https://v-moda.com",
+  "documentation_urls": [],
+  "navigation_pattern": "hierarchical",
+  "content_selectors": {
+    "title": "h1, .title, .doc-title",
+    "content": "article, .content, .documentation, main",
+    "sidebar": ".sidebar, nav",
+    "download_link": "a[href$='.pdf']"
+  },
+  "pagination_info": null,
+  "download_links": false,
+  "requires_javascript": true,
+  "rate_limit_ms": 1000,
+  "total_estimated_docs": 0,
+  "notes": "Discovered 0 documentation sources"
+}

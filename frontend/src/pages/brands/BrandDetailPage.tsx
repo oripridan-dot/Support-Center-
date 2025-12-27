@@ -33,13 +33,13 @@ export default function BrandPage() {
 
   useEffect(() => {
     // Fetch brand details
-    fetch(`/api/backend/brands/${brandId}`)
+    fetch(`/api/brands/${brandId}`)
       .then(res => res.json())
       .then(data => setBrand(data))
       .catch(err => console.error(err));
 
     // Fetch brand products
-    fetch(`/api/backend/brands/${brandId}/products`)
+    fetch(`/api/brands/${brandId}/products`)
       .then(res => res.json())
       .then(data => {
         if (Array.isArray(data)) {

@@ -1,0 +1,22 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'halilit-support-center'
+
+scrape_configs:
+  # FastAPI Backend metrics
+  - job_name: 'backend'
+    static_configs:
+      - targets: ['backend:8080']
+    metrics_path: '/metrics'
+    
+  # Flower (Celery monitoring)
+  - job_name: 'flower'
+    static_configs:
+      - targets: ['flower:5555']
+    
+  # Redis exporter (if using)
+  - job_name: 'redis'
+    static_configs:
+      - targets: ['redis:6379']

@@ -1,0 +1,2548 @@
+{
+  "brand_id": 18,
+  "brand_name": "Ashdown Engineering",
+  "base_url": "https://ashdownmusic.com",
+  "documentation_urls": [
+    {
+      "url": "https://ashdownmusic.com/products/abm-1200-evo-iv-head",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-600-evo-iv-head",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-500-evo-ii-head",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/original-hd-1-head",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ctm-300-head",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ashdown-vu-mug",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ashdown-abm-knobs",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/fs-jlo-drive",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/fs-4",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/fs-2",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/fs-1",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/fs-drive-plus",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/fs-dual-comp",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/bass-ometer",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/bass-graphic-eq-1",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/nm2",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/the-waiting-room",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/life-support",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/hairy-tongue",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/cubicle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/booster-shot",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/octa-dose",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/bearded-lady",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/doctors-note",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/tuneup",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/the-tourniquet-aspirin-compressor",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/bass-verb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-810h-evo-iv-cabinet",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-410h-evo-iv-cabinet",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-115h-evo-iv",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-210h-evo-iv",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-112t-evo-ii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-115t-evo-ii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-210t-evo-ii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-410-evo-ii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-414-evo-ii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-610t-evo-ii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/head-of-doom",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/tour-bus-10",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/tour-bus-15",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-120-15t",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-60-10t",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-30-8",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/original-valve-pre-di-pedal",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-social-75",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/original-c210-combo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/original-c112t-combo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aa-100-r",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mag-600h-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/eb-lite-12-220-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mibass-2-0",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-after-8",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-bentley-410-ltd",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-after-8-30w",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-800",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mag-300h-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/eb-lite-15-220-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mi10",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-perfect-10-40w",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-perfect-10",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mag-c115-300-evo-iii-combo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-420",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-vintage-12",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/five-15",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mi12",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-220",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-900-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-2000-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-king-combo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mag-c410t-600-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/pibass-240",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-five-15",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-500-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/acoustic-100",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mag-c210t-300-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-five-15-bb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-500-rc-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/superfly-500",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mag-115-slim-cab",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/550-spyder",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-five-15-bbh",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/cube-40",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-610",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-1000",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/cl-115-large",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/cl-410",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/eb-180-head",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mag-210t-slim",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mag-410t-slim",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mag-414t-deep",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/power-cube-40",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-c112-220",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-tour-bus-15",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-810h-uk",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-ass-115",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/acoustic-100-bk",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/cube-40-bk",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mag-810",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-apm-1000-evq-ii-power-amp",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-410h-uk",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-212t",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-115h-uk",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/cl-610",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/freebass",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/power-cube-40-bk",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-410t",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-300-evo-ii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-c110h-400",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/cl-810",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mibass-220",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mibass-550",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-414t",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-neo-c210",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-112h-neo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-115-neo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-210-neo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-408-neo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-neo-c115",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/five-15-mini-rig",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/little-giant-1000",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/radiator-1",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-gig-bag",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-300-210t",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-600rc-evo-iv",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/woodsman-classic",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/woodsman-jumbo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/woodsman-parlour",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/20th-anniversary-abm-600-evo-iv",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/20th-anniversary-abm-410h-evo-iv",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ctm-30-tweed",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/112t-250-tweed",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-c115-500-evo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-115t",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-tour-bus-10",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-ampkit",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/studio-stool",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/dh-15-c110",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/jjb-500",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/norman-watt-roy-pre-di",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-rpm-gzr",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-rpm-je",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-rpm-1-evo-ii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-c112t-500-evo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/lb-30-drophead-15h",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-c115-420",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-c210-420",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-115",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-210t",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aaa-evo-100-bt",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-500-evo-ii-head-1",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ctm-30-little-stubby",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-c210t-500",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-c210t-500-evo-ii-combo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/agm-484h",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/agm-30-offset",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/agm-684c",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/agm-284c",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/agm-5c",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/agm-112",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/agm-212",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/agm-210",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/cl-310-dh",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-300-evo-iv-head",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/studio-8",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/studio-10",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/studio-12",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/studio-15",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/orignial-gig-bag",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ex-display-aa-50-r-professional-acoustic-combo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/studio-jnr",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/original-500h",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-800-evo-ii-head",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-300-evo-ii-head",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-evo-iv-dual-vu-rack-head",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ctm-200r",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/the-ant",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/the-newt",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/pro-fx-sub-harmonic-generator",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-210h-evo-iv-pro-neo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/fs-1-hayden-single-latching-foot-switch",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-112h-evo-iv-pro-neo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-115h-evo-iv-pro-neo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/pro-fx-two-band-boost",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/pro-fx-retro-drive",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/studio-210",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/tone-pocket-wireless",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/tone-pocket-v2-0",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/pro-fx-pro-drive",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-212t-evo-ii-super-lightweight-bass-cabinet",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/original-c115t-300-kickback-combo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/lb-30-2-n",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mf-484-2-n",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/geezer-butler-pedal-of-doom",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/john-myung-double-drive-pedal",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/interstellar-600",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/bass-exchange",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/427-small-block-badge",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/hayden-played-in-scotland-badge",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/leather-handle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rubber-handle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/black-metal-amp-cabinet-corners-3-holes",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ashdown-tool-kit",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-agm-112-guitar-cabinet",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-400-ltd-edition",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/abm-evo-v-750",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ctm-100-head-1",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-phone-box-headphone-out-di-box",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mf-284",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/studio-mini-rig",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ctm-15",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/agm-cab",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/roasted-capri",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/roasted-saint",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ashdown-vu-t-shirt",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/cl-115-b-stock",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/lomenzo-mega-drive",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/youth-115",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/youth-212",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-500-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-800-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aa-woodsman-parlour",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/aa-woodsman-classic",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/stuart-zender-funk-face",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ashdown-pro-di-1",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ashdown-triple-shot",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/sx-5c",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/sx-5h",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/sx-50h",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/roasted-saint-soap",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/betsy",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ashdown-t-shirt",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ashdown-hoodie",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/peacemaker-mini-head",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-110-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-112-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-115t-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-210t-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-414t-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rm-610t-evo-iii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/original-evo-300",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/original-evo-c112-300",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/kt-15",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/kt-15fx",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/kt-30fx",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/sx-112a",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/sx-112f",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/sx-212a",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/sx-212f",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/sx-412",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/eliza",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/betty",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-lb-30-2-n",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/copy-of-agm-5c",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/copy-of-agm-284c",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/copy-of-rm-500-evo-ii-head",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-rm-c210t-500-evo-ii-combo-1",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mf-484-2-n-copy",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/the-newt-copy",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-ctm-200r",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-agm-30-offset-1",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-geezer-butler-pedal-of-doom",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/mixwave-ashdown-abm-evo-iv",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/peacemaker-2-combo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/nfr-1-reflex-studio-monitor-pair",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/nfr-2-reflex-studio-monitor-pair",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-stuart-zender-funk-face",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/rb-800",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-aae-ctm-valve-pre",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-rm-110-evo-ii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-agm-684c",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-mf-284",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-original-c115t-300-kickback-combo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-rm-c115t-500-evo-ii",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-fs-4",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-sx-112a",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-kt-30fx",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-kt-15",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-kt-15fx",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/shavo-so-1200",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/studio-4",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/micro-killer",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/hbs-40",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ashdown-football-shirt-1997-edition",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ashdown-festival-bucket-hat-signature-edition",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ashdown-festival-belt-bag",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/glow-in-the-dark-guitar-picks-spotthevu",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-aa-woodsman-classic",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/b-stock-sx-212f",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/uk-abm-600-evo-iv",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/uk-abm-300-evo-iv",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/uk-abm-810h-evo-iv",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/uk-abm-410h-evo-iv",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/uk-abm-210h-evo-iv",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/uk-abm-115h-evo-iv",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/uk-abm-112h-evo-iv",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/cl-112h-neo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/cl-112h-neo-copy",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/cl-210h-neo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/cod-212-8-uk",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/cod-215-8-uk",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/eliza-offer",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/black-friday-kt-15",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/black-friday-kt-15fx",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/kt-30fx-copy",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/black-friday-sx-5c",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/black-friday-sx-5h",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/black-friday-sx-50h",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/black-friday-sx-112f",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/black-friday-sx-212a",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/black-friday-sx-212f",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/black-friday-sx-412f",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ashdown-union-jack-t-shirt",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ashdown-double-wing-hoodie",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ashdown-double-wing-hoodie-copy",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/ice-blue-ashdown-beanie",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://ashdownmusic.com/products/roasted-capri-23",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    }
+  ],
+  "navigation_pattern": "hierarchical",
+  "content_selectors": {
+    "title": "h1, .title, .doc-title",
+    "content": "article, .content, .documentation, main",
+    "sidebar": ".sidebar, nav",
+    "download_link": "a[href$='.pdf']"
+  },
+  "pagination_info": null,
+  "download_links": false,
+  "requires_javascript": true,
+  "rate_limit_ms": 1000,
+  "total_estimated_docs": 316,
+  "notes": "Discovered 316 documentation sources"
+}

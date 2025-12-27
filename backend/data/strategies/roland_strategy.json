@@ -1,0 +1,124 @@
+{
+  "brand_id": 1,
+  "brand_name": "Roland",
+  "base_url": "https://www.roland.com",
+  "documentation_urls": [
+    {
+      "url": "https://www.roland.com/global/support/owners_manuals/",
+      "type": "manual",
+      "title": "Owner\u2019s Manuals",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.roland.com/global/sustainability/compliance_guideline/",
+      "type": "guide",
+      "title": "Compliance Guidelines",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.roland.com/global/support/archives/archive_manuals_0-9/",
+      "type": "manual",
+      "title": "Owner's Manuals (0-9)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.roland.com/global/support/archives/archive_manuals_a-g/",
+      "type": "manual",
+      "title": "Owner's Manuals (A-G)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.roland.com/global/support/archives/archive_manuals_h-m/",
+      "type": "manual",
+      "title": "Owner's Manuals (H-M)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.roland.com/global/support/archives/archive_manuals_n-s/",
+      "type": "manual",
+      "title": "Owner's Manuals (N-S)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.roland.com/global/support/archives/archive_manuals_t-z/",
+      "type": "manual",
+      "title": "Owner's Manuals (T-Z)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.roland.com/global/support/archives/archive_downloads_a-g/",
+      "type": "manual",
+      "title": "Update & Drivers (A-G)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.roland.com/global/support/archives/archive_downloads_h-m/",
+      "type": "manual",
+      "title": "Update & Drivers (H-M)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.roland.com/global/support/archives/archive_downloads_n-s/",
+      "type": "manual",
+      "title": "Update & Drivers (N-S)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.roland.com/global/support/archives/archive_downloads_t-z/",
+      "type": "manual",
+      "title": "Update & Drivers (T-Z)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.roland.com/us/support/owners_manuals/",
+      "type": "manual",
+      "title": "Owner\u2019s Manuals",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.roland.com/us/support/manual_archive/",
+      "type": "manual",
+      "title": "Manual Archive",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    }
+  ],
+  "navigation_pattern": "hierarchical",
+  "content_selectors": {
+    "title": "h1, .title, .doc-title",
+    "content": "article, .content, .documentation, main",
+    "sidebar": ".sidebar, nav",
+    "download_link": "a[href$='.pdf']"
+  },
+  "pagination_info": null,
+  "download_links": false,
+  "requires_javascript": true,
+  "rate_limit_ms": 1000,
+  "total_estimated_docs": 13,
+  "notes": "Discovered 13 documentation sources"
+}

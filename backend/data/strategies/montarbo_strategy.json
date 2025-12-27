@@ -1,0 +1,124 @@
+{
+  "brand_id": 50,
+  "brand_name": "Montarbo",
+  "base_url": "https://www.montarbo.com",
+  "documentation_urls": [
+    {
+      "url": "https://www.montarbo.com/en/support/download",
+      "type": "manual",
+      "title": "Pro Audio - Download",
+      "product_name": "Pro Audio",
+      "priority": 9,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.montarbo.com/en/download",
+      "type": "manual",
+      "title": "Pro Audio - Download",
+      "product_name": "Pro Audio",
+      "priority": 9,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.montarbo.com/en/support/technical-assistance",
+      "type": "manual",
+      "title": "Technical Assistance",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.montarbo.com/en/support/privacy",
+      "type": "manual",
+      "title": "Privacy",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.montarbo.com/en/support/cookie-policy",
+      "type": "manual",
+      "title": "Cookie Policy",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.montarbo.com/it/supporto/assistenza-tecnica",
+      "type": "manual",
+      "title": "Assistenza Tecnica",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.montarbo.com/it/supporto/download",
+      "type": "manual",
+      "title": "Download",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.montarbo.com/it/supporto/privacy",
+      "type": "manual",
+      "title": "Privacy",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.montarbo.com/it/supporto/cookie-policy",
+      "type": "manual",
+      "title": "Cookie Policy",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.montarbo.com/de/support/technical-assistance",
+      "type": "manual",
+      "title": "Technical Assistance",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.montarbo.com/de/support/download",
+      "type": "manual",
+      "title": "Download",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.montarbo.com/de/support/privacy",
+      "type": "manual",
+      "title": "Privacy",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.montarbo.com/de/support/cookie-policy",
+      "type": "manual",
+      "title": "Cookie Policy",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    }
+  ],
+  "navigation_pattern": "hierarchical",
+  "content_selectors": {
+    "title": "h1, .title, .doc-title",
+    "content": "article, .content, .documentation, main",
+    "sidebar": ".sidebar, nav",
+    "download_link": "a[href$='.pdf']"
+  },
+  "pagination_info": null,
+  "download_links": false,
+  "requires_javascript": true,
+  "rate_limit_ms": 1000,
+  "total_estimated_docs": 13,
+  "notes": "Discovered 13 documentation sources"
+}

@@ -98,9 +98,13 @@ export default function BrandsPage() {
               {filteredBrands.map((brand) => (
                 <Link href={`/brands/${brand.id}`} key={brand.id} className="group">
                   <div className="bg-white rounded-2xl border border-gray-100 p-4 h-full hover:shadow-xl hover:border-blue-500/30 transition-all duration-300 flex flex-col">
-                    <div className="h-24 flex items-center justify-center mb-4 bg-gray-50 rounded-xl p-3 group-hover:bg-white transition-colors">
+                    <div className="h-40 w-full flex items-center justify-center mb-4 bg-gray-50 rounded-xl p-8 group-hover:bg-white transition-colors overflow-hidden">
                       {brand.logo_url ? (
-                        <img src={brand.logo_url} alt={brand.name} className="max-h-full max-w-full object-contain grayscale group-hover:grayscale-0 transition-all" />
+                        <img 
+                          src={brand.logo_url} 
+                          alt={brand.name} 
+                          className="max-w-full max-h-full object-contain grayscale-[30%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-300" 
+                        />
                       ) : (
                         <span className="text-xl font-bold text-gray-300">{brand.name}</span>
                       )}

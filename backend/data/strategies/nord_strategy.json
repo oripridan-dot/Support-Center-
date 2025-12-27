@@ -1,0 +1,68 @@
+{
+  "brand_id": 12,
+  "brand_name": "Nord",
+  "base_url": "https://www.nordkeyboards.com",
+  "documentation_urls": [
+    {
+      "url": "https://www.nordkeyboards.com/downloads/",
+      "type": "manual",
+      "title": "The user manualsThe user manual describes all functions of your instrument and is available in the D",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.nordkeyboards.com/legacy-products/nord-c2d/downloads?scrollToTabs=1",
+      "type": "manual",
+      "title": "(2012-2020) The Nord C2D has 2 sets of physical drawbars per manual, realistic simulations of a B3 t",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.nordkeyboards.com/legacy-products/nord-c1/downloads?scrollToTabs=1",
+      "type": "manual",
+      "title": "(2005-2009) The groundbreaking Nord C1 Combo Organ, featuring dual manuals and a revolutionary speak",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.nordkeyboards.com/support/",
+      "type": "manual",
+      "title": "Support",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.nordkeyboards.com/support/feedback/",
+      "type": "manual",
+      "title": "Feedback",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.nordkeyboards.com/support/privacy-policy/",
+      "type": "manual",
+      "title": "Privacy Policy",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    }
+  ],
+  "navigation_pattern": "hierarchical",
+  "content_selectors": {
+    "title": "h1, .title, .doc-title",
+    "content": "article, .content, .documentation, main",
+    "sidebar": ".sidebar, nav",
+    "download_link": "a[href$='.pdf']"
+  },
+  "pagination_info": null,
+  "download_links": false,
+  "requires_javascript": true,
+  "rate_limit_ms": 1000,
+  "total_estimated_docs": 6,
+  "notes": "Discovered 6 documentation sources"
+}

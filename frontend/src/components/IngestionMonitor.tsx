@@ -55,8 +55,7 @@ export default function IngestionMonitor({ variant = 'floating' }: IngestionMoni
       // Fallback to polling if WebSocket is not available
       const interval = setInterval(async () => {
         try {
-          const apiUrl = '/api/backend';
-          const response = await fetch(`${apiUrl}/ingestion/status`);
+          const response = await fetch('/api/ingestion/status');
           const data: IngestionStatus = await response.json();
           setStatus(data);
           
@@ -84,7 +83,7 @@ export default function IngestionMonitor({ variant = 'floating' }: IngestionMoni
       try {
         const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
         const wsBaseUrl = window.location.host;
-        const wsUrl = `${wsProtocol}//${wsBaseUrl}/api/backend/ingestion/ws/status`;
+        const wsUrl = `${wsProtocol}//${wsBaseUrl}/api/ingestion/ws/status`;
         
         const socket = new WebSocket(wsUrl);
         
@@ -153,7 +152,7 @@ export default function IngestionMonitor({ variant = 'floating' }: IngestionMoni
     if (isStarting) return;
     setIsStarting(true);
     try {
-      await fetch('/api/backend/ingestion/start', {
+      await fetch('/api/ingestion/start', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -170,7 +169,7 @@ export default function IngestionMonitor({ variant = 'floating' }: IngestionMoni
     }
   };
 
-  const brandCounts = Object.entries(status.brand_progress || {}).map(([brand, progress]) => {
+  const brandCounts = Object.entries(status?.brand_progress || {}).map(([brand, progress]) => {
     const count = progress.document_count || 0;
     const statusEmoji = progress.status === 'complete' ? '✅' : progress.status === 'processing' ? '⚙️' : progress.status === 'idle' ? '⏸' : '🔍';
     
@@ -186,6 +185,11 @@ export default function IngestionMonitor({ variant = 'floating' }: IngestionMoni
       </div>
     );
   }).filter(Boolean);
+
+  // Don't render until we have status data
+  if (!status) {
+    return null;
+  }
 
   return (
     <div className={cn(
@@ -270,12 +274,12 @@ export default function IngestionMonitor({ variant = 'floating' }: IngestionMoni
       <div className="mb-3">
         <div className="flex justify-between text-[10px] mb-1">
           <span className="text-gray-600">Total Progress</span>
-          <span className="font-semibold text-gray-800">{status.progress_percent.toFixed(1)}%</span>
+          <span className="font-semibold text-gray-800">{(status.progress_percent || 0).toFixed(1)}%</span>
         </div>
         <div className="w-full bg-gray-200 rounded-full h-1.5">
           <div
-            className={`h-1.5 rounded-full transition-all duration-300 ${status.progress_percent >= 100 ? 'bg-green-500' : 'bg-gradient-to-r from-blue-400 to-blue-600'}`}
-            style={{ width: `${status.progress_percent}%` }}
+            className={`h-1.5 rounded-full transition-all duration-300 ${(status.progress_percent || 0) >= 100 ? 'bg-green-500' : 'bg-gradient-to-r from-blue-400 to-blue-600'}`}
+            style={{ width: `${status.progress_percent || 0}%` }}
           />
         </div>
       </div>
@@ -294,16 +298,16 @@ export default function IngestionMonitor({ variant = 'floating' }: IngestionMoni
       <div className="grid grid-cols-2 gap-2 mb-2 text-center text-xs">
         <div className="bg-gray-50 p-1.5 rounded">
           <p className="text-gray-500 text-[10px]">Total</p>
-          <p className="font-bold text-gray-800">{status.total_documents}</p>
+          <p className="font-bold text-gray-800">{status.total_documents || 0}</p>
         </div>
         <div className="bg-gray-50 p-1.5 rounded">
           <p className="text-gray-500 text-[10px]">Done</p>
-          <p className="font-bold text-gray-800">{status.progress_percent.toFixed(0)}%</p>
+          <p className="font-bold text-gray-800">{(status.progress_percent || 0).toFixed(0)}%</p>
         </div>
       </div>
 
       {/* Errors */}
-      {status.errors.length > 0 && variant === 'floating' && (
+      {status.errors && status.errors.length > 0 && variant === 'floating' && (
         <div className="mb-4 p-3 bg-red-50 rounded border border-red-200">
           <p className="text-xs font-semibold text-red-700 mb-2">Recent Errors ({status.errors.length})</p>
           <div className="max-h-24 overflow-y-auto">

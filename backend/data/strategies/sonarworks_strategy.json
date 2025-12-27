@@ -1,0 +1,140 @@
+{
+  "brand_id": 20,
+  "brand_name": "Sonarworks",
+  "base_url": "https://www.sonarworks.com",
+  "documentation_urls": [
+    {
+      "url": "https://www.sonarworks.com/download-center",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.sonarworks.com/soundid/supported-headphones",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.sonarworks.com/soundid-reference/resources",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.sonarworks.com/soundid-reference/supported-headphones",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.sonarworks.com/soundid-reference/ebooks/top-28-pro-headphones-guide-2025",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.sonarworks.com/soundid-reference/ebooks/top30-pro-headphones-guide2024",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.sonarworks.com/soundid-reference/ebooks/studio-setup-guide",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.sonarworks.com/soundid-reference/ebooks/headphones-buying-guide2021",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.sonarworks.com/legal/soundid-reference/eref-microphone-user-manual-2025",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.sonarworks.com/legal/soundid-reference/measurement-microphone-user-manual-2021",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.sonarworks.com/legal/soundid-reference/measurement-microphone-user-manual-2024",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.sonarworks.com/legal/soundid-reference/measurement-microphone-user-manual-2025",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.sonarworks.com/legal/soundid-reference/measurement-microphone-user-manual-2015",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.sonarworks.com/soundid-reference/download",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.sonarworks.com/blog/learn/microphone-polar-patterns-guide",
+      "type": "manual",
+      "title": "Microphone Polar Patterns Decoded: Cardioid, Omnidirectional, and Figure-8 Applications",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    }
+  ],
+  "navigation_pattern": "hierarchical",
+  "content_selectors": {
+    "title": "h1, .title, .doc-title",
+    "content": "article, .content, .documentation, main",
+    "sidebar": ".sidebar, nav",
+    "download_link": "a[href$='.pdf']"
+  },
+  "pagination_info": null,
+  "download_links": false,
+  "requires_javascript": true,
+  "rate_limit_ms": 1000,
+  "total_estimated_docs": 15,
+  "notes": "Discovered 15 documentation sources"
+}

@@ -19,6 +19,10 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
+# Global flag for pipeline control
+_pipeline_running = False
+_pipeline_task = None
+
 class IngestionStatus(BaseModel):
     is_running: bool
     current_brand: Optional[str] = None
@@ -40,6 +44,10 @@ class IngestionStatus(BaseModel):
 class StartIngestionRequest(BaseModel):
     brand_name: Optional[str] = None
     force_rescan: bool = False
+
+class StartPipelineRequest(BaseModel):
+    brand_id: Optional[int] = None
+    parallel_mode: bool = True  # Enable parallel mode by default
 
 async def run_ingestion_task(brand_name: Optional[str], force_rescan: bool):
     """Background task to run ingestion"""
@@ -213,6 +221,195 @@ async def reset_ingestion():
     """Reset ingestion tracker"""
     tracker.reset()
     return {"message": "Ingestion tracker reset"}
+
+@router.get("/workers-status")
+async def get_workers_status():
+    """Get real-time status of all 3 workers"""
+    from app.workers.status_tracker import worker_status
+    return worker_status.get_status()
+
+@router.websocket("/ws/pipeline")
+async def websocket_pipeline(websocket: WebSocket):
+    """WebSocket endpoint for real-time pipeline activity streaming"""
+    await websocket.accept()
+    from app.workers.status_tracker import worker_status
+    
+    try:
+        while True:
+            # Send current status every 500ms
+            status = worker_status.get_status()
+            await websocket.send_json(status)
+            await asyncio.sleep(0.5)
+    except WebSocketDisconnect:
+        pass
+    except Exception as e:
+        logger.error(f"WebSocket error: {e}")
+        try:
+            await websocket.close()
+        except:
+            pass
+
+@router.post("/start-pipeline")
+async def start_pipeline(request: StartPipelineRequest, background_tasks: BackgroundTasks):
+    """
+    Start the HIGH-PERFORMANCE 28-worker pipeline
+    
+    Uses the optimized worker pool system instead of legacy 3-worker orchestrator
+    """
+    global _pipeline_running, _pipeline_task
+    
+    if _pipeline_running:
+        raise HTTPException(status_code=400, detail="Pipeline is already running")
+    
+    brand_id = request.brand_id
+    parallel_mode = request.parallel_mode
+    
+    async def run_pipeline():
+        global _pipeline_running
+        _pipeline_running = True
+        try:
+            # Use high-performance worker pool instead of legacy orchestrator
+            from app.workers.high_performance import worker_pool, TaskCategory, TaskPriority
+            from app.workers.explorer import ExplorerWorker
+            from app.workers.scraper import ScraperWorker
+            from app.workers.ingester import IngesterWorker
+            
+            # If no brand_id provided, process ALL brands
+            if brand_id is None:
+                session = next(get_session())
+                from app.models.sql_models import Brand
+                all_brands = session.exec(select(Brand).order_by(Brand.id)).all()
+                
+                if not all_brands:
+                    logger.error("No brands found in database")
+                    return
+                
+                logger.info(f"🚀 HIGH-PERFORMANCE PIPELINE: Processing {len(all_brands)} brands")
+                logger.info(f"⚡ Using 28-worker specialized system")
+                
+                # Initialize workers
+                explorer = ExplorerWorker()
+                scraper = ScraperWorker()
+                ingester = IngesterWorker()
+                
+                await explorer.initialize()
+                await scraper.initialize()
+                
+                completed = 0
+                failed = 0
+                
+                for idx, brand in enumerate(all_brands, 1):
+                    if not _pipeline_running:
+                        logger.info(f"🛑 Pipeline stopped by user after {idx} brands")
+                        break
+                        
+                    logger.info(f"\n{'='*80}")
+                    logger.info(f"🎯 BRAND {idx}/{len(all_brands)}: {brand.name} (ID: {brand.id})")
+                    logger.info(f"{'='*80}")
+                    
+                    try:
+                        # Step 1: Exploration using SCRAPING worker pool
+                        logger.info(f"🔍 Step 1/3: Exploring {brand.name}...")
+                        strategy = await explorer.explore_brand(brand.id)
+                        
+                        # Step 2: Scraping using SCRAPING worker pool
+                        logger.info(f"📥 Step 2/3: Scraping {len(strategy.documentation_urls)} URLs...")
+                        docs = await scraper.scrape_strategy(strategy)
+                        
+                        # Step 3: Ingestion using INGESTION + EMBEDDING worker pools
+                        if docs:
+                            logger.info(f"💾 Step 3/3: Ingesting {len(docs)} documents...")
+                            await ingester.ingest_documents(brand.id, docs, strategy.brand_name)
+                            logger.info(f"✅ {brand.name} completed: {len(docs)} docs ingested")
+                            completed += 1
+                        else:
+                            logger.warning(f"⚠️  {brand.name}: No documents to ingest")
+                            completed += 1
+                    
+                    except Exception as e:
+                        failed += 1
+                        logger.error(f"❌ {brand.name} error: {e}", exc_info=True)
+                
+                # Cleanup
+                await explorer.shutdown()
+                await scraper.shutdown()
+                
+                logger.info(f"\n{'='*80}")
+                logger.info(f"🏁 HIGH-PERFORMANCE PIPELINE COMPLETE")
+                logger.info(f"{'='*80}")
+                logger.info(f"✅ Successful: {completed}/{len(all_brands)}")
+                logger.info(f"❌ Failed: {failed}/{len(all_brands)}")
+                logger.info(f"{'='*80}")
+                
+            else:
+                # Single brand mode with high-performance workers
+                logger.info(f"🚀 Starting HIGH-PERFORMANCE pipeline for brand {brand_id}")
+                logger.info(f"⚡ Using 28-worker specialized system")
+                
+                explorer = ExplorerWorker()
+                scraper = ScraperWorker()
+                ingester = IngesterWorker()
+                
+                await explorer.initialize()
+                await scraper.initialize()
+                
+                try:
+                    # Step 1: Exploration
+                    logger.info(f"🔍 Step 1/3: Exploring brand...")
+                    strategy = await explorer.explore_brand(brand_id)
+                    
+                    # Step 2: Scraping
+                    logger.info(f"📥 Step 2/3: Scraping {len(strategy.documentation_urls)} URLs...")
+                    docs = await scraper.scrape_strategy(strategy)
+                    
+                    # Step 3: Ingestion
+                    if docs:
+                        logger.info(f"💾 Step 3/3: Ingesting {len(docs)} documents...")
+                        await ingester.ingest_documents(brand_id, docs, strategy.brand_name)
+                        logger.info(f"✅ Pipeline completed: {len(docs)} docs ingested")
+                    else:
+                        logger.warning(f"⚠️  No documents to ingest")
+                    
+                except Exception as e:
+                    logger.error(f"❌ Pipeline error: {e}", exc_info=True)
+                finally:
+                    await explorer.shutdown()
+                    await scraper.shutdown()
+                
+        except Exception as e:
+            logger.error(f"Pipeline error: {e}", exc_info=True)
+        finally:
+            _pipeline_running = False
+    
+    # Start pipeline in background
+    _pipeline_task = asyncio.create_task(run_pipeline())
+    
+    mode_label = "parallel" if parallel_mode else "sequential"
+    brand_msg = "all brands" if brand_id is None else f"brand {brand_id}"
+    return {
+        "message": f"Pipeline started for {brand_msg} ({mode_label} mode)", 
+        "brand_id": brand_id,
+        "parallel_mode": parallel_mode
+    }
+
+@router.post("/stop-pipeline")
+async def stop_pipeline():
+    """Stop the worker pipeline"""
+    global _pipeline_running, _pipeline_task
+    
+    if not _pipeline_running:
+        return {"message": "Pipeline is not running"}
+    
+    _pipeline_running = False
+    
+    if _pipeline_task:
+        _pipeline_task.cancel()
+        try:
+            await _pipeline_task
+        except asyncio.CancelledError:
+            pass
+    
+    return {"message": "Pipeline stopped"}
 
 @router.get("/stats")
 async def get_stats(session: Session = Depends(get_session)):

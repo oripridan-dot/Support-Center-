@@ -1,0 +1,349 @@
+version: '3.8'
+
+name: halilit-support-center
+
+services:
+  # ============================================================================
+  # Redis - Task Queue & Caching
+  # ============================================================================
+  redis:
+    image: redis:7-alpine
+    container_name: halilit-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes --maxmemory 2gb --maxmemory-policy allkeys-lru
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    restart: unless-stopped
+    networks:
+      - halilit-network
+
+  # ============================================================================
+  # ChromaDB - Vector Database
+  # ============================================================================
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: halilit-chromadb
+    ports:
+      - "8000:8000"
+    volumes:
+      - chromadb_data:/chroma/chroma
+    environment:
+      - ALLOW_RESET=true
+      - IS_PERSISTENT=TRUE
+      - ANONYMIZED_TELEMETRY=FALSE
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/heartbeat"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+    networks:
+      - halilit-network
+
+  # ============================================================================
+  # Celery Workers - Scraping (Parallel execution)
+  # ============================================================================
+  scraper_worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: halilit-scraper-worker
+    command: celery -A app.workers.queue_manager worker -Q scraping -c 4 --loglevel=info --logfile=/app/logs/scraper_worker.log
+    depends_on:
+      - redis
+      - chromadb
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/1
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - CHROMA_HOST=chromadb
+      - CHROMA_PORT=8000
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./backend:/app
+      - ./logs:/app/logs
+      - playwright_cache:/root/.cache/ms-playwright
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
+        reservations:
+          cpus: '1'
+          memory: 1G
+    restart: unless-stopped
+    networks:
+      - halilit-network
+
+  # ============================================================================
+  # Celery Workers - Embeddings (CPU/GPU optimized)
+  # ============================================================================
+  embedding_worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: halilit-embedding-worker
+    command: celery -A app.workers.queue_manager worker -Q embeddings -c 2 --loglevel=info --logfile=/app/logs/embedding_worker.log
+    depends_on:
+      - redis
+      - chromadb
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/1
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - CHROMA_HOST=chromadb
+      - CHROMA_PORT=8000
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./backend:/app
+      - ./logs:/app/logs
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: '4'
+          memory: 4G
+        reservations:
+          cpus: '2'
+          memory: 2G
+    restart: unless-stopped
+    networks:
+      - halilit-network
+
+  # ============================================================================
+  # Celery Workers - RAG Queries (High Priority)
+  # ============================================================================
+  rag_worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: halilit-rag-worker
+    command: celery -A app.workers.queue_manager worker -Q rag_queries -c 8 --loglevel=info --logfile=/app/logs/rag_worker.log
+    depends_on:
+      - redis
+      - chromadb
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/1
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - CHROMA_HOST=chromadb
+      - CHROMA_PORT=8000
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./backend:/app
+      - ./logs:/app/logs
+    deploy:
+      replicas: 4
+      resources:
+        limits:
+          cpus: '8'
+          memory: 8G
+        reservations:
+          cpus: '4'
+          memory: 4G
+    restart: unless-stopped
+    networks:
+      - halilit-network
+
+  # ============================================================================
+  # Celery Workers - Maintenance (Background tasks)
+  # ============================================================================
+  maintenance_worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: halilit-maintenance-worker
+    command: celery -A app.workers.queue_manager worker -Q maintenance -c 2 --loglevel=info --logfile=/app/logs/maintenance_worker.log
+    depends_on:
+      - redis
+      - chromadb
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/1
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - CHROMA_HOST=chromadb
+      - CHROMA_PORT=8000
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./backend:/app
+      - ./logs:/app/logs
+    restart: unless-stopped
+    networks:
+      - halilit-network
+
+  # ============================================================================
+  # Celery Beat - Task Scheduler
+  # ============================================================================
+  celery_beat:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: halilit-celery-beat
+    command: celery -A app.workers.queue_manager beat --loglevel=info --logfile=/app/logs/celery_beat.log
+    depends_on:
+      - redis
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./backend:/app
+      - ./logs:/app/logs
+    restart: unless-stopped
+    networks:
+      - halilit-network
+
+  # ============================================================================
+  # Flower - Celery Monitoring Dashboard
+  # ============================================================================
+  flower:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: halilit-flower
+    command: celery -A app.workers.queue_manager flower --port=5555 --basic_auth=${FLOWER_USER:-admin}:${FLOWER_PASSWORD:-admin}
+    ports:
+      - "5555:5555"
+    depends_on:
+      - redis
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/1
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    restart: unless-stopped
+    networks:
+      - halilit-network
+
+  # ============================================================================
+  # FastAPI Backend
+  # ============================================================================
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: halilit-backend
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload --log-level info
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+      - chromadb
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - CHROMA_HOST=chromadb
+      - CHROMA_PORT=8000
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - ENVIRONMENT=production
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./backend:/app
+      - ./logs:/app/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+    networks:
+      - halilit-network
+
+  # ============================================================================
+  # Prometheus - Metrics Collection
+  # ============================================================================
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: halilit-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+    restart: unless-stopped
+    networks:
+      - halilit-network
+
+  # ============================================================================
+  # Grafana - Metrics Visualization
+  # ============================================================================
+  grafana:
+    image: grafana/grafana:latest
+    container_name: halilit-grafana
+    ports:
+      - "3001:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD:-admin}
+      - GF_USERS_ALLOW_SIGN_UP=false
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+    networks:
+      - halilit-network
+
+  # ============================================================================
+  # Frontend (Optional - uncomment if using)
+  # ============================================================================
+  # frontend:
+  #   build:
+  #     context: ./frontend
+  #     dockerfile: Dockerfile
+  #   container_name: halilit-frontend
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - backend
+  #   environment:
+  #     - NEXT_PUBLIC_API_URL=http://backend:8080
+  #   volumes:
+  #     - ./frontend:/app
+  #     - /app/node_modules
+  #   restart: unless-stopped
+  #   networks:
+  #     - halilit-network
+
+# ============================================================================
+# Volumes
+# ============================================================================
+volumes:
+  redis_data:
+    driver: local
+  chromadb_data:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
+  playwright_cache:
+    driver: local
+
+# ============================================================================
+# Networks
+# ============================================================================
+networks:
+  halilit-network:
+    driver: bridge

@@ -1,0 +1,57 @@
+[
+  {
+    "url": "https://www.eve-audio.com/tech-specs/exo24",
+    "title": "Discover more",
+    "content": "54 Hz - 24 kHz",
+    "doc_type": "manual",
+    "brand_id": 52,
+    "brand_name": "Eve Audio",
+    "file_path": "/workspaces/Support-Center-/backend/data/eve_audio/Discover_more_87b072dc.html",
+    "metadata": {},
+    "scraped_at": "2025-12-26 20:53:05.206247"
+  },
+  {
+    "url": "https://www.eve-audio.com/tech-specs/exo25",
+    "title": "Discover more",
+    "content": "44 Hz - 24 kHz",
+    "doc_type": "manual",
+    "brand_id": 52,
+    "brand_name": "Eve Audio",
+    "file_path": "/workspaces/Support-Center-/backend/data/eve_audio/Discover_more_14aa5967.html",
+    "metadata": {},
+    "scraped_at": "2025-12-26 20:53:09.337863"
+  },
+  {
+    "url": "https://www.eve-audio.com/tech-specs/exo27",
+    "title": "Discover more",
+    "content": "41 Hz - 24 kHz",
+    "doc_type": "manual",
+    "brand_id": 52,
+    "brand_name": "Eve Audio",
+    "file_path": "/workspaces/Support-Center-/backend/data/eve_audio/Discover_more_fe243281.html",
+    "metadata": {},
+    "scraped_at": "2025-12-26 20:53:13.457182"
+  },
+  {
+    "url": "https://www.eve-audio.com/tech-specs/exo28",
+    "title": "Discover more",
+    "content": "37 Hz - 24 kHz",
+    "doc_type": "manual",
+    "brand_id": 52,
+    "brand_name": "Eve Audio",
+    "file_path": "/workspaces/Support-Center-/backend/data/eve_audio/Discover_more_7246c950.html",
+    "metadata": {},
+    "scraped_at": "2025-12-26 20:53:17.512478"
+  },
+  {
+    "url": "https://www.eve-audio.com/tech-specs/sc203",
+    "title": "Discover more",
+    "content": "62 Hz - 21 kHz\nFrequency range",
+    "doc_type": "manual",
+    "brand_id": 52,
+    "brand_name": "Eve Audio",
+    "file_path": "/workspaces/Support-Center-/backend/data/eve_audio/Discover_more_548daabd.html",
+    "metadata": {},
+    "scraped_at": "2025-12-26 20:53:21.584115"
+  }
+]

@@ -1,0 +1,396 @@
+{
+  "brand_id": 5,
+  "brand_name": "Akai Professional",
+  "base_url": "https://www.akaipro.com",
+  "documentation_urls": [
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/mpk-mini-4/MPK%20mini%20IV%20-%20User%20Guide%20-%20v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "User Guide v1.1",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/mpk-mini-4/Studio%20Instrument%20Collection%20-%20User%20Guide%20-%20v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "SIC Setup Guide",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/mpk-mini-4/MPK%20mini%20IV%20-%20Ableton%20Live%20Setup%20Guide%20-%20v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "Ableton Setup Guide",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/mpk-mini-4/MPK%20mini%20IV%20-%20Logic%20Pro%20Setup%20Guide%20-%20v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "Logic Setup Guide",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/mpk-mini-4/MPK%20mini%20IV%20-%20FL%20Studio%20Setup%20Guide%20-%20v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "FL Studio Setup Guide",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/mpk-mini-4/MPK%20mini%20IV%20-%20Cubase%20Setup%20Guide%20-%20v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "Cubase Setup Guide",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/mpk-mini-4/MPK%20mini%20IV%20-%20GarageBand%20Setup%20Guide%20-%20v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "Garageband Setup Guide",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/mpk3mini/MPK-mini-Quickstart-Guide-v1_3.pdf",
+      "type": "spec_sheet",
+      "title": "Quickstart Guide v1.3 (0.97 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/mpk-mini-mk2/MPK_mini_-_User_Guide_-_v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "MPK Mini mkII - User Guide v1.0 (1.24 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/mpk-mini-mk2/MPK_mini_MKII_Editor_-_User_Guide_-_v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "MPK Mini mkII - Editor User Guide v1.0 (1.57 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/mpk-mini-play-mk3/MPK_mini_Play_mk3_User_Guide_v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "MPK Mini Play Mk3 User Guide v1.0 (2.11 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/attachments/mpkminiplus/MPK%20mini%20Plus%20-%20User%20Guide%20-%20v1.2.pdf",
+      "type": "spec_sheet",
+      "title": "MPK mini Plus - User Guide (2.68 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/attachments/MPK225/MPK225%20-%20Quickstart%20Guide%20-%20v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "MPK225 - Quickstart Guide (3.74 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/attachments/MPK225/MPK225%20-%20User%20Guide%20-%20v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "MPK225 - User Guide (1.88 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/attachments/MPK249/MPK249%20-%20Quickstart%20Guide%20-%20v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "MPK249 - Quickstart Guide (3.51 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/attachments/MPK249/MPK249%20-%20User%20Guide%20-%20v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "MPK249 - User Guide (1.91 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/attachments/MPK261/MPK261%20-%20Quickstart%20Guide%20-%20v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "MPK261 - Quickstart Guide (3.34 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/attachments/MPK261/MPK261%20-%20User%20Guide%20-%20v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "MPk261 - User Guide (1.94 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/apc-key-25-mkii/APC%20Key%2025%20mk2%20-%20User%20Guide%20-%20v1.2.pdf",
+      "type": "spec_sheet",
+      "title": "APC Key 25 mk2 - User Guide - v1.2 (2.63 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/attachments/apckey25/APC_Key_25_User_Guide.pdf",
+      "type": "spec_sheet",
+      "title": "APC Key 25 - User Guide (1.75 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/LPK25/LPK25%20mk2-%20v1.2.pdf",
+      "type": "spec_sheet",
+      "title": "LPK25 mk2 - User Guide - v1.2 (2.51 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/LPK25/lpk25_quickstart_guide__revb__00.zip_24ce614e4e1c133b0399143fdff4b520.zip",
+      "type": "guide",
+      "title": "LPK25 - Quickstart Guide (1.30 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/LPK25/LPK25-EditorUserGuide-v1.0.pdf_54dc49044d3f3af03801cfe1e80a7a3d.pdf",
+      "type": "spec_sheet",
+      "title": "LPK25 Editor User Guide (318.20 kB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/LPK25-wireless/LPK25%20Wireless%20-%20User%20Guide%20-%20v1.0.pdf_58a2879fdfbc4b62f5909a6cf7d2d494.pdf",
+      "type": "spec_sheet",
+      "title": "LPK25 Wireless - User Manual v1.0 (2.82 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/attachments/MPD218/MPD218-UserGuide-v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "MPD218 - User Guide (1.26 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/attachments/MPD226/MPD226-User_Guide-v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "MPD226 - User Guide (2.45 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/attachments/MPD232/MPD232-User_Guide-v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "MPD232 - User Guide (3.37 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/attachments/apc40II/APC40%20mkII%20-%20User%20Guide%20-%20v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "APC40 mkii - User Guide (3.71 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/attachments/MIDIMIX/MIDImix-UserGuide-v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "Midi Mix User Guide (1.13 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/APC64/APC64%20-%20User%20Guide%20-%20v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "APC64 - User Guide v1.1 (8.8 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/apc-mini/APC%20mini%20-%20User%20Guide%20-%20v1.0.pdf_079659375431bb679d17071da25ad6af.pdf",
+      "type": "spec_sheet",
+      "title": "APC mini - User Guide (907.69 kB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/apc-mini-mkii/APC%20mini%20mk2%20-%20User%20Guide%20-%20v1.7.pdf",
+      "type": "spec_sheet",
+      "title": "APC mini Mk2 - User Guide v1.7 (4.01 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/LPD8/LPD8%20mk2%20-%20User%20Guide%20-%20v1.2.pdf",
+      "type": "spec_sheet",
+      "title": "LPD8 mk2 - User Guide - v1.2 (1.10 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/attachments/lpd8/lpd8___quickstart_guide___reva_00.zip",
+      "type": "guide",
+      "title": "LPD8 - Quickstart Guide (2.56 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/LPD8/LPD8-EditorUserGuide-v1.0.pdf_062c35bed20bc085907692f4539a918c.pdf",
+      "type": "spec_sheet",
+      "title": "LPD8 Editor User Guide (308.75 kB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/fire/Fire-UserGuide-v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "Fire User Guide (3.96 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/expression-pedal/Akai_Expression_Pedal_User_Guide.pdf",
+      "type": "spec_sheet",
+      "title": "Akai Expression Pedal User Guide (229.75 kB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/attachments/mpx8/mpx8_user_guide_reva.pdf",
+      "type": "spec_sheet",
+      "title": "MPX8 - User Guide (1.00 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/ewi-usb/aria_quickstart_manual_v1.1_01.pdf_ba3fbb2c302a7242d9bf5972bffbd18a.pdf",
+      "type": "spec_sheet",
+      "title": "EWI Software Quick Start Guide (690 KB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/ewi-usb/ewi_usb_quickstart_manual_reve_00.pdf_5b308a79a94a15f669be9f8a30828c15.pdf",
+      "type": "spec_sheet",
+      "title": "EWI USB hardware Quickstart Guide (936 KB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/ewisolo/EWI-Solo-User-Guide-v1_6.pdf",
+      "type": "spec_sheet",
+      "title": "EWI Solo - User Guide v1.6 (3.26 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/ewi-4000/ewi4000s_refmanual_revd_00.pdf_2b1b7872139bd77b89740a52cbb86d99.pdf",
+      "type": "spec_sheet",
+      "title": "EWI4000S - Reference Manual [rev D] (1.64 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/ewi-4000/ewi4000s_v2_3_manualaddendum_00.pdf_aa30bfbeb7df49080a3425b2ef966409.pdf",
+      "type": "spec_sheet",
+      "title": "EWI4000S - Version 2.3 Manual Addendum (0.98 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/ewi-4000/uniquestewi40001.03_00.pdf_d900410a052c61804fc8d3c0678f60a2.pdf",
+      "type": "spec_sheet",
+      "title": "EWI4000S - UniQuest Manual [v1.03] (5.41 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/AKAI_EWI5000_User_guideCN.pdf",
+      "type": "spec_sheet",
+      "title": "EWI5000 - User Guide (Chinese - 36.05 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/ewi5000/EWI5000-QuickstartGuide-v1.0.pdf_9d812e4761ac415bc0717ef6e9ce887c.pdf",
+      "type": "spec_sheet",
+      "title": "EWI5000 - Quickstart Guide (3.34 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/akai/ewi5000/EWI5000-UserGuide-v1.0.pdf_6b0a349fd5e4a543bc738d9634196b60.pdf",
+      "type": "spec_sheet",
+      "title": "EWI5000 - User Guide (1.05 MB)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    }
+  ],
+  "navigation_pattern": "hierarchical",
+  "content_selectors": {
+    "title": "h1, .title, .doc-title",
+    "content": "article, .content, .documentation, main",
+    "sidebar": ".sidebar, nav",
+    "download_link": "a[href$='.pdf']"
+  },
+  "pagination_info": null,
+  "download_links": false,
+  "requires_javascript": true,
+  "rate_limit_ms": 1000,
+  "total_estimated_docs": 47,
+  "notes": "Discovered 47 documentation sources"
+}

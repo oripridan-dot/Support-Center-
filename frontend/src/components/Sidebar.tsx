@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
-import { Home, Grid, Menu, X } from 'lucide-react';
+import { Home, Grid, Menu, X, Activity, Zap } from 'lucide-react';
 import { useState } from 'react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import IngestionMonitor from './IngestionMonitor';
+import ApiHealthCheck from './ApiHealthCheck';
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -15,6 +16,8 @@ export default function Sidebar() {
   const menuItems = [
     { icon: Home, label: 'Dashboard', href: '/' },
     { icon: Grid, label: 'All Brands', href: '/brands' },
+    { icon: Activity, label: 'Workers', href: '/workers' },
+    { icon: Zap, label: 'Performance', href: '/performance' },
   ];
 
   return (
@@ -64,9 +67,8 @@ export default function Sidebar() {
 
         <div className="p-6 pt-0 mt-auto">
           <div className="pt-6 border-t border-gray-100">
-            <div className="flex items-center gap-3 px-4 py-3 text-gray-400 text-sm">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              <span>System Online</span>
+            <div className="flex items-center gap-3 px-4 py-3 text-sm">
+              <ApiHealthCheck />
             </div>
           </div>
         </div>

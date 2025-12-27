@@ -6,7 +6,7 @@ class Brand(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     name: str = Field(index=True)
     logo_url: Optional[str] = None
-    website_url: str
+    website_url: Optional[str] = None
     description: Optional[str] = None
     primary_color: Optional[str] = "#000000"
     secondary_color: Optional[str] = "#ffffff"
@@ -39,8 +39,12 @@ class Document(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     title: str
     url: str
+    content: Optional[str] = None  # Full text content for vectorization
     content_hash: Optional[str] = None
+    doc_type: Optional[str] = "manual"  # "manual", "datasheet", "guide", etc.
+    file_path: Optional[str] = None  # Local file path if downloaded
     last_updated: datetime = Field(default_factory=datetime.utcnow)
+    created_at: datetime = Field(default_factory=datetime.utcnow)
     brand_id: int = Field(foreign_key="brand.id")
     product_id: Optional[int] = Field(default=None, foreign_key="product.id")
     

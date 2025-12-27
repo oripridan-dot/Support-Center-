@@ -1,0 +1,94 @@
+version: '3.8'
+
+# ===================================================================
+# HALILIT SUPPORT CENTER - LIGHTWEIGHT DOCKER SETUP
+# Uses new async task queue (no Redis/Celery required)
+# ===================================================================
+
+name: halilit-support-center-lite
+
+services:
+  # ChromaDB Vector Database
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: halilit_chromadb_lite
+    ports:
+      - "8000:8000"
+    volumes:
+      - chromadb_data:/chroma/chroma
+    environment:
+      - ALLOW_RESET=true
+      - ANONYMIZED_TELEMETRY=false
+      - IS_PERSISTENT=TRUE
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/heartbeat"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+    networks:
+      - halilit_network
+
+  # FastAPI Backend (with built-in async task queue)
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: halilit_backend_lite
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./backend:/app
+      - ./cache:/app/cache
+      - ./logs:/app/logs
+      - ./backend/data:/app/data
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - CHROMA_HOST=chromadb
+      - CHROMA_PORT=8000
+      - ENVIRONMENT=production
+      - LOG_LEVEL=INFO
+      - PYTHONUNBUFFERED=1
+      - TASK_QUEUE_WORKERS=4
+    depends_on:
+      chromadb:
+        condition: service_healthy
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8080 --workers 2
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+    networks:
+      - halilit_network
+
+  # React Frontend (Development mode with Vite)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    container_name: halilit_frontend_lite
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - VITE_API_URL=http://localhost:8080
+      - NODE_ENV=development
+    depends_on:
+      - backend
+    command: npm run dev -- --host 0.0.0.0
+    restart: unless-stopped
+    networks:
+      - halilit_network
+
+volumes:
+  chromadb_data:
+    driver: local
+
+networks:
+  halilit_network:
+    driver: bridge

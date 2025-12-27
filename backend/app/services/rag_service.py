@@ -14,7 +14,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # Initialize LangChain components
 embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=settings.GEMINI_API_KEY)
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=settings.GEMINI_API_KEY)
+llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp", google_api_key=settings.GEMINI_API_KEY, temperature=0.3)
 
 collection = get_collection()
 
@@ -118,6 +118,24 @@ async def ask_question(question: str, brand_id: int = None, is_first_message: bo
     """
     Retrieve context and generate answer using Gemini.
     """
+    # Check for greetings/conversational queries
+    greetings = ['hi', 'hello', 'hey', 'good morning', 'good afternoon', 'good evening', 'how are you', 'what\'s up', 'sup']
+    if any(greeting in question.lower().strip() for greeting in greetings) and len(question.split()) <= 5:
+        # Get brand info for personalized greeting
+        session = next(get_session())
+        brand = None
+        if brand_id:
+            brand = session.exec(select(Brand).where(Brand.id == brand_id)).first()
+        
+        brand_name = brand.name if brand else "our support team"
+        return {
+            "answer": f"👋 Hello! I'm your {brand_name} technical support assistant. I'm here to help you with product specifications, troubleshooting, setup guides, and any technical questions you might have. What can I help you with today?",
+            "sources": [],
+            "images": [],
+            "pdfs": [],
+            "brand_logos": [{"name": brand.name, "url": brand.logo_url}] if brand else []
+        }
+    
     # 1. Query Vector DB
     # Detect if the user is asking for a comparison or general brand info
     is_comparison = any(keyword in question.lower() for keyword in ["vs", "difference", "compare", "better", "between"])
@@ -137,25 +155,16 @@ async def ask_question(question: str, brand_id: int = None, is_first_message: bo
     
     # If we found a product model in the question, prioritize that
     if product_model and not is_comparison:
-        # First try: query with product model filter (using brand metadata, not brand_id)
-        session = next(get_session())
+        # First try: query with product model filter
         if brand_id:
-            statement = select(Brand).where(Brand.id == brand_id)
-            brand = session.exec(statement).first()
-            if brand:
-                where_clause["brand"] = brand.name
-                # Note: We'll do a post-filter for product name since ChromaDB doesn't support partial matching well
+            where_clause["brand_id"] = str(brand_id)
     elif brand_id:
-        # Use brand name from database
-        session = next(get_session())
-        statement = select(Brand).where(Brand.id == brand_id)
-        brand = session.exec(statement).first()
-        if brand:
-            where_clause["brand"] = brand.name
+        # Use brand_id from parameter
+        where_clause["brand_id"] = str(brand_id)
     
     # Only filter by product_id if it's NOT a comparison question
     if product_id and not is_comparison:
-        where_clause["product_id"] = product_id
+        where_clause["product_id"] = str(product_id)
         
     if where_clause:
         if len(where_clause) > 1:

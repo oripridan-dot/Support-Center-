@@ -1,0 +1,2148 @@
+{
+  "brand_id": 1,
+  "brand_name": "Universal Audio",
+  "base_url": "https://www.uaudio.com",
+  "documentation_urls": [
+    {
+      "url": "https://www.uaudio.com/products/uad-spark",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/moog-minimoog",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/6176-vintage-channel-strip",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/neve-complete-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/sd-1-standard-dynamic-microphone",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/luna",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/volt-2-usb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/lion-68-super-lead-amp",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/thermionic-culture-vulture",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/1176-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/610-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ada-flanger",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ada-std-1-stereo-tapped-delay",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/akg-bx-20-reverb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ampeg-b15n",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ampeg-svt-3-pro",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ampeg-svt-vr",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ampex-atr-102",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ams-dmx-digital-delay-pitch-shifter",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ams-neve-dfc-channel-strip",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/api-2500-bus-compressor",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/api-500-series-eq-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/api-preamp",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/api-summing",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/api-vision-channel-strip-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/auto-tune-realtime-x",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/avalon-vt-737-tube-channel-strip",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/bill-putnam-mic-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/brainworx-bx-digital3",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/brainworx-bx-masterdesk",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/brainworx-bx-masterdesk-classic",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/brainworx-bx-subsynth",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/brigade-chorus",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/bx-refinement",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/bx-saturator-v2",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/c-suite-c-axe-guitar-noise-suppressor",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/c-suite-c-max-limiter",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/c-vox-noise-reduction",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/cambridge-eq",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/capitol-chambers",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/capitol-mastering-compressor",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/century-tube-channel-strip",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/chandler-gav-19t-guitar-amp",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/chandler-limited-curve-bender",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/chandler-limited-zener-limiter",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/cooper-time-cube",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/dangerous-bax-eq",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/dbx-160",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/diezel-herbert-amplifier",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/diezel-vh4-amplifier",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/dreamverb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/dytronics-cyclosonic-panner",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/dytronics-tri-stereo-chorus",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/eden-wt800-bass-amplifier",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/electra-88-vintage-keyboard-studio",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/elysia-mpressor",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/empirical-labs-el8-distressor-compressor",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/emt-140",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/emt-250",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/engl-e646-vs",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/engl-e765-rt",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/engl-savage-120-amplifier",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ep-34",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/eventide-h910",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/fairchild-tube-limiter-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/fatso",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/fender-55-dlx",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/friedman-amplifiers-plug-in-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/friedman-buxom-betty",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/fuchs-overdrive-amp-plug-in",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/fuchs-train-amp",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/galaxy-tape-echo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/gallien-krueger-800rb-bass-amp",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/harrison-32c",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/helios-type-69-preamp-eq",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/hitsville-eq-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/hitsville-reverb-chambers",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/k-stereo-ambience-recovery",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/korg-sdd-3000-digital-delay",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/lexicon-224",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/lexicon-480l-digital-reverb-effects",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/little-labs-ibp",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/little-labs-voice-of-god",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/manley-massive-passive",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/manley-tube-preamp",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/manley-variable-mu",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/manley-voxbox",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/marshall-bluesbreaker",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/marshall-jmp2203",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/marshall-plexi",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/marshall-silver-jubilee",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/massenburg-mdweq5",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/millennia-nseq-2",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/moog-multimode-filter-xl-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/mxr-flanger-doubler",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/neve-1073-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/neve-1081",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/neve-1084-preamp-eq",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/neve-31102",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/neve-88rs-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/neve-dynamics-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/neve-preamp",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/neve-summing",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ocean-way-microphone-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/opal-morphing-synthesizer",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/oxford-envolution",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/oxford-eq",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/oxford-inflator",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/oxide-tape-recorder",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/polymax-synth",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/precision-buss-compressor",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/precision-de-esser",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/precision-enhancer-hz",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/precision-enhancer-khz",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/precision-eq",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/precision-limiter",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/precision-maximizer",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/precision-multiband",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/pultec-passive-eq-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/pure-plate-reverb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ravel",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/rmx-16-expanded",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/softube-vocoder",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/sonnox-oxford-dynamic-eq",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/sonnox-oxford-limiter-v2",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/sonnox-oxford-supresser-ds",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/sound-machine-wood-works",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/sphere-mic-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/spitfire-chamber-strings-luna-edition",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/spitfire-symphonic-brass-luna-edition",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/spitfire-symphonic-woodwinds-luna-edition",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/spl-transient-designer",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/spl-twin-tube-processor",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/studer-a800-tape-recorder",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/studio-d-chorus",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/suhr-pt100-amplifier",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/suhr-se100-amplifier",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/summit-tla-compressor",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/teletronix-la-2a-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/tonelux-tilt-eq",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/trident-a-range",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/tube-tech-cl-1b-mkii-compressor",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/tube-tech-eq-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ua-tube-compressor-collection",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-la-3a",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-oto-biscuit-effects-plug-in",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-sound-city-studios-plug-in",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/v76-preamplifier",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/valley-people-dyna-mite",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/vsc-2-compressor",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/vsm-3-mix-satellite",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/waterfall-b3",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/waterfall-rotary-speaker",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/1176ln-classic-limiting-amplifier",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/4-710d-four-channel-tone-blending-mic-preamp",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/710-twin-finity-tone-blending-mic-preamplifier",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/la-610-mkii-classic-tube-recording-channel",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/solo-610-classic-tube-preamplifier-di-box",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/teletronix-la-2a-classic-leveling-amplifier",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/1176-studio-compressor-pedal",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/astra-modulation-machine",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/brigade-chorus-vibrato",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/del-verb-ambience-companion",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/dream-65-reverb-amplifier",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/evermore-studio-reverb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/flow-vintage-tremolo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/galaxy-74-tape-echo-reverb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/golden-reverberator",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/heavenly-plate-reverb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/max-preamp-dual-compressor",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/orion-tape-echo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ox-stomp-dynamic-speaker-emulator",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ruby-63-top-boost-amplifier",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/starlight-echo-station",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/teletronix-la-2a-studio-compressor",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/woodrow-55-instrument-amplifier",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ox-amp-top-box",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad2-pcie",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-2-satellite-thunderbolt-3",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/sc-1-standard-condenser-microphone",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/sd-3-standard-instrument-dynamic-microphone",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/sd-5-standard-drum-dynamic-microphone",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/sd-7-standard-kick-dynamic-microphone",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/sp-1-standard-pencil-microphones",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ua-bock-167",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ua-bock-187",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ua-bock-251",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ua-sphere-dlx-modeling-microphone",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ua-sphere-lx-modeling-microphone",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/apollo-solo",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/apollo-x16d",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/volt-1-usb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/volt-4-usb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/volt-176-usb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/volt-276-usb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/volt-476-usb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/volt-476p-usb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-essentials-edition",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/api-vision-console-emulation-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/analog-classics-pro-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ssl-4000-series-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/distortion-essentials-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/luna-spitfire-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/marshall-legends-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/softube-amp-room-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/verve-analog-machines-essentials",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/verve-analog-machines",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-custom-2-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ua-connect",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-console-app",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/anti-1992-high-gain-amp",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/knuckles-92-dual-rec-amplifier",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/enigmatic-82-overdrive-special-amp",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/la6176-signature-channel-strip",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/analog-tape-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/apollo-twin-x",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/apollo-x16",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/apollo-x4",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/apollo-x6",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/apollo-x8",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/apollo-x8p",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/apollo-solo-usb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/apollo-twin-x-usb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/thunderbolt-3-option-card",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-2-satellite-usb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-2-satellite-firewire",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-guitar-amp-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/pick-one-free-plug-in",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/topline-vocal-suite",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ssl-4000-e-series-channel-strip",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/woodrow-55-instrument",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-custom-6-plus-6-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ua-1176-fet",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/dream-65-reverb",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/lion-68-super-lead",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ssl-4000-g-series-bus-compressor",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-custom-3-plus-3-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-select-2-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-custom-10-plus-10-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ruby-63-top-boost",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/apollo-e1x",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/apollo-e2m",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/teletronix-la-2a-tube-compressor",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/anthem-analog-synthesizer",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/showtime-64-tube-amp",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-pro-vocal-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-guitar-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-classic-keys-and-synths-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/a-type-multiband-dynamic-enhancer",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/shadow-hills-mastering-compressor-class-a",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/maag-eq4-ms",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/paradise-guitar-studio",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/ocean-way-studios-deluxe",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/volt-876",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-mix-tape-pro-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/luna-pro",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/spl-vitalizer-mk3-t",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/elysia-alpha-compressor-v2",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-ultimate-14",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-complete-4",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-signature-edition-3",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-holiday-mix-tape-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-best-of-2025-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-select-6-plus-6-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-select-10-plus-10-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.uaudio.com/products/uad-select-3-plus-3-bundle",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    }
+  ],
+  "navigation_pattern": "hierarchical",
+  "content_selectors": {
+    "title": "h1, .title, .doc-title",
+    "content": "article, .content, .documentation, main",
+    "sidebar": ".sidebar, nav",
+    "download_link": "a[href$='.pdf']"
+  },
+  "pagination_info": null,
+  "download_links": false,
+  "requires_javascript": true,
+  "rate_limit_ms": 1000,
+  "total_estimated_docs": 266,
+  "notes": "Discovered 266 documentation sources"
+}

@@ -1,0 +1,5596 @@
+{
+  "brand_id": 34,
+  "brand_name": "Steinberg",
+  "base_url": "https://www.steinberg.net",
+  "documentation_urls": [
+    {
+      "url": "https://www.steinberg.net/de/audio-interfaces/products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/nuendo/complementary-products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/nuendo/post-production/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/press/2020/spectralayers-7/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/press/2020/the-steinberg-production-starter-kit/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/press/2021/spectralayers-8/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/press/2022/spectralayers-9/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/press/2023/spectralayers-10/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/press/2024/spectralayers-11/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/press/2025/hardware-brand-transition/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/press/2025/spectralayers-12/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/promotion/cubase-partner-products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/spectralayers/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/spectralayers/compare-editions/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/spectralayers/features/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/spectralayers/further-applications/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/spectralayers/get-spectralayers/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/spectralayers/learn/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/spectralayers/music-production/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/spectralayers/new-features/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/spectralayers/post-restoration/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/spectralayers/trial/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/spectralayers/update-spectralayers/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/stories/studio-tutorial/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/support-for-ukraine/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/10-ways-to-add-ear-candy/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/25-terms-for-cubase-beginners/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/5-mixconsole-tips-for-faster-mixing/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/5-tips-for-a-great-electric-bass-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/5-tips-for-big-fat-kick-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/5-tips-for-smooth-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/5-wavelab-tools-you-need-for-mastering/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/5-ways-to-use-sidechain/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/5-ways-to-warm-up-your-tracks/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/5-ways-to-widen-your-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/6-basic-audio-processes-in-cubase-you-need-to-know/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/add-effect-plug-ins/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/add-lofi-vibes/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/add-track-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/advanced-metal-drum-programming/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/apply-fx-plug-ins-in-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/atmos-monitoring-on-headphones/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/beat-deconstruction-unmixing-components/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/benefits-of-using-a-mastering-daw/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/connect-audio-hardware-to-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/control-synths-with-quick-controls/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/create-ducked-delays/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/create-giant-sub-basses/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/create-lofi-music/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/create-morphing-lead-sounds/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/create-the-reverse-reverb-effect/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/create-unique-instruments/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/creating-alien-sounds-for-video-games/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/creating-weapon-sounds-for-video-games/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/demo-recordings-sound-professional/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/download-choices-and-content-guide/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/drum-bus-compression-in-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/find-samples-loops-instruments-fx-in-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/find-the-perfect-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/fixing-guitar-productions-with-spectrum-editing/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/fuller-metal-drum-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/game-sound-design-in-ambisonics/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/get-creative-with-reverence/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/get-your-music-ready-for-streaming-platforms/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/how-to-add-organic-textures-to-your-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/how-to-compose-adventurous-brass/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/how-to-eliminate-unwanted-sounds-from-a-song/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/how-to-get-great-audio-for-your-podcasts/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/how-to-get-the-best-audio-for-vlogging/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/how-to-improve-the-sound-of-podcasts/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/how-to-improve-the-sound-of-videos/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/how-to-make-your-music-sound-professional/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/how-to-record-an-asmr-video-with-great-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/how-to-record-your-podcast/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/how-to-set-up-an-online-karaoke-system-at-home/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/how-to-virtual-instruments/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/immerse-with-ambidecoder-quick-start-guide/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/improve-the-sound-quality-of-video-calls/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/improve-your-songwriting/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/jaron-lopez/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/let-the-music-play/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/make-your-chords-sound-more-sophisticated/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/make-your-synths-pop/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/master-metal-track/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/metal-bass-recording-tips/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/metal-drums-routing-balancing/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/mix-clean-metal-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/mix-edit-metal-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/mix-metal-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/mix-metal-screaming-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/mix-your-song/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/mixing-low-tuned-metal-guitars/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/mixing-metal-bass/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/mixing-metal-guitar-solos/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/mixing-music-in-ambisonics/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/mixing-rock-music/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/modern-trap-drum-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/never-lose-a-take/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/orchestration-in-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/perfect-metal-guitar-tone/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/perfect-rock-guitar-lead-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/perfect-rock-guitar-tone/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/polyrhythmic-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/produce-huge-acoustic-snares/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/professional-metal-snare-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/programming-rock-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/record-metal-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/rock-bass-recording-techniques/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/save-export-your-project/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/setting-up-a-session-for-a-weapon-element-for-video-games/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/setup-your-audio-interface/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/slicing-samples-to-create-trap-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/sound-design-for-vr-ar-and-360-video/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/sound-into-and-out-of-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/synths-to-enhance-metal-productions/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/the-no-one-trick-to-make-everything-sound-wide/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/tips-for-mixing-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/use-parallel-compression-to-make-your-vocals-stand/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/vocal-chain-with-dom/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/vocal-stem-cleaning/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/voice-recording/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/what-is-a-daw/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/what-is-mastering/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/why-is-wavelab-the-best-audio-editor/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/tutorials/your-first-audio-recording/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/audio-interfaces/products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/nuendo/complementary-products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/nuendo/post-production/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/press/2020/spectralayers-7/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/press/2020/the-steinberg-production-starter-kit/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/press/2021/spectralayers-8/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/press/2022/spectralayers-9/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/press/2023/spectralayers-10/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/press/2024/spectralayers-11/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/press/2025/hardware-brand-transition/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/press/2025/spectralayers-12/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/promotion/cubase-partner-products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/spectralayers/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/spectralayers/compare-editions/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/spectralayers/features/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/spectralayers/further-applications/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/spectralayers/get-spectralayers/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/spectralayers/learn/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/spectralayers/music-production/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/spectralayers/new-features/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/spectralayers/post-restoration/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/spectralayers/release-notes/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/spectralayers/release-notes/11/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/spectralayers/release-notes/12/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/spectralayers/trial/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/spectralayers/update-spectralayers/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/stories/studio-tutorial/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/support-for-ukraine/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/10-ways-to-add-ear-candy/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/25-terms-for-cubase-beginners/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/5-mixconsole-tips-for-faster-mixing/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/5-tips-for-a-great-electric-bass-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/5-tips-for-big-fat-kick-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/5-tips-for-smooth-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/5-wavelab-tools-you-need-for-mastering/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/5-ways-to-use-sidechain/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/5-ways-to-warm-up-your-tracks/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/5-ways-to-widen-your-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/6-basic-audio-processes-in-cubase-you-need-to-know/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/add-effect-plug-ins/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/add-lofi-vibes/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/add-track-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/advanced-metal-drum-programming/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/apply-fx-plug-ins-in-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/atmos-monitoring-on-headphones/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/automation-for-better-metal-mixes/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/bass-melodies-fx-drum-and-bass/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/beat-deconstruction-unmixing-components/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/beat-for-liquid-drum-and-bass/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/benefits-of-using-a-mastering-daw/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/brickwall-limiter-to-improve-metal-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/build-a-solid-song-structure/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/build-hardstyle-kick/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/build-hardstyle-leads/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/build-your-own-studio/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/building-a-neo-soul-groove/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/building-your-own-home-studio/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/compose-cinematic-orchestra/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/compose-epic-percussion/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/compose-love-strings/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/compose-suspenseful-themes/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/composing-a-science-fiction-score/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/connect-audio-hardware-to-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/control-synths-with-quick-controls/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/create-a-hybrid-multi-layered-snare/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/create-a-synthwave-track/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/create-a-talking-synth-wobble/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/create-an-analogue-style-kick-drum/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/create-custom-drum-and-bass-kit/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/create-ducked-delays/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/create-giant-sub-basses/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/create-k-pop-chord-progression/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/create-k-pop-hook/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/create-lofi-music/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/create-modern-drum-sounds-and-synths/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/create-morphing-lead-sounds/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/create-stranger-things-arp-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/create-the-reverse-reverb-effect/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/create-trap-track/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/create-unique-instruments/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/creating-a-custom-trap-kit/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/creating-a-funky-groove/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/creating-a-hip-hop-groove/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/creating-a-neo-disco-track/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/creating-a-soul-track/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/creating-a-superhero-theme/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/creating-a-track-like-cold-heart-pnau-remix/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/creating-a-track-like-stay/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/creating-a-track-like-the-batman/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/creating-alien-sounds-for-video-games/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/creating-weapon-sounds-for-video-games/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/dark-trap-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/deconstruct-loops-in-groove-agent/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/demo-recordings-sound-professional/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/download-choices-and-content-guide/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/drum-bus-compression-in-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/drum-slicing-in-groove-agent/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/enhance-tracks-with-percussion/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/fat-vocal-chains-and-arrangement-drum-and-bass/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/find-samples-loops-instruments-fx-in-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/find-the-perfect-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/fixing-guitar-productions-with-spectrum-editing/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/frequency-2-in-metal-mixing/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/fuller-metal-drum-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/game-sound-design-in-ambisonics/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/generative-trap-melodies/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/get-creative-with-reverence/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/get-inspired-build-on-an-idea/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/get-your-music-ready-for-streaming-platforms/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/groove-and-bass-girl-crush/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/haunting-halloween-theme-song/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/home-studio-for-recording-heavy-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/how-to-add-organic-textures-to-your-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/how-to-compose-adventurous-brass/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/how-to-create-808s/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/how-to-eliminate-unwanted-sounds-from-a-song/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/how-to-get-great-audio-for-your-podcasts/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/how-to-get-the-best-audio-for-vlogging/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/how-to-improve-the-sound-of-podcasts/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/how-to-improve-the-sound-of-videos/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/how-to-make-your-music-sound-professional/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/how-to-record-an-asmr-video-with-great-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/how-to-record-your-podcast/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/how-to-set-up-an-online-karaoke-system-at-home/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/how-to-virtual-instruments/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/immerse-with-ambidecoder-quick-start-guide/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/improve-the-sound-quality-of-video-calls/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/improve-your-songwriting/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/jaron-lopez/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/layer-samples-in-groove-agent/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/let-the-music-play/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/make-four-chords-really-count/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/make-girl-crush-song-sound-special/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/make-your-chords-sound-more-sophisticated/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/make-your-own-drum-kits/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/make-your-synths-pop/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/master-metal-track/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/mastering-trap-song/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/metal-bass-recording-tips/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/metal-drums-routing-balancing/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/metal-mixing-template/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/mix-and-master-electronic-track/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/mix-clean-metal-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/mix-edit-metal-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/mix-girl-crush-song/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/mix-metal-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/mix-metal-screaming-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/mix-your-song/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/mixing-low-tuned-metal-guitars/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/mixing-metal-bass/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/mixing-metal-guitar-solos/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/mixing-music-in-ambisonics/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/mixing-rock-music/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/modern-ambient-trap-melodies/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/modern-midi-trap-hats/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/modern-trap-drum-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/multiple-outputs-in-groove-agent/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/never-lose-a-take/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/orchestration-in-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/perfect-metal-guitar-tone/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/perfect-rock-guitar-lead-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/perfect-rock-guitar-tone/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/polyrhythmic-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/produce-a-pop-track-with-orchestra/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/produce-huge-acoustic-snares/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/produce-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/produce-your-song/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/professional-metal-snare-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/programming-rock-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/record-metal-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/recording-metal-guitar-solos/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/rock-bass-recording-techniques/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/sample-a-808-drum-machine/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/save-export-your-project/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/setting-up-a-session-for-a-weapon-element-for-video-games/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/setup-your-audio-interface/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/slicing-samples-to-create-trap-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/sound-design-for-vr-ar-and-360-video/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/sound-into-and-out-of-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/synths-to-enhance-metal-productions/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/take-control-of-909-samples/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/the-no-one-trick-to-make-everything-sound-wide/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/three-instruments-with-one-sample/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/tips-creating-sounds/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/tips-for-mixing-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/turn-loops-into-full-song/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/use-parallel-compression-to-make-your-vocals-stand/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/vocal-chain-with-dom/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/vocal-stem-cleaning/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/voice-recording/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/what-is-a-daw/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/what-is-girl-crush-and-how-to-produce-it/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/what-is-mastering/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/what-makes-a-great-melody/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/what-makes-a-k-pop-production-special/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/why-is-wavelab-the-best-audio-editor/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/your-first-audio-recording/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/audio-interfaces/products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/nuendo/complementary-products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/nuendo/post-production/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/promotion/cubase-partner-products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/spectralayers/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/spectralayers/compare-editions/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/spectralayers/features/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/spectralayers/further-applications/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/spectralayers/get-spectralayers/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/spectralayers/learn/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/spectralayers/music-production/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/spectralayers/new-features/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/spectralayers/post-restoration/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/spectralayers/trial/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/spectralayers/update-spectralayers/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/stories/studio-tutorial/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/10-ways-to-add-ear-candy/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/25-terms-for-cubase-beginners/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/5-mixconsole-tips-for-faster-mixing/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/5-tips-for-a-great-electric-bass-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/5-tips-for-big-fat-kick-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/5-tips-for-smooth-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/5-wavelab-tools-you-need-for-mastering/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/5-ways-to-use-sidechain/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/5-ways-to-warm-up-your-tracks/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/5-ways-to-widen-your-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/6-basic-audio-processes-in-cubase-you-need-to-know/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/add-effect-plug-ins/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/add-lofi-vibes/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/add-track-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/advanced-metal-drum-programming/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/apply-fx-plug-ins-in-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/atmos-monitoring-on-headphones/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/beat-deconstruction-unmixing-components/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/benefits-of-using-a-mastering-daw/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/connect-audio-hardware-to-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/control-synths-with-quick-controls/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/create-ducked-delays/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/create-giant-sub-basses/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/create-lofi-music/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/create-morphing-lead-sounds/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/create-the-reverse-reverb-effect/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/create-unique-instruments/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/creating-alien-sounds-for-video-games/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/creating-weapon-sounds-for-video-games/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/demo-recordings-sound-professional/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/download-choices-and-content-guide/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/drum-bus-compression-in-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/find-samples-loops-instruments-fx-in-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/find-the-perfect-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/fixing-guitar-productions-with-spectrum-editing/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/fuller-metal-drum-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/game-sound-design-in-ambisonics/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/get-creative-with-reverence/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/get-your-music-ready-for-streaming-platforms/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/how-to-add-organic-textures-to-your-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/how-to-compose-adventurous-brass/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/how-to-eliminate-unwanted-sounds-from-a-song/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/how-to-get-great-audio-for-your-podcasts/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/how-to-get-the-best-audio-for-vlogging/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/how-to-improve-the-sound-of-podcasts/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/how-to-improve-the-sound-of-videos/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/how-to-make-your-music-sound-professional/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/how-to-record-an-asmr-video-with-great-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/how-to-record-your-podcast/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/how-to-set-up-an-online-karaoke-system-at-home/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/how-to-virtual-instruments/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/immerse-with-ambidecoder-quick-start-guide/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/improve-the-sound-quality-of-video-calls/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/improve-your-songwriting/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/jaron-lopez/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/let-the-music-play/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/make-your-chords-sound-more-sophisticated/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/make-your-synths-pop/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/master-metal-track/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/metal-bass-recording-tips/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/metal-drums-routing-balancing/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/mix-clean-metal-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/mix-edit-metal-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/mix-metal-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/mix-metal-screaming-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/mix-your-song/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/mixing-low-tuned-metal-guitars/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/mixing-metal-bass/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/mixing-metal-guitar-solos/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/mixing-music-in-ambisonics/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/mixing-rock-music/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/modern-trap-drum-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/never-lose-a-take/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/orchestration-in-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/perfect-metal-guitar-tone/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/perfect-rock-guitar-lead-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/perfect-rock-guitar-tone/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/polyrhythmic-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/produce-huge-acoustic-snares/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/professional-metal-snare-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/programming-rock-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/record-metal-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/rock-bass-recording-techniques/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/save-export-your-project/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/setting-up-a-session-for-a-weapon-element-for-video-games/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/setup-your-audio-interface/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/slicing-samples-to-create-trap-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/sound-design-for-vr-ar-and-360-video/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/sound-into-and-out-of-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/synths-to-enhance-metal-productions/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/the-no-one-trick-to-make-everything-sound-wide/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/tips-for-mixing-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/use-parallel-compression-to-make-your-vocals-stand/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/vocal-chain-with-dom/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/vocal-stem-cleaning/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/voice-recording/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/what-is-a-daw/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/what-is-mastering/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/why-is-wavelab-the-best-audio-editor/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/es/tutorials/your-first-audio-recording/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/audio-interfaces/products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/nuendo/complementary-products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/nuendo/post-production/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/press/2020/spectralayers-7/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/press/2020/the-steinberg-production-starter-kit/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/press/2021/spectralayers-8/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/press/2022/spectralayers-9/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/press/2023/spectralayers-10/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/press/2024/spectralayers-11/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/press/2025/hardware-brand-transition/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/press/2025/spectralayers-12/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/promotion/cubase-partner-products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/spectralayers/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/spectralayers/compare-editions/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/spectralayers/features/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/spectralayers/further-applications/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/spectralayers/get-spectralayers/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/spectralayers/learn/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/spectralayers/music-production/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/spectralayers/new-features/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/spectralayers/post-restoration/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/spectralayers/trial/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/spectralayers/update-spectralayers/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/stories/studio-tutorial/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/10-ways-to-add-ear-candy/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/25-terms-for-cubase-beginners/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/5-mixconsole-tips-for-faster-mixing/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/5-tips-for-a-great-electric-bass-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/5-tips-for-big-fat-kick-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/5-tips-for-smooth-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/5-wavelab-tools-you-need-for-mastering/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/5-ways-to-use-sidechain/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/5-ways-to-warm-up-your-tracks/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/5-ways-to-widen-your-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/6-basic-audio-processes-in-cubase-you-need-to-know/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/add-effect-plug-ins/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/add-lofi-vibes/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/add-track-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/advanced-metal-drum-programming/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/apply-fx-plug-ins-in-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/atmos-monitoring-on-headphones/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/beat-deconstruction-unmixing-components/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/benefits-of-using-a-mastering-daw/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/connect-audio-hardware-to-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/control-synths-with-quick-controls/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/create-ducked-delays/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/create-giant-sub-basses/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/create-lofi-music/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/create-morphing-lead-sounds/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/create-the-reverse-reverb-effect/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/create-unique-instruments/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/creating-alien-sounds-for-video-games/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/creating-weapon-sounds-for-video-games/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/demo-recordings-sound-professional/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/download-choices-and-content-guide/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/drum-bus-compression-in-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/find-samples-loops-instruments-fx-in-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/find-the-perfect-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/fixing-guitar-productions-with-spectrum-editing/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/fuller-metal-drum-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/game-sound-design-in-ambisonics/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/get-creative-with-reverence/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/get-your-music-ready-for-streaming-platforms/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/how-to-add-organic-textures-to-your-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/how-to-compose-adventurous-brass/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/how-to-eliminate-unwanted-sounds-from-a-song/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/how-to-get-great-audio-for-your-podcasts/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/how-to-get-the-best-audio-for-vlogging/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/how-to-improve-the-sound-of-podcasts/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/how-to-improve-the-sound-of-videos/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/how-to-make-your-music-sound-professional/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/how-to-record-an-asmr-video-with-great-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/how-to-record-your-podcast/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/how-to-set-up-an-online-karaoke-system-at-home/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/how-to-virtual-instruments/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/immerse-with-ambidecoder-quick-start-guide/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/improve-the-sound-quality-of-video-calls/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/improve-your-songwriting/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/jaron-lopez/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/let-the-music-play/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/make-your-chords-sound-more-sophisticated/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/make-your-synths-pop/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/master-metal-track/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/metal-bass-recording-tips/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/metal-drums-routing-balancing/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/mix-clean-metal-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/mix-edit-metal-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/mix-metal-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/mix-metal-screaming-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/mix-your-song/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/mixing-low-tuned-metal-guitars/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/mixing-metal-bass/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/mixing-metal-guitar-solos/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/mixing-music-in-ambisonics/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/mixing-rock-music/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/modern-trap-drum-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/never-lose-a-take/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/orchestration-in-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/perfect-metal-guitar-tone/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/perfect-rock-guitar-lead-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/perfect-rock-guitar-tone/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/polyrhythmic-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/produce-huge-acoustic-snares/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/professional-metal-snare-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/programming-rock-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/record-metal-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/rock-bass-recording-techniques/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/save-export-your-project/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/setting-up-a-session-for-a-weapon-element-for-video-games/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/setup-your-audio-interface/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/slicing-samples-to-create-trap-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/sound-design-for-vr-ar-and-360-video/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/sound-into-and-out-of-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/synths-to-enhance-metal-productions/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/the-no-one-trick-to-make-everything-sound-wide/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/tips-for-mixing-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/use-parallel-compression-to-make-your-vocals-stand/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/vocal-chain-with-dom/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/vocal-stem-cleaning/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/voice-recording/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/what-is-a-daw/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/what-is-mastering/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/why-is-wavelab-the-best-audio-editor/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/fr/tutorials/your-first-audio-recording/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/audio-interfaces/products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/nuendo/complementary-products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/nuendo/post-production/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/press/2020/spectralayers-7/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/press/2020/the-steinberg-production-starter-kit/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/press/2021/spectralayers-8/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/press/2022/spectralayers-9/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/press/2023/spectralayers-10/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/press/2024/spectralayers-11/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/press/2025/hardware-brand-transition/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/press/2025/spectralayers-12/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/promotion/cubase-partner-products/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/spectralayers/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/spectralayers/compare-editions/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/spectralayers/features/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/spectralayers/further-applications/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/spectralayers/get-spectralayers/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/spectralayers/learn/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/spectralayers/music-production/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/spectralayers/new-features/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/spectralayers/post-restoration/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/spectralayers/release-notes/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/spectralayers/release-notes/11/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/spectralayers/release-notes/12/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/spectralayers/trial/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/spectralayers/update-spectralayers/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/stories/studio-tutorial/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/10-ways-to-add-ear-candy/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/25-terms-for-cubase-beginners/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/5-mixconsole-tips-for-faster-mixing/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/5-tips-for-a-great-electric-bass-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/5-tips-for-big-fat-kick-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/5-tips-for-smooth-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/5-wavelab-tools-you-need-for-mastering/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/5-ways-to-use-sidechain/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/5-ways-to-warm-up-your-tracks/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/5-ways-to-widen-your-vocals/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/6-basic-audio-processes-in-cubase-you-need-to-know/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/add-effect-plug-ins/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/add-lofi-vibes/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/add-track-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/advanced-metal-drum-programming/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/apply-fx-plug-ins-in-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/atmos-monitoring-on-headphones/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/beat-deconstruction-unmixing-components/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/benefits-of-using-a-mastering-daw/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/connect-audio-hardware-to-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/control-synths-with-quick-controls/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/create-ducked-delays/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/create-giant-sub-basses/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/create-lofi-music/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/create-morphing-lead-sounds/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/create-the-reverse-reverb-effect/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/create-unique-instruments/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/creating-alien-sounds-for-video-games/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/creating-weapon-sounds-for-video-games/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/demo-recordings-sound-professional/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/download-choices-and-content-guide/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/find-samples-loops-instruments-fx-in-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/find-the-perfect-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/fixing-guitar-productions-with-spectrum-editing/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/fuller-metal-drum-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/game-sound-design-in-ambisonics/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/get-creative-with-reverence/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/get-your-music-ready-for-streaming-platforms/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/how-to-add-organic-textures-to-your-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/how-to-compose-adventurous-brass/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/how-to-eliminate-unwanted-sounds-from-a-song/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/how-to-get-great-audio-for-your-podcasts/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/how-to-get-the-best-audio-for-vlogging/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/how-to-improve-the-sound-of-podcasts/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/how-to-improve-the-sound-of-videos/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/how-to-make-your-music-sound-professional/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/how-to-record-an-asmr-video-with-great-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/how-to-record-your-podcast/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/how-to-set-up-an-online-karaoke-system-at-home/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/how-to-virtual-instruments/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/immerse-with-ambidecoder-quick-start-guide/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/improve-the-sound-quality-of-video-calls/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/improve-your-songwriting/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/jaron-lopez/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/let-the-music-play/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/make-your-chords-sound-more-sophisticated/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/make-your-synths-pop/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/mixing-music-in-ambisonics/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/mixing-rock-music/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/modern-trap-drum-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/never-lose-a-take/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/perfect-metal-guitar-tone/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/perfect-rock-guitar-lead-sound/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/perfect-rock-guitar-tone/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/polyrhythmic-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/produce-huge-acoustic-snares/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/programming-rock-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/rock-bass-recording-techniques/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/save-export-your-project/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/setting-up-a-session-for-a-weapon-element-for-video-games/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/setup-your-audio-interface/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/slicing-samples-to-create-trap-drums/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/sound-design-for-vr-ar-and-360-video/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/sound-into-and-out-of-cubase/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/the-no-one-trick-to-make-everything-sound-wide/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/tips-for-mixing-metal/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/use-parallel-compression-to-make-your-vocals-stand/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/vocal-chain-with-dom/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/vocal-stem-cleaning/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/voice-recording/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/what-is-a-daw/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/what-is-mastering/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/why-is-wavelab-the-best-audio-editor/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/ja/tutorials/your-first-audio-recording/",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/en/support/downloads.html#mainnavigation",
+      "type": "manual",
+      "title": "Navigation",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/en/support/downloads.html#maincontent",
+      "type": "manual",
+      "title": "Content",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/en/support/downloads.html#mainservice",
+      "type": "manual",
+      "title": "Service",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/en/support/downloads.html",
+      "type": "manual",
+      "title": "English",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/de/support/downloads.html",
+      "type": "manual",
+      "title": "Deutsch",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/en/support/downloads/wavelab_11/wavelab_112_latest_version.html",
+      "type": "manual",
+      "title": "WaveLab 11.2 | Latest Version",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/en/support/downloads/wavelab_11/wavelab_111_outdated.html",
+      "type": "manual",
+      "title": "WaveLab 11.1 (outdated)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://o.steinberg.net/en/support/downloads/steinberg_download_assistant.html",
+      "type": "manual",
+      "title": "Steinberg Download Assistant",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/en/support/downloads.html#oben2",
+      "type": "manual",
+      "title": "Go to top",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://o.steinberg.net/en/support/downloads.html",
+      "type": "manual",
+      "title": "Downloads",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/#main",
+      "type": "manual",
+      "title": "Skip to main content",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/tutorials/#footer",
+      "type": "manual",
+      "title": "Skip to footer",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/spectralayers/#main",
+      "type": "manual",
+      "title": "Skip to main content",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.steinberg.net/spectralayers/#footer",
+      "type": "manual",
+      "title": "Skip to footer",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    }
+  ],
+  "navigation_pattern": "hierarchical",
+  "content_selectors": {
+    "title": "h1, .title, .doc-title",
+    "content": "article, .content, .documentation, main",
+    "sidebar": ".sidebar, nav",
+    "download_link": "a[href$='.pdf']"
+  },
+  "pagination_info": null,
+  "download_links": false,
+  "requires_javascript": true,
+  "rate_limit_ms": 1000,
+  "total_estimated_docs": 697,
+  "notes": "Discovered 697 documentation sources"
+}

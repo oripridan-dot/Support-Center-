@@ -1,0 +1,108 @@
+{
+  "brand_id": 29,
+  "brand_name": "Warm Audio",
+  "base_url": "https://www.warmaudio.com",
+  "documentation_urls": [
+    {
+      "url": "https://www.warmaudio.com/contact-support",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.warmaudio.com/legacy-products",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.warmaudio.com/product-registration",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.warmaudio.com/products",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.warmaudio.com/blog/holiday-gift-guide-best-gifts-for-musicians-and-audio-engineers",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.warmaudio.com/blog/signal-chain-beginners-guide-for-better-recordings",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.warmaudio.com/blog/2021-holiday-gift-guide",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.warmaudio.com/blog/warm-audio-supports-all-vinyl-broadcast-radio-show",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.warmaudio.com/blog/production-expert-winner-a-warm-audio-wa-251-tube-condenser-microphone",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.warmaudio.com/blog/bus-comp-makes-mixs-top-20-audio-products-of-the-year",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.warmaudio.com/blog/announcing-the-newest-products-from-warm-audio-bus-comp-and-direct-boxes",
+      "type": "manual",
+      "title": null,
+      "product_name": null,
+      "priority": 7,
+      "estimated_size": null
+    }
+  ],
+  "navigation_pattern": "hierarchical",
+  "content_selectors": {
+    "title": "h1, .title, .doc-title",
+    "content": "article, .content, .documentation, main",
+    "sidebar": ".sidebar, nav",
+    "download_link": "a[href$='.pdf']"
+  },
+  "pagination_info": null,
+  "download_links": false,
+  "requires_javascript": true,
+  "rate_limit_ms": 1000,
+  "total_estimated_docs": 11,
+  "notes": "Discovered 11 documentation sources"
+}

@@ -30,7 +30,7 @@ async def start_worker(request: WorkerStartRequest):
         return {"status": "already_running", "pid": worker_process.pid}
     
     # Build command
-    cmd = ["python", "worker.py", "--mode", request.mode]
+    cmd = ["python3", "worker.py", "--mode", request.mode]
     
     if request.brand_name:
         cmd.extend(["--brand", request.brand_name])
@@ -91,7 +91,7 @@ async def scrape_brand(brand_name: str, background_tasks: BackgroundTasks):
     
     def run_scrape():
         subprocess.run(
-            ["python", "worker.py", "--mode", "once", "--brand", brand_name],
+            ["python3", "worker.py", "--mode", "once", "--brand", brand_name],
             cwd="/workspaces/Support-Center-/backend"
         )
     

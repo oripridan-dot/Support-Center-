@@ -1,0 +1,756 @@
+{
+  "brand_id": 44,
+  "brand_name": "M-Audio",
+  "base_url": "https://www.m-audio.com",
+  "documentation_urls": [
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/hdhuo/M-Track%20Duo%20HD%20-%20User%20Guide%20-%20v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "M-Track\n                          Duo HD User Guide v1.1",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/hdhuo/M-Track%20Duo%20HD%20Producer%20Pack%20-%20User%20Guide%20-%20v1.0-1.pdf",
+      "type": "spec_sheet",
+      "title": "M-Track\n                          Duo HD Producer Pack User Guide v1.0.1",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/M-Track%20Solo%20-%20User%20Guide%20-%20v1.6.pdf",
+      "type": "spec_sheet",
+      "title": "M-Track\n                          Solo User Guide v1.6",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/M-Track%20Duo%20-%20User%20Guide%20-%20v1.5.pdf",
+      "type": "spec_sheet",
+      "title": "M-Track Duo User Guide v1.5",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/AIR%20Hub%20-%20User%20Guide%20-%20v1.4.pdf",
+      "type": "spec_sheet",
+      "title": "AIR\n                          Hub User Guide v1.4",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/AIR%20192-4%20-%20User%20Guide%20-%20v1.2.pdf",
+      "type": "spec_sheet",
+      "title": "AIR\n                          192-4 User Guide v1.2",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/AIR%20192-6%20-%20User%20Guide%20-%20v1.2.pdf",
+      "type": "spec_sheet",
+      "title": "AIR\n                          192-6 User Guide v1.2",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/AIR%20192%208%20-%20User%20Guide%20-%20v1.3.pdf",
+      "type": "spec_sheet",
+      "title": "AIR\n                          192-8 User Guide v1.3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/AIR%20192-14%20-%20User%20Guide%20-%20v1.2.pdf",
+      "type": "spec_sheet",
+      "title": "AIR\n                          192-14 User Guide v1.2",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/AIR192-4VocalStudioPro-UserGuide-v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "AIR\n                            192-4 Vocal Studio Pro User Guide v1.1",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/M-Track%20Eight%20-%20User%20Guide%20-%20v1.2.pdf",
+      "type": "spec_sheet",
+      "title": "M-Track Eight - User Guide v1.2",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/060424_Uno_UG_EN01.pdf",
+      "type": "spec_sheet",
+      "title": "MIDISPORT\n                              Uno USB - User Guide (English)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Oxygen Series MKV - User Guide - v1.2.pdf",
+      "type": "spec_sheet",
+      "title": "Oxygen\n                          Series MKV User Guide v1.2",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Oxygen%2025%20-%20Quickstart%20Guide%20-%20v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "Oxygen\n                          25 MKV Quickstart Guide v1.1",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Oxygen%2049%20-%20Quickstart%20Guide%20-%20v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "Oxygen\n                          49 MKV Quickstart Guide v1.1",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Oxygen%2061%20-%20Quickstart%20Guide%20-%20v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "Oxygen\n                          61 MKV Quickstart Guide v1.1",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Hammer%2088%20Pro%20-%20Quickstart%20Guide%20-%20v1.2.pdf",
+      "type": "spec_sheet",
+      "title": "Hammer\n                          88 Pro Quickstart Guide v1.2",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Hammer%2088%20Pro%20Preset%20Editor%20-%20User%20Guide%20-%20v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "Hammer\n                          88 Pro Preset Editor User Guide v1.0",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Hammer%2088%20Pro%20-%20User%20Guide%20-%20v1.3.pdf",
+      "type": "spec_sheet",
+      "title": "Hammer\n                          88 Pro User Guide v1.3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Oxygen%20Pro%20Mini%20%20-%20Quickstart%20Guide%20-%20v1.3.pdf",
+      "type": "spec_sheet",
+      "title": "Oxygen\n                          Pro Mini Quickstart Guide v1.3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Oxygen%20Pro%20Mini%20-%20User%20Guide%20-%20v1.2.pdf",
+      "type": "spec_sheet",
+      "title": "Oxygen\n                          Pro Mini User Guide v1.2",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/OxygenPro25-QuickstartGuide-v1.3.pdf",
+      "type": "spec_sheet",
+      "title": "Oxygen\n                          Pro 25 Quickstart Guide v1.3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Oxygen%20Pro%20Series%20-%20User%20Guide%20-v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "Oxygen\n                          Pro 25, 49 and 61 - User Guide v1.1",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/OxygenPro49-QuickstartGuide-v1.3.pdf",
+      "type": "spec_sheet",
+      "title": "Oxygen\n                          Pro 49 Quickstart Guide v1.3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/OxygenPro61-QuickstartGuide-v1.3.pdf",
+      "type": "spec_sheet",
+      "title": "Oxygen\n                          Pro 61 Quickstart Guide v1.3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Keystation%2088%20MKIII%20-%20User%20Guide%20-%20v1.9.pdf",
+      "type": "spec_sheet",
+      "title": "Keystation\n                          88 MK3 User Guide v1.9",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Hammer88PresetEditor-UserGuide-v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "Hammer\n                          88 Preset Editor - User Guide - v1.1",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Hammer88-UserGuide-v1.2.pdf",
+      "type": "spec_sheet",
+      "title": "Hammer\n                          88 - User Guide - v1.2",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/KeystationMini32MK3-UserGuide-v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "Keystation\n                          Mini 32 MK3 User Guide v1.0",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/KeystationMini32MK3-QuickstartGuide-v1.0.pdf",
+      "type": "spec_sheet",
+      "title": "Keystation\n                          Mini 32 MK3 Quickstart Guide v1.0",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Keystation%2049%20MK3%20-%20User%20Guide%20-%20v1.6.pdf",
+      "type": "spec_sheet",
+      "title": "Keystation\n                          49 MK3 User Guide v1.6",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Keystation%2061%20MKIII%20-%20User%20Guide%20-%20v1.6.pdf",
+      "type": "spec_sheet",
+      "title": "Keystation\n                          61 MK3 User Guide v1.6",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Oxygen25-UserGuide-v1.3.pdf",
+      "type": "spec_sheet",
+      "title": "Oxygen\n                          25 - User Guide - v1.3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Oxygen49-UserGuide-v1.3.pdf",
+      "type": "spec_sheet",
+      "title": "Oxygen\n                          49 - User Guide - v1.3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/Oxygen61-UserGuide-v1.3.pdf",
+      "type": "spec_sheet",
+      "title": "Oxygen\n                          61 - User Guide - v1.3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/monitors/forty-sixty/Forty%20Sixty%20-%20Quickstart%20Guide%20-%20v1.3.pdf",
+      "type": "spec_sheet",
+      "title": "Forty\n                          Sixty Quickstart Guide v1.3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/monitors/forty-sixty/Forty%20Sixty%20-%20User%20Guide%20-%20v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "Forty\n                          Sixty User Guide v1.1",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/monitors/forty-eighty/Forty%20Eighty%20-%20Quickstart%20Guide%20-%20v1.4.pdf",
+      "type": "spec_sheet",
+      "title": "Forty\n                          Eighty Quickstart Guide v1.4",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/monitors/forty-eighty/Forty%20Eighty%20-%20User%20Guide%20-%20v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "Forty\n                          Eighty User Guide v1.1",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/BX3_BT_-_User_Guide_-_v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "BX3\n                          BT User Guide v1.1",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/BX4_BT_-_User_Guide_-_v1.1.pdf",
+      "type": "spec_sheet",
+      "title": "BX4\n                          BT User Guide v1.1",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/BX3_-_User_Guide_-_v1.3.pdf",
+      "type": "spec_sheet",
+      "title": "BX3\n                          User Guide v1.3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/BX4_-_User_Guide_-_v1.3.pdf",
+      "type": "spec_sheet",
+      "title": "BX4\n                          User Guide v1.3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/BX5%20D3%20-%20User%20Guide%20-%20v1.6.pdf",
+      "type": "spec_sheet",
+      "title": "BX5\n                          D3 - User Guide - v1.6",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/BX8%20D3%20-%20User%20Guide%20-%20v1.2.pdf",
+      "type": "spec_sheet",
+      "title": "BX8\n                          D3 - User Guide - v1.2",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/AV32-UserGuide-v1.3.pdf",
+      "type": "spec_sheet",
+      "title": "AV32\n                          - User Guide - v1.3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/BX5BT-User%20Guide-v1.3.pdf",
+      "type": "spec_sheet",
+      "title": "BX5\n                          BT - User Guide - v1.3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/BX5BT-Quickstart%20Guide-v1.6.pdf",
+      "type": "spec_sheet",
+      "title": "BX5\n                          BT - Quickstart Guide - v1.6",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://cdn.inmusicbrands.com/m-audio/maudio_documentation/UberMic-UserGuide-v1.3.pdf",
+      "type": "spec_sheet",
+      "title": "Uber\n                        Mic - User Guide - v1.3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads",
+      "type": "manual",
+      "title": "Downloads",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/legacy-downloads",
+      "type": "manual",
+      "title": "Click here",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#mtrackduohd",
+      "type": "manual",
+      "title": "M-Track Duo HD",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#mtrackduohdpp",
+      "type": "manual",
+      "title": "M-Track Duo HD Producer Pack",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#mtracksolo",
+      "type": "manual",
+      "title": "M-Track Solo",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#mtrackduo",
+      "type": "manual",
+      "title": "M-Track Duo",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#airhub",
+      "type": "manual",
+      "title": "AIR Hub",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#air1924",
+      "type": "manual",
+      "title": "AIR 192|4",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#air1926",
+      "type": "manual",
+      "title": "AIR 192|6",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#air1928",
+      "type": "manual",
+      "title": "AIR 192|8",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#air19214",
+      "type": "manual",
+      "title": "AIR 192|14",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#air1924vsp",
+      "type": "manual",
+      "title": "AIR 192|4 Vocal Studio Pro",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#mtrackeight",
+      "type": "manual",
+      "title": "M-Track Eight",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#uno",
+      "type": "manual",
+      "title": "Uno",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#oxy25v",
+      "type": "manual",
+      "title": "Oxygen 25 (MK V)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#oxy49v",
+      "type": "manual",
+      "title": "Oxygen 49 (MK V)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#oxy61v",
+      "type": "manual",
+      "title": "Oxygen 61 (MK V)",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#ham88p",
+      "type": "manual",
+      "title": "Hammer 88 Pro",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#oxypmini",
+      "type": "manual",
+      "title": "Oxygen Pro Mini",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#oxyp25",
+      "type": "manual",
+      "title": "Oxygen Pro 25",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#oxyp49",
+      "type": "manual",
+      "title": "Oxygen Pro 49",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#oxyp61",
+      "type": "manual",
+      "title": "Oxygen Pro 61",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#keys883",
+      "type": "manual",
+      "title": "Keystation 88 MK 3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#ham88",
+      "type": "manual",
+      "title": "Hammer 88",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#keysmini323",
+      "type": "manual",
+      "title": "Keystation Mini 32 MK 3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#keys493",
+      "type": "manual",
+      "title": "Keystation 49 MK 3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#keys613",
+      "type": "manual",
+      "title": "Keystation 61 MK 3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#oxy25iv",
+      "type": "manual",
+      "title": "Oxygen 25 MK IV",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#oxy49iv",
+      "type": "manual",
+      "title": "Oxygen 49 MK IV",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#oxy61iv",
+      "type": "manual",
+      "title": "Oxygen 61 MK IV",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#fortysixty",
+      "type": "manual",
+      "title": "Forty Sixty",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#fortyeighty",
+      "type": "manual",
+      "title": "Forty Eighty",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#bx3bt",
+      "type": "manual",
+      "title": "BX3 BT",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#bx4bt",
+      "type": "manual",
+      "title": "BX4 BT",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#bx3",
+      "type": "manual",
+      "title": "BX3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#bx4",
+      "type": "manual",
+      "title": "BX4",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#bx5d3",
+      "type": "manual",
+      "title": "BX5 D3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#bx8d3",
+      "type": "manual",
+      "title": "BX8 D3",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#av32",
+      "type": "manual",
+      "title": "AV32",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#bx5bt",
+      "type": "manual",
+      "title": "BX5BT",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/downloads.html#ubermic",
+      "type": "manual",
+      "title": "Uber Mic",
+      "product_name": null,
+      "priority": 6,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/drivers",
+      "type": "manual",
+      "title": "Drivers & Updates",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.m-audio.com/support/documents",
+      "type": "manual",
+      "title": "Documents",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    }
+  ],
+  "navigation_pattern": "hierarchical",
+  "content_selectors": {
+    "title": "h1, .title, .doc-title",
+    "content": "article, .content, .documentation, main",
+    "sidebar": ".sidebar, nav",
+    "download_link": "a[href$='.pdf']"
+  },
+  "pagination_info": null,
+  "download_links": false,
+  "requires_javascript": true,
+  "rate_limit_ms": 1000,
+  "total_estimated_docs": 92,
+  "notes": "Discovered 92 documentation sources"
+}

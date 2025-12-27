@@ -71,7 +71,7 @@ echo ""
 # Start Backend (FastAPI with auto-reload)
 echo -e "${BLUE}🚀 Starting Backend (FastAPI)...${NC}"
 cd "$PROJECT_ROOT/backend"
-PYTHONPATH=. python -m uvicorn app.main:app \
+PYTHONPATH=. python3 -m uvicorn app.main:app \
     --host 127.0.0.1 \
     --port 8000 \
     --reload \
@@ -111,7 +111,7 @@ echo ""
 if [ "$START_WORKER" = true ]; then
     echo -e "${BLUE}🚀 Starting Scraper Worker...${NC}"
     cd "$PROJECT_ROOT/backend"
-    PYTHONPATH=. python worker.py --mode continuous --delay 60 > "$WORKER_LOG" 2>&1 &
+    PYTHONPATH=. python3 worker.py --mode continuous --delay 60 > "$WORKER_LOG" 2>&1 &
     WORKER_PID=$!
     
     sleep 2
@@ -124,6 +124,14 @@ if [ "$START_WORKER" = true ]; then
     echo ""
 fi
 
+# Wait for backend to fully initialize
+echo -e "${BLUE}⏳ Waiting for 22-worker system to initialize...${NC}"
+sleep 3
+
+# Check 22-worker system status
+WORKERS_STATUS=$(curl -s http://127.0.0.1:8000/api/hp/health 2>/dev/null || echo '{"healthy":false}')
+WORKERS_HEALTHY=$(echo "$WORKERS_STATUS" | python3 -c "import sys, json; print(json.load(sys.stdin).get('healthy', False))" 2>/dev/null || echo "false")
+
 # Display status
 echo -e "${BLUE}╔══════════════════════════════════════════════════════════════╗${NC}"
 echo -e "${BLUE}║${NC}                    ${GREEN}ALL SYSTEMS READY!${NC}                     ${BLUE}║${NC}"
@@ -132,6 +140,17 @@ echo ""
 echo -e "${GREEN}🌐 Frontend:${NC}  http://localhost:3000"
 echo -e "${GREEN}🔌 Backend:${NC}   http://127.0.0.1:8000"
 echo -e "${GREEN}📚 API Docs:${NC}  http://127.0.0.1:8000/docs"
+echo ""
+if [ "$WORKERS_HEALTHY" = "True" ] || [ "$WORKERS_HEALTHY" = "true" ]; then
+    echo -e "${GREEN}⚡ 22-Worker System:${NC} ${GREEN}✅ OPERATIONAL${NC}"
+    echo -e "   • Scraping: 6 workers  • RAG Query: 10 workers"
+    echo -e "   • Embedding: 3 workers • Batch: 2 workers"
+    echo -e "   • Maintenance: 1 worker"
+    echo -e "   ${YELLOW}Monitor:${NC} http://127.0.0.1:8000/api/hp/workers"
+else
+    echo -e "${YELLOW}⚡ 22-Worker System:${NC} ${YELLOW}⚠️  Starting...${NC}"
+    echo -e "   Check status: curl http://127.0.0.1:8000/api/hp/health"
+fi
 echo ""
 echo -e "${YELLOW}💡 Tip for Codespaces:${NC}"
 echo -e "   If you see a 'Privacy Error' in your browser:"

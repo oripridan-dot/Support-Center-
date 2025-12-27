@@ -1,0 +1,92 @@
+{
+  "brand_id": 52,
+  "brand_name": "Eve Audio",
+  "base_url": "https://www.eve-audio.com",
+  "documentation_urls": [
+    {
+      "url": "https://www.eve-audio.com/tech-support",
+      "type": "manual",
+      "title": "Tech Support",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.eve-audio.com/exo-series/manual",
+      "type": "manual",
+      "title": "View the digital manual here",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.eve-audio.com/tech-specs/exo24",
+      "type": "manual",
+      "title": "Discover more",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.eve-audio.com/tech-specs/exo25",
+      "type": "manual",
+      "title": "Discover more",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.eve-audio.com/tech-specs/exo27",
+      "type": "manual",
+      "title": "Discover more",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.eve-audio.com/tech-specs/exo28",
+      "type": "manual",
+      "title": "Discover more",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.eve-audio.com/tech-specs/sc203",
+      "type": "manual",
+      "title": "Discover more",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.eve-audio.com/de/tech-support",
+      "type": "manual",
+      "title": "de",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    },
+    {
+      "url": "https://www.eve-audio.com/de/exo-series/manual",
+      "type": "manual",
+      "title": "Digitale Anleitung anschauen",
+      "product_name": null,
+      "priority": 5,
+      "estimated_size": null
+    }
+  ],
+  "navigation_pattern": "hierarchical",
+  "content_selectors": {
+    "title": "h1, .title, .doc-title",
+    "content": "article, .content, .documentation, main",
+    "sidebar": ".sidebar, nav",
+    "download_link": "a[href$='.pdf']"
+  },
+  "pagination_info": null,
+  "download_links": false,
+  "requires_javascript": true,
+  "rate_limit_ms": 1000,
+  "total_estimated_docs": 9,
+  "notes": "Discovered 9 documentation sources"
+}
